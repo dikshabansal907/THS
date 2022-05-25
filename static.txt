@@ -1,0 +1,174 @@
+   <!-- Accordian -->
+    <!-- <div class="container">
+        <div class="container-slides">
+            <ul class="slides">
+                <li class="slide active brand1">
+                    <a href="#" class="action"><span>Section title 1</span></a>
+                    <div class="slide-content">
+                        <h2>Section title 1</h2>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed convallis magna eget placerat consequat. 
+                        In laoreet, risus ac dictum maximus, lectus est pharetra 
+                        dolor, quis suscipit dui ligula ut odio. Nullam condimentum 
+                        velit nec ligula pulvinar rhoncus. Nunc non ex non justo 
+                        dictum interdum id in lacus. Nunc a mauris in ipsum 
+                        condimentum blandit. Orci varius natoque penatibus et 
+                        magnis dis parturient montes, nascetur ridiculus mus. 
+                        Phasellus feugiat eros nec scelerisque varius. Mauris 
+                        blandit molestie ipsum, eu vulputate velit lacinia eu. 
+                        Praesent molestie sollicitudin tincidunt. Donec interdum 
+                        felis sed lorem tincidunt, vel condimentum dolor sagittis. 
+                        Maecenas nec metus risus. Integer semper libero sit amet 
+                        tellus fringilla mattis. Donec viverra a arcu ut consectetur. 
+                        Ut sagittis quam laoreet, placerat ex a, condimentum risus.
+                        </p>
+                        <p>
+                        
+                        </p>
+                    </div>
+                </li>
+                <li class="slide brand2">
+                    <a href="#" class="action"><span>Section title 2</span></a>
+                    <div class="slide-content">
+                        <h2>Section title 2</h2>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed convallis magna eget placerat consequat. 
+                        In laoreet, risus ac dictum maximus, lectus est pharetra 
+                        dolor, quis suscipit dui ligula ut odio. Nullam condimentum 
+                        velit nec ligula pulvinar rhoncus. Nunc non ex non justo 
+                        dictum interdum id in lacus. Nunc a mauris in ipsum 
+                        condimentum blandit. Orci varius natoque penatibus et 
+                        magnis dis parturient montes, nascetur ridiculus mus. 
+                        Phasellus feugiat eros nec scelerisque varius. Mauris 
+                        blandit molestie ipsum, eu vulputate velit lacinia eu. 
+                        Praesent molestie sollicitudin tincidunt. Donec interdum 
+                        felis sed lorem tincidunt, vel condimentum dolor sagittis. 
+                        Maecenas nec metus risus. Integer semper libero sit amet 
+                        tellus fringilla mattis. Donec viverra a arcu ut consectetur. 
+                        Ut sagittis quam laoreet, placerat ex a, condimentum risus.
+                        </p>
+                    </div>
+                </li>
+                <li class="slide brand3">
+                    <a href="#" class="action"><span>Section title 3</span></a>
+                    <div class="slide-content">
+                        <h2>Section title 3</h2>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed convallis magna eget placerat consequat. 
+                        In laoreet, risus ac dictum maximus, lectus est pharetra 
+                        dolor, quis suscipit dui ligula ut odio. Nullam condimentum 
+                        velit nec ligula pulvinar rhoncus. Nunc non ex non justo 
+                        dictum interdum id in lacus. Nunc a mauris in ipsum 
+                        condimentum blandit. Orci varius natoque penatibus et 
+                        magnis dis parturient montes, nascetur ridiculus mus. 
+                        Phasellus feugiat eros nec scelerisque varius. Mauris 
+                        blandit molestie ipsum, eu vulputate velit lacinia eu. 
+                        Praesent molestie sollicitudin tincidunt. Donec interdum 
+                        felis sed lorem tincidunt, vel condimentum dolor sagittis. 
+                        Maecenas nec metus risus. Integer semper libero sit amet 
+                        tellus fringilla mattis. Donec viverra a arcu ut consectetur. 
+                        Ut sagittis quam laoreet, placerat ex a, condimentum risus.
+                        </p>
+                    </div>
+                </li>
+                <li class="slide brand4">
+                    <a href="#" class="action"><span>Section title 4</span></a>
+                    <div class="slide-content">
+                        <h2>Section title 4</h2>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed convallis magna eget placerat consequat. 
+                        In laoreet, risus ac dictum maximus, lectus est pharetra 
+                        dolor, quis suscipit dui ligula ut odio. Nullam condimentum 
+                        velit nec ligula pulvinar rhoncus. Nunc non ex non justo 
+                        dictum interdum id in lacus. Nunc a mauris in ipsum 
+                        condimentum blandit. Orci varius natoque penatibus et 
+                        magnis dis parturient montes, nascetur ridiculus mus. 
+                        Phasellus feugiat eros nec scelerisque varius. Mauris 
+                        blandit molestie ipsum, eu vulputate velit lacinia eu. 
+                        Praesent molestie sollicitudin tincidunt. Donec interdum 
+                        felis sed lorem tincidunt, vel condimentum dolor sagittis. 
+                        Maecenas nec metus risus. Integer semper libero sit amet 
+                        tellus fringilla mattis. Donec viverra a arcu ut consectetur. 
+                        Ut sagittis quam laoreet, placerat ex a, condimentum risus.
+                        </p>
+                    </div>
+                </li>
+                <li class="slide brand5">
+                    <a href="#" class="action"><span>Section title 5</span></a>
+                    <div class="slide-content">
+                        <h2>Section title 5</h2>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed convallis magna eget placerat consequat. 
+                        In laoreet, risus ac dictum maximus, lectus est pharetra 
+                        dolor, quis suscipit dui ligula ut odio. Nullam condimentum 
+                        velit nec ligula pulvinar rhoncus. Nunc non ex non justo 
+                        dictum interdum id in lacus. Nunc a mauris in ipsum 
+                        condimentum blandit. Orci varius natoque penatibus et 
+                        magnis dis parturient montes, nascetur ridiculus mus. 
+                        Phasellus feugiat eros nec scelerisque varius. Mauris 
+                        blandit molestie ipsum, eu vulputate velit lacinia eu. 
+                        Praesent molestie sollicitudin tincidunt. Donec interdum 
+                        felis sed lorem tincidunt, vel condimentum dolor sagittis. 
+                        Maecenas nec metus risus. Integer semper libero sit amet 
+                        tellus fringilla mattis. Donec viverra a arcu ut consectetur. 
+                        Ut sagittis quam laoreet, placerat ex a, condimentum risus.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div> -->
+<!-- Accordian ends -->
+
+<!-- 
+<div class="carousel">
+    <div class="carousel--item one"></div>
+    <div class="carousel--item two"></div>
+    <div class="carousel--item three"></div>
+    <div class="carousel--item four"></div>
+    <div class="carousel--item five"></div>
+  </div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Script for carousel -->
+<!-- <script>
+    $(document).ready(function(){
+    
+        // link action
+        $(".action").click(function(e){
+            e.preventDefault();
+    
+            $(".slide").removeClass("active");
+            var slide = $(this).closest(".slide");
+            slide.addClass("active");
+        });
+    
+    });
+    
+    // checkWidth
+    checkWidth = function(){
+        var windowsize = $(window).width();
+        if (windowsize > 480) {
+            var slideWidth = $('.active').width();
+            $('.slide-content').css({
+                "width" : slideWidth+"px"
+            });
+        }
+        
+    }
+    
+    $(window).resize(function() {
+        // onresize
+        checkWidth();
+    
+        // finish resize
+        clearTimeout(window.resizedFinished);
+        window.resizedFinished = setTimeout( checkWidth , 500);
+    });</script> -->
