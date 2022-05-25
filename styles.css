@@ -462,7 +462,7 @@ h3 {
   /* height: 400vh; */
   display: grid;
   grid-template-columns: repeat(8, minmax(0, 1fr));
-  grid-template-rows: repeat(14, minmax(0, 10vw));
+  grid-template-rows: repeat(11, minmax(0, 10vw));
   grid-gap: 30px;
   /* padding: 1rem 2rem; */
   position: relative;
