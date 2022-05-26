@@ -89,7 +89,7 @@ const runTimer = () => {
     }
     countCustomers.innerText = `${i}+`;
     i = i + 1;
-  }, 50);
+  }, 20);
   document.querySelector(".countCustomers").style.color = "rgba(255,0,0,0.5)";
   var counterP = setInterval(() => {
     if (j == projectUpto) {
