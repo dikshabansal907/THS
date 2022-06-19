@@ -1025,7 +1025,7 @@ video {
   width: fit-content;
   overflow: hidden;
 }
-.itemViewMoreDiv p{
+.itemViewMoreDiv p {
   margin-bottom: 0%;
 }
 .gradient:hover {
@@ -1546,13 +1546,13 @@ video {
   .snip1226 {
     padding: 0;
   }
-  .headerSectionText{
+  .headerSectionText {
     font-size: 2rem;
     width: fit-content;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 510px) {
   .aboutUs,
   .whoWeAreSection,
   .portfolio,
@@ -1719,15 +1719,15 @@ video {
     top: 90px;
     right: inherit;
   }
-  .iframeCrossIcon{
+  .iframeCrossIcon {
     font-size: 2rem;
   }
-  .iframeSection .container{
+  .iframeSection .container {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .lottieAnimation{
+  .lottieAnimation {
     /* height: 30vh;
     width: 100%; */
   }
