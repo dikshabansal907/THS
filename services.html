@@ -1,133 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
-      <!-- BootStrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <!-- BootStrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="codepen.css">
-    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="codepen.css">
+
 </head>
+
 <body>
-    <!-- Lines -->
-<div class="horizontalLine horizontalLine1"></div>
-<div class="horizontalLine horizontalLine2"></div>
-<div class="horizontalLine horizontalLine3"></div>
-<div class="horizontalLine horizontalLine4"></div>
-<div class="horizontalLine horizontalLine5"></div>
-<!-- Lines ends -->
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <nav class=" servicesNavbar">
+    <div class="brandNameContainter serviceBrandNameContainer">
+      <img class="servicesLogo" src="./images/footer/owl.png" alt="">
+      <h5 class="servicesBrandName">THE HAPPY SLATE</h5>
+    </div>
+    <ul class="snip1226">
+      <li class=" navbarItem">
+        <a href="./index.html" data-hover="Home">Home</a>
+      </li>
+      <li class="navbarItem">
+        <a href="#" data-hover="About Us">About Us</a>
+      </li>
+      <!-- <li><a href="#" data-hover="Blog">Blog</a></li> -->
+      <li class="current navbarItem">
+        <a href="./services.html" data-hover="Services">Services</a>
+      </li>
+      <li class="navbarItem">
+        <a data-toggle="modal" data-target="#serviceModalCenter" data-hover="Contact Us">
+          Contact Us
+        </a>
+      </li>
+      <!-- <li><a href="#" data-hover="Contact">Contact</a></li> -->
+    </ul>
+  </nav>
+
+  <div class="servicesPageHeadingDiv ">
+    <div class="textAndArrow">
+      <h3>Services</h3>
+      <img class="downArrow" src="./images/downArrow.png" alt="" />
+    </div>
+    <h1 class="servicesPageHeading  ">We Create <br><span class="storiesText">Stories</span></h1>
+    <img class="scribble16" src="./images/scribble16.png" alt="">
+  </div>
 
 
-<!-- Navigation Bar Starts ---------------------------------->
-
-<section class="navigationBarSectionServices">
-    <nav class="navigationBarServices">
-        <ul class="snip1226">
-            <li class="current"><a href="#" data-hover="Home">Home</a></li>
-            <li><a href="#" data-hover="About Us">About Us</a></li>
-            <li><a href="#" data-hover="Services">Services</a></li>
-            <li><a href="#" data-hover="Portfolio">Portfolio</a></li>
-        </ul>
-    </nav>
-
-    <!-- <div class="logoContainter">
-        <a href="./index.html"><img class="logo"
-                src="https://static.wixstatic.com/media/c7b6c9_a8c30ef23499423abf083e7d57863dfe~mv2.png/v1/fill/w_132,h_136,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/THS%20LOGO_%20WhiteBG.png"
-                alt="LOGO"></a>
-    </div> -->
-</section>
-    <!-- Navigation Bar Ends -->
-
-       <!-- Accordian -->
-    <div class="container servicesContainer">
-        <div class="container-slides">
-            <ul class="slides">
-                <li class="slide active brand1">
-                    <a href="#" class="action"><span>WHITE BOARD FILMS</span></a>
-                    <div class="slide-content">
-                        <!-- <h2>Section title 1</h2> -->
-               <img src="./images/services/1.png" alt="">
-                    </div>
-                </li>
-                <li class="slide brand2">
-                    <a href="#" class="action"><span>MOTION GRAPHICS FILMS</span></a>
-                    <div class="slide-content">
-                        <!-- <h2>Section title 2</h2> -->
-                        <img src="./images/services/1.png" alt=""> 
-                        <!-- <div class="transparentBox">ggggggggggggggggg</div> -->
-                    </div>
-                </li>
-                <li class="slide brand3">
-                    <a href="#" class="action"><span>2D ANIMATION FILMS</span></a>
-                    <div class="slide-content">
-                        <!-- <h2>Section title 3</h2> -->
-                        <img src="./images/services/1.png" alt="">                    </div>
-                </li>
-                <li class="slide brand4">
-                    <a href="#" class="action"><span>STOP MOTION FILMS</span></a>
-                    <div class="slide-content">
-                        <!-- <h2>Section title 4</h2> -->
-                        <img src="./images/services/1.png" alt="">                    </div>
-                </li>
-                <li class="slide brand5">
-                    <a href="#" class="action"><span>3D ANIMATION FILMS</span></a>
-                    <div class="slide-content">
-                        <!-- <h2>Section title 5</h2> -->
-                        <img src="./images/services/1.png" alt="">                    </div>
-                </li>
-            </ul>
+  <!-- ======= portfolio Section ======= -->
+  <section id="portfolio" class="portfolio">
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+        <div class="col-12">
+          <div class="servicesPageText mb-5 px-lg-5 px-1">
+            At The Happy Slate, we create stories! We transform dull information into engaging stories
+            that your audience can relate to and care for. Whether you need to explain a product,
+            announce a launch, spread awareness or just say Hi, we make it engaging for your
+            audience.
+          </div>
         </div>
-    </div> 
-<!-- Accordian ends -->
+      </div>
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter=".filter-2d" class="filter-active">2D ANIMATION</li>
+            <li data-filter=".filter-3d">3D ANIMATION</li>
+            <li data-filter=".filter-stop">Stop Motion</li>
+            <li data-filter=".filter-white">Whiteboard</li>
+            <li data-filter=".filter-motion">Motion Graphics</li>
+            <li data-filter=".filter-original">THS Originals</li>
+          </ul>
+        </div>
+      </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <div class="row portfolio-container" style="
+    position: relative;
+    height: 891px;
+">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-2d" style="
+    position: absolute;
+    left: 0px;
+    top: 0px;
+">
+          <img src="images/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>App 1</h4>
+            <p>App</p>
+            <a href="images/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="App 1"><i class="bi bi-play"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-2d" style="
+    position: absolute;
+    left: 380px;
+    top: 0px;
+">
+          <img src="images/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Web 3</h4>
+            <p>Web</p>
+            <a href="images/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="Web 3"><i class="bi bi-play"></i></a>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-3d" style="
+    position: absolute;
+    left: 760px;
+    top: 0px;
+">
+          <img src="images/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>App 2</h4>
+            <p>App</p>
+            <a href="images/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="App 2"><i class="bi bi-play"></i></a>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-3d" style="
+    position: absolute;
+    left: 0px;
+    top: 297px;
+">
+          <img src="images/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Card 2</h4>
+            <p>Card</p>
+            <a href="images/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="Card 2"><i class="bi bi-play"></i></a>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-3d" style="
+    position: absolute;
+    left: 380px;
+    top: 297px;
+">
+          <img src="images/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Web 2</h4>
+            <p>Web</p>
+            <a href="images/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="Web 2"><i class="bi bi-play"></i></a>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-white" style="
+    position: absolute;
+    left: 760px;
+    top: 297px;
+">
+          <img src="images/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>App 3</h4>
+            <p>App</p>
+            <a href="images/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="App 3"><i class="bi bi-play"></i></a>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-motion" style="
+    position: absolute;
+    left: 0px;
+    top: 594px;
+">
+          <img src="images/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Card 1</h4>
+            <p>Card</p>
+            <a href="images/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="Card 1"><i class="bi bi-play"></i></a>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-stop" style="
+    position: absolute;
+    left: 380px;
+    top: 594px;
+">
+          <img src="images/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Card 3</h4>
+            <p>Card</p>
+            <a href="images/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="Card 3"><i class="bi bi-play"></i></a>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-2d" style="
+    position: absolute;
+    left: 760px;
+    top: 594px;
+">
+          <img src="images/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Web 3</h4>
+            <p>Web</p>
+            <a href="images/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="Web 3"><i class="bi bi-play"></i></a>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-original" style="
+    position: absolute;
+    left: 760px;
+    top: 594px;
+">
+          <img src="images/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Web 3</h4>
+            <p>Web</p>
+            <a href="images/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="Web 3"><i class="bi bi-play"></i></a>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- End portfolio Section -->
+
+  <!-- footer section -->
+  <footer class="footerServiceSection footerSection">
+    <img class="footerImg" src="./images/footer/owl.png" alt="" />
+    <div class="footerDiv">
+      <h5 class="footerBrandName">THE HAPPY SLATE</h5>
+      <div class="footerList1Div">
+        <ul class="footerList1">
+          <li class="footerList1items">
+            Lorem
+            <div class="footerUnderline"></div>
+          </li>
+          <li class="footerList1items">
+            Lorem
+            <div class="footerUnderline"></div>
+          </li>
+          <li class="footerList1items">
+            Lorem
+            <div class="footerUnderline"></div>
+          </li>
+        </ul>
+      </div>
+      <hr style="color: black; height: 2px" />
+      <div class="footerList2Div">
+        <ul class="footerList2">
+          <li class="footerList2items">
+            About Us
+            <div class="footerUnderline"></div>
+          </li>
+          <li class="footerList2items">
+            Services
+            <div class="footerUnderline"></div>
+          </li>
+          <li class="footerList2items">
+            Portfolio
+            <div class="footerUnderline"></div>
+          </li>
+          <li class="footerList2items">
+            Careers
+            <div class="footerUnderline"></div>
+          </li>
+          <li class="footerList2items">
+            Social
+            <div class="footerUnderline"></div>
+          </li>
+          <!-- <li class="footerList2items">
+            Lorem
+            <div class="footerUnderline"></div>
+          </li>
+          <li class="footerList2items">
+            Lorem
+            <div class="footerUnderline"></div>
+          </li> -->
+        </ul>
+      </div>
+      <div class="footerButtonsDiv">
+        <ul class="footerButtons">
+          <div class="footerCircles footerListButtons">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+          <div class="footerCircles footerListButtons">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="footerCircles footerListButtons">
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <div class="footerCircles footerListButtons">
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <div class="footerCircles footerListButtons">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </ul>
+      </div>
+      <div class="footerText">
+        <div class="footerText1 text-muted">
+          <p class="footerText1paragraphs">Terms&conditions</p>
+          <p class="footerText1paragraphs">Privacy Policy</p>
+        </div>
+        <div class="footerText2 text-muted">
+          <p>Copyright © 2022 The Happy Slate.All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="serviceModalCenter" tabindex="-1" role="dialog" aria-labelledby="serviceModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <div class="d-flex justify-content-end">
+            <button type="button" class="close float-right" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="container-contact100">
+
+            <form class="contact100-form" action="https://formsubmit.co/0e363346e77e05124d3873dcab0f2c3c" method="POST">
+              <span class="contact100-form-title">
+                We'd love to hear from you!
+              </span>
+              <div class="wrap-input100 rs1-wrap-input100 " data-validate="Name is required">
+                <input class="input100" type="text" name="name" placeholder="Enter your name" required>
+                <span class="focus-input100"></span>
+              </div>
+              <div class="wrap-input100 rs1-wrap-input100" data-validate=" Valid email is required: ex@abc.xyz">
+                <input class="input100" type="text" name="email" placeholder="Enter your email address" required>
+                <span class="focus-input100"></span>
+              </div>
+              <div class="wrap-input100 " data-validate="Message is required">
+                <textarea class="input100" name="message" placeholder="Your message here..." required></textarea>
+                <span class="focus-input100"></span>
+              </div>
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="https://www.google.com">
+              <div class="container-contact100-form-btn">
+                <button type="submit" class="contact100-form-btn">
+                  <span>
+                    Submit
+                    <!-- <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i> -->
+                  </span>
+                </button>
+
+              </div>
+              <div class="d-flex justify-content-end w-100">
+                <span class="text-muted">The Happy Slate</span>
+              </div>
+            </form>
+            <span class="contact100-more">
+              <!-- For any question contact: <span class="contact100-more-highlight">+001 345 6889</span> -->
+            </span>
+
+          </div>
+
+        </div>
+        <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<!-- Script for carousel -->
- <script>
-  $(document).ready(function(){
-  
+  <!-- Script for carousel -->
+  <script>
+    $(document).ready(function () {
+
       // link action
-      $(".action").click(function(e){
-          e.preventDefault();
-  
-          $(".slide").removeClass("active");
-          var slide = $(this).closest(".slide");
-          slide.addClass("active");
+      $(".action").click(function (e) {
+        e.preventDefault();
+
+        $(".slide").removeClass("active");
+        var slide = $(this).closest(".slide");
+        slide.addClass("active");
       });
-  
-  });
-  
-  // checkWidth
-  checkWidth = function(){
+
+    });
+
+    // checkWidth
+    checkWidth = function () {
       var windowsize = $(window).width();
       if (windowsize > 480) {
-          var slideWidth = $('.active').width();
-          $('.slide-content').css({
-              "width" : slideWidth+"px"
-          });
+        var slideWidth = $('.active').width();
+        $('.slide-content').css({
+          "width": slideWidth + "px"
+        });
       }
-      
-  }
-  
-  $(window).resize(function() {
+
+    }
+
+    $(window).resize(function () {
       // onresize
       checkWidth();
-  
+
       // finish resize
       clearTimeout(window.resizedFinished);
-      window.resizedFinished = setTimeout( checkWidth , 500);
-  });
+      window.resizedFinished = setTimeout(checkWidth, 500);
+    });
   </script>
-  <!-- Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-crossorigin="anonymous"></script>
-
+  <!-- Vendor JS Files -->
+  <script src="./vendor/aos/aos.js"></script>
+  <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="./vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="./vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="./vendor/php-email-form/validate.js"></script>
+  <script src="services.js"></script>
 </body>
+
 </html>

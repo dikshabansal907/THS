@@ -6,6 +6,21 @@ if (history.scrollRestoration) {
     window.scrollTo(0, 0);
   };
 }
+const showThis = (selector) => {
+  $(selector).removeClass("display-none");
+};
+
+const hideThis = (selector) => {
+  $(selector).addClass("display-none");
+};
+
+const passIframeSrc = (src) => {
+  $(".iframeSectionVideo").attr("src", `https://www.youtube.com/embed/${src}`);
+};
+
+const stopVideo = () => {
+  $(".iframeSectionVideo").attr("src", "");
+};
 
 $(document).ready(function () {
   const tl2 = gsap.timeline({
@@ -55,8 +70,8 @@ $(document).ready(function () {
     "<80%"
   );
 
-  // $(".loader").addClass("loaderAnimation");
-  // $(".loaderBackground").addClass("loaderBackgroundAnimation");
+  $(".loader").addClass("loaderAnimation");
+  $(".loaderBackground").addClass("loaderBackgroundAnimation");
 });
 
 var timerRan = false;
@@ -154,10 +169,13 @@ $(window).scroll(function () {
     $(".typing-demo4").addClass("typing-demo-animation");
   }
 });
+
+// Go to the next item
+
 $(".owl-carousel").owlCarousel({
   loop: true,
   margin: 30,
-  autoplay: false,
+  autoplay: true,
   autoplayTimeout: 7000,
   dots: false,
   center: true,
@@ -167,12 +185,21 @@ $(".owl-carousel").owlCarousel({
       items: 1,
     },
     600: {
-      items: 2,
+      items: 1,
     },
     1000: {
       items: 3,
     },
   },
+});
+
+// owl buttons
+$(".owlNextButton").click(function () {
+  $(".owl-carousel").trigger("next.owl.carousel");
+});
+// Go to the previous item
+$(".owlPrevButton").click(function () {
+  $(".owl-carousel").trigger("prev.owl.carousel");
 });
 
 new Skroll()
@@ -196,44 +223,46 @@ new Skroll()
   })
   .init();
 // facebook animation
-gsap.set(".facebookSvg", { transformOrigin: "center" });
-setInterval(() => {
-  gsap.fromTo(
-    ".facebookSvg",
-    { rotation: -40, scale: 1 },
-    { rotation: 0, duration: 2, scale: 2, ease: "elastic.out(5, 0.2)" }
-  );
-  gsap.fromTo(
-    ".facebookSvg",
-    { rotation: 40, scale: 2 },
-    { rotation: 0, duration: 2, scale: 1, ease: "elastic.out(5, 0.2)" }
-  );
-}, 5000);
+// gsap.set(".facebookSvg", { transformOrigin: "center" });
+// setInterval(() => {
+//   gsap.fromTo(
+//     ".facebookSvg",
+//     { rotation: -40, scale: 1 },
+//     { rotation: 0, duration: 2, scale: 2, ease: "elastic.out(5, 0.2)" }
+//   );
+//   gsap.fromTo(
+//     ".facebookSvg",
+//     { rotation: 40, scale: 2 },
+//     { rotation: 0, duration: 2, scale: 1, ease: "elastic.out(5, 0.2)" }
+//   );
+// }, 5000);
 // instagram animation
-gsap.set(".instagramSvg", { transformOrigin: "center" });
-setInterval(() => {
-  gsap.fromTo(
-    ".instagramSvg",
-    { rotation: -40, scale: 1 },
-    { rotation: 0, duration: 2, scale: 2, ease: "elastic.out(5, 0.2)" }
-  );
-  gsap.fromTo(
-    ".instagramSvg",
-    { rotation: 40, scale: 2 },
-    { rotation: 0, duration: 2, scale: 1, ease: "elastic.out(5, 0.2)" }
-  );
-}, 6000);
+// gsap.set(".instagramSvg", { transformOrigin: "center" });
+// setInterval(() => {
+//   gsap.fromTo(
+//     ".instagramSvg",
+//     { rotation: -40, scale: 1 },
+//     { rotation: 0, duration: 2, scale: 2, ease: "elastic.out(5, 0.2)" }
+//   );
+//   gsap.fromTo(
+//     ".instagramSvg",
+//     { rotation: 40, scale: 2 },
+//     { rotation: 0, duration: 2, scale: 1, ease: "elastic.out(5, 0.2)" }
+//   );
+// }, 6000);
 // twitter animation
-gsap.set(".twitterSvg", { transformOrigin: "center" });
-setInterval(() => {
-  gsap.fromTo(
-    ".twitterSvg",
-    { rotation: -40, scale: 1 },
-    { rotation: 0, duration: 2, scale: 2, ease: "elastic.out(5, 0.2)" }
-  );
-  gsap.fromTo(
-    ".twitterSvg",
-    { rotation: 40, scale: 2 },
-    { rotation: 0, duration: 2, scale: 1, ease: "elastic.out(5, 0.2)" }
-  );
-}, 7000);
+// gsap.set(".twitterSvg", { transformOrigin: "center" });
+// setInterval(() => {
+//   gsap.fromTo(
+//     ".twitterSvg",
+//     { rotation: -40, scale: 1 },
+//     { rotation: 0, duration: 2, scale: 2, ease: "elastic.out(5, 0.2)" }
+//   );
+//   gsap.fromTo(
+//     ".twitterSvg",
+//     { rotation: 40, scale: 2 },
+//     { rotation: 0, duration: 2, scale: 1, ease: "elastic.out(5, 0.2)" }
+//   );
+// }, 7000);
+
+
