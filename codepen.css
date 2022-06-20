@@ -434,8 +434,8 @@ p {
 .serviceBrandNameContainer{
   display: flex;
 }
-
-@media screen and (max-width: 620px) {
+/* 750 krna h */
+@media screen and (max-width: 768px) {
   .servicesNavbar{
     flex-direction: column;
     align-items: center;
@@ -455,6 +455,7 @@ p {
   }
   .portfolio {
     padding: 2rem 4rem 0rem 4rem;
+    margin-bottom: 2rem;
   }
   .servicesPageHeadingDiv {
     padding: 4rem 4rem 0rem 4rem;
@@ -465,9 +466,15 @@ p {
 .servicesPageHeading{
   font-size: 2rem;
 }
+.servicesPageText {
+  font-size: 1.5rem;
+}
+.portfolio #portfolio-flters li {
+  font-size: 17px;
+}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   .portfolio {
     padding: 2rem 2rem 0rem 2rem;
   }

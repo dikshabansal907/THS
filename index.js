@@ -184,9 +184,10 @@ $(".owl-carousel").owlCarousel({
     0: {
       items: 1,
     },
-    600: {
+    501: {
       items: 1,
     },
+
     1000: {
       items: 3,
     },

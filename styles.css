@@ -370,45 +370,6 @@ video {
   top: 17%;
   left: 5rem;
 }
-/* @media (max-width: 1000px) {
-  .aboutUs {
-    padding: 1rem 1rem;
-    margin-top: -3rem;
-  }
-  .scribble2 {
-    left: -1rem;
-    top: 0rem;
-  }
-}
-@media (max-width: 800px) {
-  .aboutUs {
-    padding: 1rem 1rem;
-    margin-top: -7rem;
-  }
-  .scribble2 {
-    top: 0rem;
-    left: 0rem;
-  }
-}
-@media (max-width: 700px) {
-  .aboutUs {
-    padding: 1rem 1rem;
-    margin-top: -14rem;
-  }
-}
-@media (max-width: 600px) {
-  .aboutUs {
-    padding: 1rem 1rem;
-    margin-top: -19rem;
-  }
-  .scribble2 {
-    top: 5%;
-    left: 1rem;
-  }
-  .aboutUsParagraphs{
-    width: 57%;
-  }
-} */
 
 /* about us section ends */
 
@@ -1206,12 +1167,17 @@ video {
 
 .typing-demo-animation {
   opacity: 1;
-  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  animation: typing 1.7s, blink 0.5s step-end infinite alternate;
 }
 
 @keyframes typing {
-  from {
-    width: 0;
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
   }
 }
 
@@ -1487,8 +1453,15 @@ video {
 .socialbutton:focus {
   box-shadow: none !important;
 }
-
-@media screen and (max-width: 620px) {
+/* doing it 768 from 620 */
+@media screen and (max-width: 768px) {
+  .horizontalLine{
+    display: none;
+  }
+  video {
+    width: auto;
+    transform: translateX(-32%);
+  }
   .servicesNavbar {
     flex-direction: column;
     align-items: center;
@@ -1506,16 +1479,34 @@ video {
   .snip1226 li {
     font-size: 0.8rem;
   }
+  .navigationBar {
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+  .logoContainter {
+    position: static;
+  }
+  .logo {
+    position: static;
+  }
   .aboutUs,
   .portfolio,
   .customerReviews,
   .whoWeAre,
   .countDiv,
+  .whoWeAreSection,
   .portfolioSection {
     padding: 2rem 4rem 0rem 4rem;
   }
+
+  .aboutUsDiv {
+    padding-left: 0;
+  }
+  /* .portfolioSection h1{
+    padding: 0rem 0rem 0rem 1.5rem;
+  } */
   .servicesPageHeadingDiv {
-    padding: 4rem 4rem 0rem 4rem;
+    /* padding: 4rem 4rem 0rem 4rem; */
   }
   .portfolio #portfolio-flters li {
     font-size: 10px;
@@ -1534,8 +1525,29 @@ video {
   .portfolioDiv a {
     font-size: initial;
   }
+  .item-container .info {
+    padding: 2rem 3rem;
+  }
   .originals {
     padding-left: 4rem;
+  }
+  .originalGridHeading {
+    text-align: center;
+    position: static;
+    overflow-wrap: break-word;
+    font-size: large;
+  }
+  .viewMoreDiv{
+    margin-left: 30px;
+  }
+  .viewVideoIcon {
+    font-size: 2rem;
+  }
+  .originalTransparentDiv {
+    flex-direction: column-reverse;
+  }
+  .viewVideoHeading {
+    display: none;
   }
   .customerTextAndArrow {
     padding-left: 0rem;
@@ -1550,9 +1562,32 @@ video {
     font-size: 2rem;
     width: fit-content;
   }
+  .textAndArrow {
+    margin-left: 0rem;
+  }
+  .iframeSection {
+    text-align: center;
+    padding: 0 15px;
+  }
+  .iframeCrossDiv {
+    left: 50%;
+    top:25%;
+    right: inherit;
+  }
+
+  .contactContainer {
+    display: none;
+  }
+  .scribble {
+    display: none;
+  }
+
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 480px) {
+  .horizontalLine{
+    display: none;
+  }
   .aboutUs,
   .whoWeAreSection,
   .portfolio,
@@ -1584,14 +1619,17 @@ video {
   .typing-demo6 {
     opacity: 1;
   }
-  .typing-demo-animation {
+  /* .typing-demo-animation {
     animation: none;
-  }
+  } */
   .textAndArrow {
     margin-left: 0rem;
   }
   .originals {
     padding-left: 2rem;
+  }
+  .viewMoreDiv{
+    margin-left: 4px;
   }
   .customerTextAndArrow {
     padding-left: 0rem;
@@ -1726,9 +1764,5 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .lottieAnimation {
-    /* height: 30vh;
-    width: 100%; */
   }
 }
