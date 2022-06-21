@@ -1391,6 +1391,7 @@ video {
 }
 .footerText1 p,
 .footerText2 p {
+  color: grey;
   font-size: 0.9rem;
   font-weight: 900;
   margin-right: 0.7rem;
