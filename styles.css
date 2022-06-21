@@ -232,6 +232,7 @@ video {
 /* navigation bar css ends */
 
 .headerSectionText {
+  text-align: center;
   opacity: 0;
   position: absolute;
   z-index: 3;
@@ -1455,7 +1456,7 @@ video {
 }
 /* doing it 768 from 620 */
 @media screen and (max-width: 768px) {
-  .horizontalLine{
+  .horizontalLine {
     display: none;
   }
   video {
@@ -1537,7 +1538,7 @@ video {
     overflow-wrap: break-word;
     font-size: large;
   }
-  .viewMoreDiv{
+  .viewMoreDiv {
     margin-left: 30px;
   }
   .viewVideoIcon {
@@ -1571,7 +1572,7 @@ video {
   }
   .iframeCrossDiv {
     left: 50%;
-    top:25%;
+    top: 25%;
     right: inherit;
   }
 
@@ -1581,11 +1582,10 @@ video {
   .scribble {
     display: none;
   }
-
 }
 
 @media screen and (max-width: 480px) {
-  .horizontalLine{
+  .horizontalLine {
     display: none;
   }
   .aboutUs,
@@ -1628,7 +1628,7 @@ video {
   .originals {
     padding-left: 2rem;
   }
-  .viewMoreDiv{
+  .viewMoreDiv {
     margin-left: 4px;
   }
   .customerTextAndArrow {
