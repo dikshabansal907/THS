@@ -22,57 +22,57 @@ const stopVideo = () => {
   $(".iframeSectionVideo").attr("src", "");
 };
 
-$(document).ready(function () {
-  const tl2 = gsap.timeline({
-    defaults: { duration: 0.5, ease: "elastic.out(1.5,0.2)" },
-  });
-  tl2.set(".headerSectionText", { y: "100%" });
-  tl2.fromTo(
-    ".headerSectionText",
-    { bottom: "50%", scale: 0, letterSpacing: 0, opacity: 1 },
-    {
-      duration: 2,
-      bottom: "50%",
-      scale: 1.2,
-      letterSpacing: 12,
-      ease: Power1.easeOut,
-      autoRound: false,
-    }
-  );
-  tl2.fromTo(
-    ".headerSectionText",
-    { bottom: "50%", scale: 1.2, letterSpacing: 12 },
-    {
-      duration: 3,
-      bottom: "15%",
-      scale: 1,
-      letterSpacing: 0,
-      ease: Expo.easeOut,
-      autoRound: false,
-    }
-  );
-  tl2.fromTo(
-    ".loaderBackground1",
-    { y: "-49%" },
-    { duration: 2, y: "-100%", ease: Power4.easeOut },
-    "<"
-  );
-  tl2.fromTo(
-    ".loaderBackground2",
-    { y: "49%" },
-    { duration: 2, y: "100%", ease: Power4.easeOut },
-    "<"
-  );
-  tl2.fromTo(
-    ".navbarItem",
-    { y: "-100%" },
-    { duration: 0.5, y: "0%", ease: Back.easeOut.config(1), stagger: 0.2 },
-    "<80%"
-  );
+// $(document).ready(function () {
+//   const tl2 = gsap.timeline({
+//     defaults: { duration: 0.5, ease: "elastic.out(1.5,0.2)" },
+//   });
+//   tl2.set(".headerSectionText", { y: "100%" });
+//   tl2.fromTo(
+//     ".headerSectionText",
+//     { bottom: "50%", scale: 0, letterSpacing: 0, opacity: 1 },
+//     {
+//       duration: 2,
+//       bottom: "50%",
+//       scale: 1.2,
+//       letterSpacing: 12,
+//       ease: Power1.easeOut,
+//       autoRound: false,
+//     }
+//   );
+//   tl2.fromTo(
+//     ".headerSectionText",
+//     { bottom: "50%", scale: 1.2, letterSpacing: 12 },
+//     {
+//       duration: 3,
+//       bottom: "15%",
+//       scale: 1,
+//       letterSpacing: 0,
+//       ease: Expo.easeOut,
+//       autoRound: false,
+//     }
+//   );
+//   tl2.fromTo(
+//     ".loaderBackground1",
+//     { y: "-49%" },
+//     { duration: 2, y: "-100%", ease: Power4.easeOut },
+//     "<"
+//   );
+//   tl2.fromTo(
+//     ".loaderBackground2",
+//     { y: "49%" },
+//     { duration: 2, y: "100%", ease: Power4.easeOut },
+//     "<"
+//   );
+//   tl2.fromTo(
+//     ".navbarItem",
+//     { y: "-100%" },
+//     { duration: 0.5, y: "0%", ease: Back.easeOut.config(1), stagger: 0.2 },
+//     "<80%"
+//   );
 
-  $(".loader").addClass("loaderAnimation");
-  $(".loaderBackground").addClass("loaderBackgroundAnimation");
-});
+//   $(".loader").addClass("loaderAnimation");
+//   $(".loaderBackground").addClass("loaderBackgroundAnimation");
+// });
 
 var timerRan = false;
 $(window).scroll(function () {
@@ -175,7 +175,7 @@ $(window).scroll(function () {
 $(".owl-carousel").owlCarousel({
   loop: true,
   margin: 30,
-  autoplay: true,
+  autoplay: false,
   autoplayTimeout: 7000,
   dots: false,
   center: true,
