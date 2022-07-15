@@ -2219,7 +2219,8 @@ Services Page Ends
   .contactContainer {
     display: flex;
     position: fixed;
-    left: 22.7rem;
+    right: -2vw;
+    top: 44%;
   }
   .facebookSvg,
   .instagramSvg,
