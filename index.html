@@ -78,11 +78,28 @@
           <a href="./services.html" data-hover="Services">Services</a>
         </li>
         <li class="navbarItem">
-          <a href="./brandWork.html" data-hover="Gallery">Gallery</a>
+          <!-- <a href="./brandWork.html" data-hover="Gallery">Gallery</a> -->
+          <a href="./brandWork.html" id="gallery-dropdown-button" data-hover="Gallery" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">Gallery</a>
+          <!-- From This  -->
+          <ul class="dropdown-menu" id="gallery-dropdown" style="display: none">
+            <button class="dropdown-item">Brand Films</button>
+            <button class="dropdown-item">Original Films</button>
+          </ul>
+          <!-- To This  -->
         </li>
+        <!-- <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Gallery
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Brand Films</a>
+            <a class="dropdown-item" href="#">Original Films</a>
+          </div> -->
+        </div>
         <li class="navbarItem">
           <a data-toggle="modal" data-target="#exampleModalCenter" data-hover="Contact Us">
-            Contact 
+            Contact
           </a>
         </li>
         <!-- <li><a href="#" data-hover="Contact">Contact</a></li> -->
@@ -133,50 +150,9 @@
   </section>
 
   <!-- about us section ends ---------------------------------------------->
-  <section class="countDiv">
-    <h1 class="typing-demo1 text-break">Just a few <span class="home">numbers</span> <br>to blow your mind!</h1>
-    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center mt-5">
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title countCustomers">
-              <span class="home">0</span>
-            </h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <i class="bi bi-person-heart customersIcon"></i>
-              <li><b>CUSTOMERS</b></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title countProjects">
-              <span class="home">0</span>
-            </h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <i class="bi bi-chat-left-heart-fill projectsIcon"></i>
-              <li>PROJECTS</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title countAwards">
-              <span class="home">0</span>
-            </h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <i class="bi bi-award-fill awardsIcon"></i>
-              <li>AWARDS</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
+
+
   <!-- portfolio section starts ----------------------------------------------->
   <section id="portfolio" class="portfolio">
     <img class="scribble scribble4" src="./images/Scribbles/scribble4.png" alt="" />
@@ -188,7 +164,7 @@
       </div>
       <img class="scribble scribble13" src="./images/Scribbles/scribble13.png" alt="" />
       <h1 class="typing-demo2 text-break">
-        Our <span style="color: red; opacity: 0.5">Brand </span>Work
+        Our <span style="color: red; opacity: 0.5">Brand </span>Films
       </h1>
       <h2 class="typing-demo2 typing-demo2-subHeading fw-bold">
         &nbsp;The <span class="home">home</span> for your stories.
@@ -230,7 +206,7 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
             <div class="itemViewMoreDiv">
-              <h6 class="gradient" onclick="showThis('.iframeSection'); passIframeSrc('aZ4-Vlse91U')">
+              <h6 class="gradient" onclick="showThis('.iframeSection'); passIframeSrc('A5pMyztSRq8')">
                 Click to Play<span class="arrow">-></span></h6>
               <div class="gradientUnderline"></div>
             </div>
@@ -241,14 +217,14 @@
         <div class="item-container">
           <img src="./images/BrandImages/a2.jpg" alt="" />
           <div class="infoBackground"></div>
-<div class="info">
+          <div class="info">
             <h2 class="brandName">Brand Name</h2>
             <h3>Title</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
             <div class="itemViewMoreDiv">
-              <h6 class="gradient" onclick="showThis('.iframeSection'); passIframeSrc('aZ4-Vlse91U')">Click to Play<span
+              <h6 class="gradient" onclick="showThis('.iframeSection'); passIframeSrc('ycUq6CTx-Zw')">Click to Play<span
                   class="arrow">-></span></h6>
               <div class="gradientUnderline"></div>
             </div>
@@ -259,14 +235,14 @@
       <div class="item">
         <div class="item-container">
           <img src="./images/BrandImages/a3.jpg" alt="" />
-<div class="info">
+          <div class="info">
             <h2 class="brandName">Brand Name</h2>
             <h3>Title</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
             <div class="itemViewMoreDiv">
-              <h6 class="gradient" onclick="showThis('.iframeSection'); passIframeSrc('aZ4-Vlse91U')">Click to Play<span
+              <h6 class="gradient" onclick="showThis('.iframeSection'); passIframeSrc('AA2m9ZGCgLc')">Click to Play<span
                   class="arrow">-></span></h6>
               <div class="gradientUnderline"></div>
             </div>
@@ -276,14 +252,14 @@
       <div class="item">
         <div class="item-container">
           <img src="./images/BrandImages/a4.jpg" alt="" />
-<div class="info">
+          <div class="info">
             <h2 class="brandName">Brand Name</h2>
             <h3>Title</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
             <div class="itemViewMoreDiv">
-              <h6 class="gradient" onclick="showThis('.iframeSection'); passIframeSrc('aZ4-Vlse91U')">Click to Play<span
+              <h6 class="gradient" onclick="showThis('.iframeSection'); passIframeSrc('Zfj24ypr4zU')">Click to Play<span
                   class="arrow">-></span></h6>
               <div class="gradientUnderline"></div>
             </div>
@@ -293,14 +269,14 @@
       <div class="item">
         <div class="item-container">
           <img src="./images/BrandImages/a5.jpg" alt="" />
-<div class="info">
+          <div class="info">
             <h2 class="brandName">Brand Name</h2>
             <h3>Title</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
             <div class="itemViewMoreDiv">
-              <h6 class="gradient" onclick="showThis('.iframeSection'); passIframeSrc('aZ4-Vlse91U')">Click to Play<span
+              <h6 class="gradient" onclick="showThis('.iframeSection'); passIframeSrc('-0jMfPhg-DA')">Click to Play<span
                   class="arrow">-></span></h6>
               <div class="gradientUnderline"></div>
             </div>
@@ -310,14 +286,14 @@
       <div class="item">
         <div class="item-container">
           <img src="./images/BrandImages/a6.jpg" alt="" />
-<div class="info">
+          <div class="info">
             <h2 class="brandName">Brand Name</h2>
             <h3>Title</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
             <div class="itemViewMoreDiv">
-              <h6 class="gradient" onclick="showThis('.iframeSection'); passIframeSrc('aZ4-Vlse91U')">Click to Play<span
+              <h6 class="gradient" onclick="showThis('.iframeSection'); passIframeSrc('Bw9RD7G5Lls')">Click to Play<span
                   class="arrow">-></span></h6>
               <div class="gradientUnderline"></div>
             </div>
@@ -338,60 +314,110 @@
 
   <!-- portfolio carousel ends ----------------------->
 
+  <!-- numbers section -->
+  <section class="brandCountDiv">
+    <h1 class="typing-demo1 text-break">Just a few <span class="home">numbers</span> <br>to blow your mind!</h1>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center mt-5">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title brandCountCustomers">
+              <span class="home">0</span>
+            </h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <i class="bi bi-person-heart customersIcon"></i>
+              <li><b>CUSTOMERS</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title brandCountProjects">
+              <span class="home">0</span>
+            </h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <i class="bi bi-chat-left-heart-fill projectsIcon"></i>
+              <li>PROJECTS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title brandCountAwards">
+              <span class="home">0</span>
+            </h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <i class="bi bi-award-fill awardsIcon"></i>
+              <li>AWARDS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Logo starts-->
 
   <div class="logoSlider">
     <!-- <img class="scribble scribble5" src="./images/scibble5.png" alt=""> -->
     <div class="slide-track">
       <div class="logoSlide">
-        <img src="./images/logosCanva/1.png" />
+        <img src="./images/BrandLogos/Logos_0000_Layer-16.png" />
       </div>
       <div class="logoSlide">
-        <img src="./images/logosCanva/2.png" alt="" />
+        <img src="./images/BrandLogos/Logos_0001_Layer-15.png" alt="" />
       </div>
       <div class="logoSlide">
-        <img src="./images/logosCanva/3.png" alt="" />
+        <img src="./images/BrandLogos/Logos_0002_Layer-14.png" alt="" />
       </div>
       <div class="logoSlide">
-        <img src="./images/logosCanva/4.png" />
+        <img src="./images/BrandLogos/Logos_0003_Layer-13.png" />
       </div>
       <div class="logoSlide">
-        <img src="./images/logosCanva/5.png" alt="" />
+        <img src="./images/BrandLogos/Logos_0004_Layer-12.png" alt="" />
       </div>
       <div class="logoSlide">
-        <img src="./images/logosCanva/6.png" alt="" />
+        <img src="./images/BrandLogos/Logos_0005_Layer-11.png" alt="" />
       </div>
       <div class="logoSlide">
-        <img src="./images/logosCanva/7.png" />
+        <img src="./images/BrandLogos/Logos_0006_Layer-10.png" />
       </div>
       <div class="logoSlide">
-        <img src="./images/logosCanva/8.png" alt="" />
+        <img src="./images/BrandLogos/Logos_0007_Layer-9.png" alt="" />
       </div>
       <div class="logoSlide">
-        <img src="./images/logosCanva/9.png" alt="" />
+        <img src="./images/BrandLogos/Logos_0008_Layer-8.png" alt="" />
       </div>
       <div class="logoSlide">
-        <img src="./images/logosCanva/10.png" alt="" />
+        <img src="./images/BrandLogos/Logos_0009_Layer-7.png" alt="" />
       </div>
       <div class="logoSlide">
-        <img src="./images/logosCanva/11.png" alt="" />
+        <img src="./images/BrandLogos/Logos_0010_Layer-6.png" alt="" />
       </div>
       <div class="logoSlide">
-        <img src="./images/logosCanva/12.png" alt="" />
+        <img src="./images/BrandLogos/Logos_0011_Layer-5.png" alt="" />
       </div>
       <div class="logoSlide">
-        <img src="./images/logosCanva/13.png" alt="" />
+        <img src="./images/BrandLogos/Logos_0012_Layer-4.png" alt="" />
       </div>
       <div class="logoSlide">
-        <img src="./images/logosCanva/14.png" alt="" />
+        <img src="./images/BrandLogos/Logos_0013_Layer-3.png" alt="" />
+      </div>
+      <div class="logoSlide">
+        <img src="./images/BrandLogos/Logos_0014_Layer-1.png" alt="" />
       </div>
       <!-- <div class="logoSlide">
-                <img src="./images/logosCanva/1.png" alt="">
+                <img src="./images/BrandLogos/1.png" alt="">
             </div> -->
     </div>
   </div>
 
   <!-- logo ends -->
+
   <!-- originals section starts ----------------------------->
   <section class="originals">
     <!-- <img class="scribble scribble9" src="./images/scribble9.png" alt="" /> -->
@@ -416,7 +442,7 @@
           <h4 class="originalGridHeading">Lorem, ipsum dolor.</h4>
           <!-- icon -->
           <i class="bi bi-play-circle viewVideoIcon"
-            onclick="showThis('.iframeSection'); passIframeSrc('aZ4-Vlse91U')"></i>
+            onclick="showThis('.iframeSection'); passIframeSrc('ruZn2hyP4-o')"></i>
           <h4 class="viewVideoHeading">View Video</h4>
         </div>
       </div>
@@ -427,7 +453,7 @@
           <h4 class="originalGridHeading">Lorem, ipsum dolor.</h4>
           <!-- icon -->
           <i class="bi bi-play-circle viewVideoIcon"
-            onclick="showThis('.iframeSection'); passIframeSrc('aZ4-Vlse91U')"></i>
+            onclick="showThis('.iframeSection'); passIframeSrc('YaqpyaTZXZQ')"></i>
           <h4 class="viewVideoHeading">View Video</h4>
         </div>
       </div>
@@ -437,7 +463,7 @@
           <h4 class="originalGridHeading">Lorem, ipsum dolor.</h4>
           <!-- icon -->
           <i class="bi bi-play-circle viewVideoIcon"
-            onclick="showThis('.iframeSection'); passIframeSrc('aZ4-Vlse91U')"></i>
+            onclick="showThis('.iframeSection'); passIframeSrc('Spz6xweCMnU')"></i>
           <h4 class="viewVideoHeading">View Video</h4>
         </div>
       </div>
@@ -447,7 +473,7 @@
           <h4 class="originalGridHeading">Lorem, ipsum dolor.</h4>
           <!-- icon -->
           <i class="bi bi-play-circle viewVideoIcon"
-            onclick="showThis('.iframeSection'); passIframeSrc('aZ4-Vlse91U')"></i>
+            onclick="showThis('.iframeSection'); passIframeSrc('R9OeUYUOsAE')"></i>
           <h4 class="viewVideoHeading">View Video</h4>
         </div>
       </div>
@@ -467,7 +493,7 @@
           <h4 class="originalGridHeading">Lorem, ipsum dolor.</h4>
           <!-- icon -->
           <i class="bi bi-play-circle viewVideoIcon"
-            onclick="showThis('.iframeSection'); passIframeSrc('aZ4-Vlse91U')"></i>
+            onclick="showThis('.iframeSection'); passIframeSrc('fqF5evUS1dg')"></i>
           <h4 class="viewVideoHeading">View Video</h4>
         </div>
       </div>
@@ -477,7 +503,7 @@
           <h4 class="originalGridHeading">Lorem, ipsum dolor.</h4>
           <!-- icon -->
           <i class="bi bi-play-circle viewVideoIcon"
-            onclick="showThis('.iframeSection'); passIframeSrc('aZ4-Vlse91U')"></i>
+            onclick="showThis('.iframeSection'); passIframeSrc('CZflgE1iINs')"></i>
           <h4 class="viewVideoHeading">View Video</h4>
         </div>
       </div>
@@ -491,6 +517,52 @@
   </section>
 
   <!-- originals carousel ends ---------------------------->
+
+  <!-- numbers section for originals-->
+  <section class="originalCountDiv">
+    <h1 class="typing-demo1 text-break">Just a few <span class="home">numbers</span> <br>to blow your mind!</h1>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center mt-5">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title originalCountCustomers">
+              <span class="home">0</span>
+            </h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <i class="bi bi-person-heart customersIcon"></i>
+              <li><b>CUSTOMERS</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title originalCountProjects">
+              <span class="home">0</span>
+            </h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <i class="bi bi-chat-left-heart-fill projectsIcon"></i>
+              <li>PROJECTS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title originalCountAwards">
+              <span class="home">0</span>
+            </h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <i class="bi bi-award-fill awardsIcon"></i>
+              <li>AWARDS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Customer Reviews Section Start -->
   <section class="customerReviews">
@@ -528,15 +600,6 @@
 
   <!-- Customer Reviews Section Ends -->
 
-  <div class="contactContainer">
-    <!-- <h6 class="getInTouch">Get in Touch</h6> -->
-    <button type="button" class="btn socialbutton" data-toggle="modal" data-target="#exampleModalCenter">
-      <div class="messageSvg"><i class="fa-regular fa-message"></i></div>
-    </button>
-    <div class="facebookSvg"><i class="fab fa-facebook-f"></i></div>
-    <div class="instagramSvg"><i class="fa-brands fa-instagram"></i></div>
-    <div class="twitterSvg"><i class="fa-brands fa-twitter"></i></div>
-  </div>
 
   <!-- Modal -->
   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
@@ -724,6 +787,15 @@
       allowfullscreen></iframe>
     <!-- </div> -->
   </section>
+
+  <!-- floating button contact US -->
+  <div class="contactContainer">
+    <div class="contactUsFloatingDiv" type="button" data-toggle="modal" data-target="#exampleModalCenter">
+      <i class="fa-solid fa-envelope"></i>
+      <h6>Contact Us</h6>
+    </div>
+    <img src="images/footer/owl.png" alt="owl-image">
+  </div>
 
   <!-- <script>
     $('#myModal').on('shown.bs.modal', function () {

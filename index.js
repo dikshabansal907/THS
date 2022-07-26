@@ -1,3 +1,18 @@
+let dropdownForGallery = document.getElementById("gallery-dropdown-button");
+dropdownForGallery.addEventListener("mouseover", () => {
+  document.getElementById("gallery-dropdown").style.display = "block";
+});
+dropdownForGallery.addEventListener("mouseout", () => {
+  document.getElementById("gallery-dropdown").style.display = "none";
+});
+let dropdownForGalleryOptions = document.getElementById("gallery-dropdown");
+dropdownForGalleryOptions.addEventListener("mouseover", () => {
+  document.getElementById("gallery-dropdown").style.display = "block";
+});
+dropdownForGalleryOptions.addEventListener("mouseout", () => {
+  document.getElementById("gallery-dropdown").style.display = "none";
+});
+
 if (history.scrollRestoration) {
   history.scrollRestoration = "manual";
 } else {
@@ -74,58 +89,113 @@ const stopVideo = () => {
 //   $(".loaderBackground").addClass("loaderBackgroundAnimation");
 // });
 
-var timerRan = false;
+let brandTimerRan = false;
+let originalTimerRan = false;
 $(window).scroll(function () {
-  var hT = $(".countCustomers").offset().top,
-    hH = $(".countCustomers").outerHeight(),
+  let hT = $(".brandCountCustomers").offset().top,
+    hH = $(".brandCountCustomers").outerHeight(),
     wH = $(window).height(),
     wS = $(this).scrollTop();
   if (wS > hT + hH - wH) {
-    if (!timerRan) {
+    if (!brandTimerRan) {
       runTimer();
     }
   }
 });
 
 const runTimer = () => {
-  timerRan = true;
-  var countCustomers = document.querySelector(".countCustomers");
-  var countProjects = document.querySelector(".countProjects");
-  var countAwards = document.querySelector(".countAwards");
+  brandTimerRan = true;
+  let countCustomers = document.querySelector(".brandCountCustomers");
+  let countProjects = document.querySelector(".brandCountProjects");
+  let countAwards = document.querySelector(".brandCountAwards");
   let customerUpto = 120;
   let projectUpto = 50;
   let awardsUpto = 10;
-  var i = 0;
-  var j = 0;
-  var k = 0;
-  var counterC = setInterval(() => {
+  let i = 0;
+  let j = 0;
+  let k = 0;
+  let counterC = setInterval(() => {
     if (i == customerUpto) {
       clearInterval(counterC);
     }
     countCustomers.innerText = `${i}+`;
     i = i + 1;
   }, 20);
-  document.querySelector(".countCustomers").style.color = "rgba(255,0,0,0.5)";
-  var counterP = setInterval(() => {
+  document.querySelector(".brandCountCustomers").style.color =
+    "rgba(255,0,0,0.5)";
+  let counterP = setInterval(() => {
     if (j == projectUpto) {
       clearInterval(counterP);
     }
     countProjects.innerText = `${j}+`;
     j = j + 1;
   }, 50);
-  document.querySelector(".countProjects").style.color = "rgba(255,0,0,0.5)";
-  var counterA = setInterval(() => {
+  document.querySelector(".brandCountProjects").style.color =
+    "rgba(255,0,0,0.5)";
+  let counterA = setInterval(() => {
     if (k == awardsUpto) {
       clearInterval(counterA);
     }
     countAwards.innerText = `${k}+`;
     k = k + 1;
   }, 50);
+  document.querySelector(".brandCountAwards").style.color = "rgba(255,0,0,0.5)";
 };
-document.querySelector(".countAwards").style.color = "rgba(255,0,0,0.5)";
 
 $(window).scroll(function () {
-  var hT = $(".typing-demo1").offset().top,
+  let hT = $(".originalCountCustomers").offset().top,
+    hH = $(".originalCountCustomers").outerHeight(),
+    wH = $(window).height(),
+    wS = $(this).scrollTop();
+  if (wS > hT + hH - wH) {
+    if (!originalTimerRan) {
+      runOriginalTimer();
+    }
+  }
+});
+
+const runOriginalTimer = () => {
+  originalTimerRan = true;
+  let countCustomers = document.querySelector(".originalCountCustomers");
+  let countProjects = document.querySelector(".originalCountProjects");
+  let countAwards = document.querySelector(".originalCountAwards");
+  let customerUpto = 120;
+  let projectUpto = 50;
+  let awardsUpto = 10;
+  let i = 0;
+  let j = 0;
+  let k = 0;
+  let counterC = setInterval(() => {
+    if (i == customerUpto) {
+      clearInterval(counterC);
+    }
+    countCustomers.innerText = `${i}+`;
+    i = i + 1;
+  }, 20);
+  document.querySelector(".originalCountCustomers").style.color =
+    "rgba(255,0,0,0.5)";
+  let counterP = setInterval(() => {
+    if (j == projectUpto) {
+      clearInterval(counterP);
+    }
+    countProjects.innerText = `${j}+`;
+    j = j + 1;
+  }, 50);
+  document.querySelector(".originalCountProjects").style.color =
+    "rgba(255,0,0,0.5)";
+  let counterA = setInterval(() => {
+    if (k == awardsUpto) {
+      clearInterval(counterA);
+    }
+    countAwards.innerText = `${k}+`;
+    k = k + 1;
+  }, 50);
+  document.querySelector(".originalCountAwards").style.color =
+    "rgba(255,0,0,0.5)";
+};
+
+$(window).scroll(function () {
+  let hT = $(".typing-demo1").offset().top,
     hH = $(".typing-demo1").outerHeight(),
     wH = $(window).height(),
     wS = $(this).scrollTop();
@@ -134,7 +204,7 @@ $(window).scroll(function () {
   }
 });
 $(window).scroll(function () {
-  var hT = $(".typing-demo2").offset().top,
+  let hT = $(".typing-demo2").offset().top,
     hH = $(".typing-demo2").outerHeight(),
     wH = $(window).height(),
     wS = $(this).scrollTop();
@@ -143,7 +213,7 @@ $(window).scroll(function () {
   }
 });
 $(window).scroll(function () {
-  var hT = $(".typing-demo5").offset().top,
+  let hT = $(".typing-demo5").offset().top,
     hH = $(".typing-demo5").outerHeight(),
     wH = $(window).height(),
     wS = $(this).scrollTop();
@@ -152,7 +222,7 @@ $(window).scroll(function () {
   }
 });
 $(window).scroll(function () {
-  var hT = $(".typing-demo3").offset().top,
+  let hT = $(".typing-demo3").offset().top,
     hH = $(".typing-demo3").outerHeight(),
     wH = $(window).height(),
     wS = $(this).scrollTop();
@@ -161,7 +231,7 @@ $(window).scroll(function () {
   }
 });
 $(window).scroll(function () {
-  var hT = $(".typing-demo4").offset().top,
+  let hT = $(".typing-demo4").offset().top,
     hH = $(".typing-demo4").outerHeight(),
     wH = $(window).height(),
     wS = $(this).scrollTop();
@@ -265,5 +335,3 @@ new Skroll()
 //     { rotation: 0, duration: 2, scale: 1, ease: "elastic.out(5, 0.2)" }
 //   );
 // }, 7000);
-
-
