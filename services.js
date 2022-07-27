@@ -24,48 +24,45 @@ const on = (type, el, listener, all = false) => {
 /**
  * Porfolio isotope and filter
  */
-window.addEventListener("load", () => {
-  let portfolioContainer = select(".portfolio-container");
-  if (portfolioContainer) {
-    let portfolioIsotope = new Isotope(portfolioContainer, {
-      itemSelector: ".portfolio-item",
-      layoutMode: "fitRows",
-    });
+// window.addEventListener("load", () => {
+//   let portfolioContainer = select(".portfolio-container");
+//   if (portfolioContainer) {
+//     let portfolioIsotope = new Isotope(portfolioContainer, {
+//       filter: ".filter-2d",
+//     });
 
-    let portfolioFilters = select("#portfolio-flters li");
-    console.log(portfolioFilters);
+//     let portfolioFilters = select("#portfolio-flters li");
 
-    let twoDAnimation = document.getElementById("2dAnimation");
+//     on(
+//       "click",
+//       "#portfolio-flters li",
+//       function (e) {
+//         e.preventDefault();
+//         portfolioFilters.forEach(function (el) {
+//           el.classList.remove("filter-active");
+//         });
+//         this.classList.add("filter-active");
 
-    portfolioIsotope.arrange({
-      filter: twoDAnimation.getAttribute("data-filter"),
-    });
-    portfolioIsotope.on("arrangeComplete", function () {
-      AOS.refresh();
-    });
-    // }
+//         switch (this.getAttribute("data-filter")) {
+//           case ".filter-2d":
+//             $(".portfolioText").text("lorem303030300303");
+//             break;
+//           case ".filter-3d":
+//             $(".portfolioText").text("lorem50505050505");
+//             break;
+//         }
 
-    on(
-      "click",
-      "#portfolio-flters li",
-      function (e) {
-        e.preventDefault();
-        portfolioFilters.forEach(function (el) {
-          el.classList.remove("filter-active");
-        });
-        this.classList.add("filter-active");
-
-        portfolioIsotope.arrange({
-          filter: this.getAttribute("data-filter"),
-        });
-        portfolioIsotope.on("arrangeComplete", function () {
-          AOS.refresh();
-        });
-      },
-      true
-    );
-  }
-});
+//         portfolioIsotope.arrange({
+//           filter: this.getAttribute("data-filter"),
+//         });
+//         portfolioIsotope.on("arrangeComplete", function () {
+//           AOS.refresh();
+//         });
+//       },
+//       true
+//     );
+//   }
+// });
 
 /**
  * Initiate portfolio lightbox
@@ -107,6 +104,7 @@ window.addEventListener("load", () => {
     let portfolioIsotope = new Isotope(portfolioContainer, {
       itemSelector: ".portfolio-item",
       layoutMode: "fitRows",
+      filter: ".filter-2d",
     });
 
     let portfolioFilters = select("#portfolio-flters li", true);
@@ -116,10 +114,25 @@ window.addEventListener("load", () => {
       "#portfolio-flters li",
       function (e) {
         e.preventDefault();
+        console.log("ran");
+        console.log(portfolioFilters);
         portfolioFilters.forEach(function (el) {
           el.classList.remove("filter-active");
         });
         this.classList.add("filter-active");
+
+        switch (this.getAttribute("data-filter")) {
+          case ".filter-2d":
+            $(".portfolioText").text(
+              "2d ipsum dolor sit amet consectetur adipisicing elit. Vel molestiae animi similique reiciendis odit. Neque comm odi saepe voluptas sunt eos ut. Libero rerum impedit expedita ducimus, numquam eius saepe illum et. Est eligendi iste quos sit nemo! Cum eos non aliquam reiciendis, hic dicta quis, odio automnis, odit doloremque."
+            );
+            break;
+          case ".filter-3d":
+            $(".portfolioText").text(
+              "3d ipsum dolor sit amet consectetur adipisicing elit. Vel molestiae animi similique reiciendis odit. Neque comm odi saepe voluptas sunt eos ut. Libero rerum impedit expedita ducimus, numquam eius saepe illum et. Est eligendi iste quos sit nemo! Cum eos non aliquam reiciendis, hic dicta quis, odio automnis, odit doloremque."
+            );
+            break;
+        }
 
         portfolioIsotope.arrange({
           filter: this.getAttribute("data-filter"),
@@ -132,57 +145,3 @@ window.addEventListener("load", () => {
     );
   }
 });
-
-
-
-
-
-$(window).scroll(function () {
-  var hT = $(".originalCountCustomers").offset().top,
-    hH = $(".originalCountCustomers").outerHeight(),
-    wH = $(window).height(),
-    wS = $(this).scrollTop();
-  if (wS > hT + hH - wH) {
-    if (!timerRan) {
-      runTimer();
-    }
-  }
-});
-
-const runTimer = () => {
-  timerRan = true;
-  var countCustomers = document.querySelector(".originalCountCustomers");
-  var countProjects = document.querySelector(".brandCountProjects");
-  var countAwards = document.querySelector(".brandCountAwards");
-  let customerUpto = 120;
-  let projectUpto = 50;
-  let awardsUpto = 10;
-  var i = 0;
-  var j = 0;
-  var k = 0;
-  var counterC = setInterval(() => {
-    if (i == customerUpto) {
-      clearInterval(counterC);
-    }
-    countCustomers.innerText = `${i}+`;
-    i = i + 1;
-  }, 20);
-  document.querySelector(".originalCountCustomers").style.color =
-    "rgba(255,0,0,0.5)";
-  var counterP = setInterval(() => {
-    if (j == projectUpto) {
-      clearInterval(counterP);
-    }
-    countProjects.innerText = `${j}+`;
-    j = j + 1;
-  }, 50);
-  document.querySelector(".brandCountProjects").style.color =
-    "rgba(255,0,0,0.5)";
-  var counterA = setInterval(() => {
-    if (k == awardsUpto) {
-      clearInterval(counterA);
-    }
-    countAwards.innerText = `${k}+`;
-    k = k + 1;
-  }, 50);
-};

@@ -127,6 +127,7 @@ video {
 }
 .snip1226 {
   overflow: hidden;
+  /* margin-top: 1.3rem; */
 }
 
 .snip1226 a {
@@ -142,6 +143,7 @@ video {
 .snip1226 ol,
 ul {
   padding-left: 0rem !important;
+  margin-bottom: 0rem !important ;
 }
 .navigationBar {
   display: flex;
@@ -333,7 +335,7 @@ ul {
 
 .portfolioSection {
   /* overflow-x: hidden; */
-  padding: 2rem 8rem 1rem;
+  padding: 0rem 8rem 1rem;
   position: relative;
 }
 
@@ -777,10 +779,10 @@ ul {
 
 .instagramGridContainer {
   flex-basis: 70%;
-  height: 70vh;
+  /* height: 70vh; */
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  /* grid-template-rows: repeat(7, 1fr); */
   grid-gap: 30px;
   padding: 1rem 2rem;
 }
@@ -792,8 +794,9 @@ ul {
 }
 
 .instagramGridItem1 {
-  grid-column: 1/3;
-  grid-row: 1/4;
+  grid-column: 1/7;
+  transform: scale(0.5);
+  /* grid-row: 1/7; */
 }
 
 /* .instagramGridItem2 {
@@ -860,7 +863,7 @@ ul {
 }
 
 .instagramGridItem:hover {
-  transform: scale(1.03);
+  /* transform: scale(1.03); */
   /* box-shadow: 0 0 0px 2px #F5BC53; */
 }
 
@@ -1392,7 +1395,9 @@ ul {
 }
 .footerImg {
   width: 10%;
-  transform: translateY(-50%);
+  transform: translateY(-30%);
+  padding-bottom: 2rem;
+  transform: scale(1.5);
 }
 .footerBrandName {
   text-align: center;
@@ -1637,11 +1642,6 @@ ul {
   justify-content: space-evenly;
 }
 
-.i4ewOd-pzNkMb-haAclf{
-  /* display: none !important; */
-  opacity: 0;
-}
-
 .circleHiddenSocialHandleIcon {
   font-size: 1.3rem;
   cursor: pointer;
@@ -1661,11 +1661,7 @@ ul {
   font-weight: bolder;
   /* line-height: 1.1; */
 }
-.designationShilpa,
-.designationAditya,
-.designationDeep {
-  line-height: 0.9;
-}
+
 .teamMemberDiv a {
   text-decoration: none;
   color: #000;
@@ -1697,10 +1693,11 @@ about us Page ends
   justify-content: space-around;
   align-items: center;
   background-color: #263238;
+  overflow: hidden;
 }
 .servicesLogo {
-  width: 10%;
-  margin-right: 1rem;
+  width: 22%;
+  /* margin-right: 30rem; */
 }
 .servicesBrandName {
   font-family: "Just Another Hand", cursive;
@@ -1712,7 +1709,7 @@ about us Page ends
   /* word-spacing: 0.8rem; */
 }
 .brandNameContainter {
-  margin-bottom: 2vmin;
+  /* margin-bottom: 2vmin; */
   align-items: center;
 }
 
@@ -1792,9 +1789,9 @@ p {
   color: black;
 }
 
-.contactUsInput.form-control:focus{
+.contactUsInput.form-control:focus {
   /* box-shadow: none; */
-  box-shadow: 0 0 0 0.1rem #fa4753
+  box-shadow: 0 0 0 0.1rem #fa4753;
 }
 
 /* services contact us */
@@ -1859,6 +1856,8 @@ p {
 
 .contactUsMapDiv {
   padding: 2rem;
+  display: flex;
+  align-items: flex-end;
 }
 
 .contactUsMapIframe {
@@ -1883,6 +1882,13 @@ p {
     position: relative;
     bottom: -95px;
   }
+}
+
+.contactMap {
+  position: relative;
+  clip-path: polygon(0% 30%, 100% 30%, 100% 100%, 0% 100%);
+  top: -1em;
+  border: inherit;
 }
 
 /* 
@@ -1978,6 +1984,7 @@ Services Page Ends
 
 .serviceBrandNameContainer {
   display: flex;
+  justify-content: space-between;
 }
 
 /* brand work */
@@ -2029,9 +2036,7 @@ Services Page Ends
   .servicesBrandName {
     text-align: center;
   }
-  .servicesLogo {
-    text-align: center;
-  }
+
   .serviceBrandNameContainer {
     display: flex;
     flex-direction: column;
@@ -2152,6 +2157,8 @@ Services Page Ends
   }
   .servicesLogo {
     text-align: center;
+    width: 40%;
+    margin-bottom: 10px;
   }
   .serviceBrandNameContainer {
     display: flex;
@@ -2193,6 +2200,10 @@ Services Page Ends
   /* team section */
   .circleHiddenDiv {
     padding-top: 0px;
+  }
+  .footerImg {
+    padding-bottom: 2.5rem;
+    transform: scale(2.5) translateY(10px);
   }
 }
 
@@ -2279,7 +2290,8 @@ Services Page Ends
     letter-spacing: 0.3rem;
   }
   .footerImg {
-    width: 15%;
+    padding-bottom: 2.3rem;
+    transform: scale(3.5) translateY(13px);
   }
   .footerList1items,
   .footerList2items {
@@ -2431,11 +2443,16 @@ Services Page Ends
   }
 
   /* contact us container */
-  
-  .contactUsFloatingDiv{
+
+  .contactUsFloatingDiv {
     right: 15px;
   }
   .contactContainer img {
     left: 1.4rem;
+  }
+  .servicesLogo {
+    text-align: center;
+    width: 40%;
+    margin-bottom: 10px;
   }
 }
