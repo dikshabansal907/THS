@@ -37,6 +37,9 @@ const stopVideo = () => {
   $(".iframeSectionVideo").attr("src", "");
 };
 
+
+
+
 // $(document).ready(function () {
 //   const tl2 = gsap.timeline({
 //     defaults: { duration: 0.5, ease: "elastic.out(1.5,0.2)" },

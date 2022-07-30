@@ -37,13 +37,6 @@
 
 <body>
 
-  <!-- Lines -->
-  <div class="horizontalLine horizontalLine1"></div>
-  <div class="horizontalLine horizontalLine2"></div>
-  <div class="horizontalLine horizontalLine3"></div>
-  <div class="horizontalLine horizontalLine4"></div>
-  <div class="horizontalLine horizontalLine5"></div>
-  <!-- Lines ends -->
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
   <!-- Navigation Bar Starts -->
@@ -83,7 +76,7 @@
             data-bs-toggle="dropdown" aria-expanded="false">Gallery</a>
           <!-- From This  -->
           <ul class="dropdown-menu" id="gallery-dropdown" style="display: none">
-            <button class="dropdown-item">Brand Films</button>
+            <button class="dropdown-item dropdown-item-brand">Brand Films</button>
             <button class="dropdown-item">Original Films</button>
           </ul>
           <!-- To This  -->
@@ -157,11 +150,11 @@
   <section id="portfolio" class="portfolio">
     <img class="scribble scribble4" src="./images/Scribbles/scribble4.png" alt="" />
     <div class="portfolioDiv">
-      <div class="textAndArrow">
+      <!-- <div class="textAndArrow">
         <h3>Portfolio</h3>
-        <!-- <img class="plane"src="./images/plane.gif" alt=""> -->
+        <img class="plane"src="./images/plane.gif" alt="">
         <img class="downArrowPortfolio downArrow" src="./images/downArrow.png" alt="" />
-      </div>
+      </div> -->
       <img class="scribble scribble13" src="./images/Scribbles/scribble13.png" alt="" />
       <h1 class="typing-demo2 text-break">
         Our <span style="color: red; opacity: 0.5">Brand </span>Films
@@ -418,6 +411,17 @@
 
   <!-- logo ends -->
 
+
+<!-- floating contact container -->
+  <div class="contactContainer">
+    <div class="contactUsFloatingDiv" type="button" data-toggle="modal" data-target="#exampleModalCenter">
+      <i class="fa-solid fa-envelope "></i>
+      <h6>Contact Us</h6>
+    </div>
+    <img src="images/footer/owl.png" alt="owl-image">
+  </div>
+
+
   <!-- originals section starts ----------------------------->
   <section class="originals">
     <!-- <img class="scribble scribble9" src="./images/scribble9.png" alt="" /> -->
@@ -520,7 +524,7 @@
 
   <!-- numbers section for originals-->
   <section class="originalCountDiv">
-    <h1 class="typing-demo1 text-break">Just a few <span class="home">numbers</span> <br>to blow your mind!</h1>
+    <h1 class="typing-demo1 text-break">Some more <span class="home">numbers</span> <br>to blow your mind!</h1>
     <div class="row row-cols-1 row-cols-md-3 mb-3 text-center mt-5">
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
@@ -575,11 +579,28 @@
       What Our <span class="home">Client</span><br />Say About Us
     </h1>
     <img class="scribble scribble14" src="./images/Scribbles/scribble14.png" alt="" />
-    <div class="instagramGridContainer">
+
+    <div class="customerReviewContainer bg-danger">
+      <div class="customerReviewHeading">
+        <h3 class="text-center">Our clients send us bunch of smiles and we love them</h3>
+      </div>
+      <div class="customerSliderContent">
+        <img src="./images/Team/boyAvatar.png" alt="">
+        <h2 class="customerName">Some Name</h2>
+        <p>lorem ipsum</p>
+        <img class="customerReviewStars" src="" alt="">
+        <p class="customerReviewParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sapiente
+          voluptates consequuntur rem qui eveniet porro quas harum amet quae.</p>
+      </div>
+  </section>
+  </div>
+
+
+  <!-- <div class="instagramGridContainer">
       <div class="instagramGridItem instagramGridItem1">
         <img class="instagramGridImg" src="./images/testimonials/testimoinial Kunal.png" alt="Instagram IMG 1" />
       </div>
-      <!-- <div class="instagramGridItem instagramGridItem3">
+      <div class="instagramGridItem instagramGridItem3">
         <img class="instagramGridImg" src="./images/testimonials/testimoinial_Belli.png" alt="Instagram IMG 3" />
       </div>
       <div class="instagramGridItem instagramGridItem5">
@@ -593,9 +614,9 @@
       </div>
       <div class="instagramGridItem instagramGridItem11">
         <img class="instagramGridImg" src="./images/CustomerReviews/review9.png" alt="Instagram IMG 11" />
-      </div> -->
-    </div>
-    <img class="scribble scribble12" src="./images/Scribbles/scribble12.png" alt="" />
+      </div>
+    </div> -->
+  <img class="scribble scribble12" src="./images/Scribbles/scribble12.png" alt="" />
   </section>
 
   <!-- Customer Reviews Section Ends -->
@@ -699,15 +720,15 @@
       <div class="footerList1Div">
         <ul class="footerList1">
           <li class="footerList1items">
-            Lorem
+            Parampara
             <div class="footerUnderline"></div>
           </li>
           <li class="footerList1items">
-            Lorem
+            Pratishtha
             <div class="footerUnderline"></div>
           </li>
           <li class="footerList1items">
-            Lorem
+            Anushasan
             <div class="footerUnderline"></div>
           </li>
         </ul>
@@ -792,7 +813,7 @@
   <!-- floating button contact US -->
   <div class="contactContainer">
     <div class="contactUsFloatingDiv" type="button" data-toggle="modal" data-target="#exampleModalCenter">
-      <i class="fa-solid fa-envelope"></i>
+      <i class="fa-solid fa-envelope "></i>
       <h6>Contact Us</h6>
     </div>
     <img src="images/footer/owl.png" alt="owl-image">

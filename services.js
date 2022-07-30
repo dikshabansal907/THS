@@ -124,16 +124,29 @@ window.addEventListener("load", () => {
         switch (this.getAttribute("data-filter")) {
           case ".filter-2d":
             $(".portfolioText").text(
-              "2d ipsum dolor sit amet consectetur adipisicing elit. Vel molestiae animi similique reiciendis odit. Neque comm odi saepe voluptas sunt eos ut. Libero rerum impedit expedita ducimus, numquam eius saepe illum et. Est eligendi iste quos sit nemo! Cum eos non aliquam reiciendis, hic dicta quis, odio automnis, odit doloremque."
+              "Story driven films with characters, emotions and scenes. Tailor made for maximum emotional impact. Ideal for ads, product launches and social campaigns."
             );
             break;
           case ".filter-3d":
             $(".portfolioText").text(
-              "3d ipsum dolor sit amet consectetur adipisicing elit. Vel molestiae animi similique reiciendis odit. Neque comm odi saepe voluptas sunt eos ut. Libero rerum impedit expedita ducimus, numquam eius saepe illum et. Est eligendi iste quos sit nemo! Cum eos non aliquam reiciendis, hic dicta quis, odio automnis, odit doloremque."
+              "Rich immersive films created with realism and depth .Ideal for premium content that stands out."
+              
             );
             break;
+            case ".filter-motion":
+              $(".portfolioText").text(
+                "Graphics, shapes, colors  and text brought to life to create sleek  looking information and Brand identity. Ideal for explainers, product teasers, brand films and corporate comms."
+                
+              );
+              break;
+              case ".filter-original":
+              $(".portfolioText").text(
+                "Extremely relatable and engaging animated stories made for the Indian audience. Served hot every week to a million eyeballs."
+                
+              );
+              break;
         }
-
+        
         portfolioIsotope.arrange({
           filter: this.getAttribute("data-filter"),
         });

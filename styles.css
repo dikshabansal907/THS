@@ -729,7 +729,7 @@ ul {
 }
 
 .logoSlide img {
-  width: 150px;
+  width: 250px;
   /* height: 100px; */
   animation: scroll 60s linear infinite;
 }
@@ -1016,24 +1016,40 @@ ul {
 .contactUsFloatingDiv {
   background-color: #fa4753;
   color: white;
-  width: 55px;
-  height: 55px;
+  width: 70px;
+  height: 70px;
   position: fixed;
   right: 40px;
   bottom: 40px;
   transition: all 0.3s linear;
   border-radius: 50px;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-  font-size: 1.4rem;
+
+  font-size: 1.5rem;
   overflow: hidden;
 }
+/* .contactEnvelope{
+  animation-name: contactEnvelopeAnimation;
+  animation-duration: 3s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes contactEnvelopeAnimation {
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+  
+} */
 
 .contactContainer {
   position: fixed;
-  width: 55px;
-  height: 55px;
+  width: 70px;
+  height: 70px;
   right: 40px;
   bottom: 40px;
   z-index: 1;
@@ -1058,7 +1074,7 @@ ul {
   transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
-  left: calc(55px / 2);
+  left: calc(70px / 2);
 }
 
 .contactUsFloatingDiv h6 {
@@ -1067,7 +1083,9 @@ ul {
   top: 50%;
   left: 100%;
   font-weight: bold;
-  font-size: 1.1rem;
+  margin-bottom: 0;
+  line-height: 0;
+  font-size: 1.2rem;
   opacity: 0;
   white-space: nowrap;
   transition: all 0.3s linear;
@@ -1078,18 +1096,41 @@ ul {
 }
 
 .contactContainer:hover .contactUsFloatingDiv {
-  width: 160px;
+  width: 180px;
   transition: all 0.3s linear;
 }
 
 .contactContainer:hover .contactUsFloatingDiv h6 {
   transition: all 0.3s linear;
   opacity: 1;
-  left: calc(55px);
+  left: calc(70px);
 }
 
 .gradient:hover .arrow {
   margin-left: 0.5em;
+}
+
+.dropdown-menu {
+  background-color: transparent !important;
+  border: 1px white solid;
+  padding: 0;
+}
+
+.dropdown-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: transparent !important;
+  color: white;
+}
+
+.dropdown-item:hover {
+  color: #fa4753;
+  font-weight: bold;
+  background-color: #fff !important;
+}
+
+.dropdown-item-brand {
+  border-bottom: 1px white solid;
 }
 
 @keyframes bg-hue {
@@ -2002,6 +2043,7 @@ Services Page Ends
   right: 1vw;
 }
 .brandWorkItem {
+  border-radius: 5%;
   overflow: hidden;
 }
 
@@ -2014,6 +2056,7 @@ Services Page Ends
   box-shadow: none !important;
   outline: none !important;
 }
+
 /* doing it 850 from 768 */
 @media screen and (max-width: 850px) {
   .horizontalLine {
@@ -2191,9 +2234,7 @@ Services Page Ends
     padding-right: 2rem;
     /* padding-bottom: 5rem; */
   }
-  .servicesContactContainerDivRow {
-    padding-bottom: 12rem;
-  }
+
   .contactUsMapIframe {
     height: 203%;
   }
@@ -2228,6 +2269,7 @@ Services Page Ends
   }
   .snip1226 li {
     font-size: 0.6rem;
+    margin: 0 0.7em;
   }
 
   .circleImageDiv {
@@ -2263,6 +2305,9 @@ Services Page Ends
   }
   .customerTextAndArrow {
     padding-left: 0rem;
+  }
+  .logoSlide{
+    margin-right: 0.1rem;
   }
   .logoSlider {
     padding: 2rem 1rem;
