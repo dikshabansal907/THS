@@ -79,7 +79,7 @@
             <li data-filter=".filter-2d" class="filter-active">
               2D ANIMATION
             </li>
-            <li data-filter=".filter-3d">3D ANIMATION</li>
+            <!-- <li data-filter=".filter-3d">3D ANIMATION</li> -->
             <!-- <li data-filter=".filter-stop">Stop Motion</li> -->
             <!-- <li data-filter=".filter-white">Whiteboard</li> -->
             <li data-filter=".filter-motion">Motion Graphics</li>
@@ -89,59 +89,158 @@
       </div>
 
       <div class="portfolioTextDiv">
-        <p class="portfolioText mb-5 mt-3">Story driven films with characters, emotions and scenes. Tailor made for maximum emotional impact. Ideal for ads, product launches and social campaigns.</p>
+        <p class="portfolioText mb-5 mt-3">Story driven films with characters, emotions and scenes. Tailor made for
+          maximum emotional impact. Ideal for ads, product launches and social campaigns.</p>
       </div>
-
+      <!-- 2d starts -->
       <div class="row portfolio-container" style="position: relative; height: 891px">
         <div class="col-lg-4 col-md-6 portfolio-item filter-2d" style="position: absolute; left: 0px; top: 0px">
-          <img src="images/portfolio/portfolio-1.jpg" class="img-fluid" alt="" />
+          <img src="images/portfolio/bachat.jpeg" class="img-fluid" alt="" />
           <div class="portfolio-info">
             <h4>App 1</h4>
             <p>App</p>
-            <a href="images/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
-              class="portfolio-lightbox preview-link" title="App 1"><i class="bi bi-play"></i></a>
+            <!-- <a href="images/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="App 1"> -->
+              <i class="bi bi-play preview-link"
+                onclick="showThis('.iframeSection'); passIframeSrc('AA2m9ZGCgLc')"></i>
+              <!-- </a> -->
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-2d" style="position: absolute; left: 380px; top: 0px">
-          <img src="images/portfolio/portfolio-2.jpg" class="img-fluid" alt="" />
+          <img src="images/portfolio/mashreq.jpeg" class="img-fluid" alt="" />
           <div class="portfolio-info">
             <h4>Web 3</h4>
             <p>Web</p>
-            <a href="images/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
-              class="portfolio-lightbox preview-link" title="Web 3"><i class="bi bi-play"></i></a>
+            <a href="images/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="App 1"><i class="bi bi-play"
+                onclick="showThis('.iframeSection'); passIframeSrc('jjk23zZx_YQ')"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-2d" style="position: absolute; left: 380px; top: 0px">
+          <img src="images/portfolio/appsec.jpeg" class="img-fluid" alt="" />
+          <div class="portfolio-info">
+            <h4>Web 3</h4>
+            <p>Web</p>
+            <a href="images/portfolio/appsec.jpeg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="Web 3"><i class="bi bi-play"
+                onclick="showThis('.iframeSection'); passIframeSrc('LU6_cZDqPHQ')"></i></a>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-3d" style="position: absolute; left: 760px; top: 0px">
-          <img src="images/portfolio/portfolio-3.jpg" class="img-fluid" alt="" />
+        <!-- 2d ends -->
+
+        <!-- motion films starts -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-motion" style="position: absolute; left: 0px; top: 594px">
+          <img src="images/portfolio/bloom.jpeg" class="img-fluid" alt="" />
+          <div class="portfolio-info">
+            <h4>Card 1</h4>
+            <p>Card</p>
+            <a href="#" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="Card 1"><i class="bi bi-play"
+                onclick="showThis('.iframeSection'); passIframeSrc('Zfj24ypr4zU')"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-motion" style="position: absolute; left: 0px; top: 594px">
+          <img src="images/portfolio/EkaSignature.jpeg" class="img-fluid" alt="" />
+          <div class="portfolio-info">
+            <h4>Card 1</h4>
+            <p>Card</p>
+            <a href="#" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="Card 1"><i class="bi bi-play"
+                onclick="showThis('.iframeSection'); passIframeSrc('El_aadiDjXU')"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-motion" style="position: absolute; left: 0px; top: 594px">
+          <img src="images/portfolio/Squirro Christamas.jpeg" class="img-fluid" alt="" />
+          <div class="portfolio-info">
+            <h4>Card 1</h4>
+            <p>Card</p>
+            <a href="#" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="Card 1"><i class="bi bi-play"
+                onclick="showThis('.iframeSection'); passIframeSrc('ZocVttbsEzI')"></i></a>
+          </div>
+        </div>
+
+        <!-- motion films ends -->
+
+        <!-- Ths originals Start -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-original"
+          style="position: absolute; left: 760px; top: 594px">
+          <img src="images/portfolio/unacademy.jpeg" class="img-fluid" alt="" />
+          <div class="portfolio-info">
+            <h4>Web 3</h4>
+            <p>Web</p>
+            <a href="images/portfolio/unacademy.jpeg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="Web 3"><i class="bi bi-play"
+                onclick="showThis('.iframeSection'); passIframeSrc('PAZzseVN_g0')"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-original"
+          style="position: absolute; left: 760px; top: 594px">
+          <img src="images/portfolio/dad.png" class="img-fluid" alt="" />
+          <div class="portfolio-info">
+            <h4>Web 3</h4>
+            <p>Web</p>
+            <a href="images/portfolio/dad.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
+              title="Web 3"><i class="bi bi-play"
+                onclick="showThis('.iframeSection'); passIframeSrc('WDVWwOuK1xI')"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-original"
+          style="position: absolute; left: 760px; top: 594px">
+          <img src="images/portfolio/peace.jpeg" class="img-fluid" alt="" />
+          <div class="portfolio-info">
+            <h4>Web 3</h4>
+            <p>Web</p>
+            <a href="images/portfolio/peace.jpeg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="Web 3"><i class="bi bi-play"
+                onclick="showThis('.iframeSection'); passIframeSrc('zB_W5NwreqA')"></i></a>
+          </div>
+        </div>
+        <!-- ths originals ends -->
+
+
+        <!-- 3d starts -->
+        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-3d" style="position: absolute; left: 760px; top: 0px">
+          <img src="images/portfolio/appsec.jpeg" class="img-fluid" alt="" />
           <div class="portfolio-info">
             <h4>App 2</h4>
             <p>App</p>
-            <a href="images/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
-              class="portfolio-lightbox preview-link" title="App 2"><i class="bi bi-play"></i></a>
+            <a href="images/portfolio/appsec.jpeg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="App 2"><i class="bi bi-play"
+                onclick="showThis('.iframeSection'); passIframeSrc('AA2m9ZGCgLc')"></i></a>
           </div>
-        </div>
-        <!-- 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-3d" style="position: absolute; left: 0px; top: 297px">
+        </div> -->
+        <!-- 3 ends -->
+
+        <!-- For adding extra options -->
+
+        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-3d" style="position: absolute; left: 0px; top: 297px">
           <img src="images/portfolio/portfolio-4.jpg" class="img-fluid" alt="" />
           <div class="portfolio-info">
             <h4>Card 2</h4>
             <p>Card</p>
             <a href="images/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
-              class="portfolio-lightbox preview-link" title="Card 2"><i class="bi bi-play"></i></a>
+              class="portfolio-lightbox preview-link" title="Card 2"><i class="bi bi-play"
+                onclick="showThis('.iframeSection'); passIframeSrc('AA2m9ZGCgLc')"></i></a>
           </div>
-        </div> -->
+        </div> 
 
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-3d" style="position: absolute; left: 380px; top: 297px">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-3d" style="position: absolute; left: 380px; top: 297px">
           <img src="images/portfolio/portfolio-5.jpg" class="img-fluid" alt="" />
           <div class="portfolio-info">
             <h4>Web 2</h4>
             <p>Web</p>
             <a href="images/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
-              class="portfolio-lightbox preview-link" title="Web 2"><i class="bi bi-play"></i></a>
+              class="portfolio-lightbox preview-link" title="Web 2"><i class="bi bi-play"
+                onclick="showThis('.iframeSection'); passIframeSrc('AA2m9ZGCgLc')"></i></a>
           </div>
-        </div> -->
+        </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-white" style="position: absolute; left: 760px; top: 297px">
           <img src="images/portfolio/portfolio-6.jpg" class="img-fluid" alt="" />
@@ -149,50 +248,24 @@
             <h4>App 3</h4>
             <p>App</p>
             <a href="images/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
-              class="portfolio-lightbox preview-link" title="App 3"><i class="bi bi-play"></i></a>
+              class="portfolio-lightbox preview-link" title="App 3"><i class="bi bi-play"
+                onclick="showThis('.iframeSection'); passIframeSrc('AA2m9ZGCgLc')"></i></a>
           </div>
         </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-motion" style="position: absolute; left: 0px; top: 594px">
-          <img src="images/portfolio/portfolio-7.jpg" class="img-fluid" alt="" />
-          <div class="portfolio-info">
-            <h4>Card 1</h4>
-            <p>Card</p>
-            <a href="images/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
-              class="portfolio-lightbox preview-link" title="Card 1"><i class="bi bi-play"></i></a>
-          </div>
-        </div>
-
         <div class="col-lg-4 col-md-6 portfolio-item filter-stop" style="position: absolute; left: 380px; top: 594px">
           <img src="images/portfolio/portfolio-8.jpg" class="img-fluid" alt="" />
           <div class="portfolio-info">
             <h4>Card 3</h4>
             <p>Card</p>
             <a href="images/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
-              class="portfolio-lightbox preview-link" title="Card 3"><i class="bi bi-play"></i></a>
+              class="portfolio-lightbox preview-link" title="Card 3"><i class="bi bi-play"
+                onclick="showThis('.iframeSection'); passIframeSrc('AA2m9ZGCgLc')"></i></a>
           </div>
         </div>
+ -->
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-2d" style="position: absolute; left: 760px; top: 594px">
-          <img src="images/portfolio/portfolio-9.jpg" class="img-fluid" alt="" />
-          <div class="portfolio-info">
-            <h4>Web 3</h4>
-            <p>Web</p>
-            <a href="images/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
-              class="portfolio-lightbox preview-link" title="Web 3"><i class="bi bi-play"></i></a>
-          </div>
-        </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-original"
-          style="position: absolute; left: 760px; top: 594px">
-          <img src="images/portfolio/portfolio-9.jpg" class="img-fluid" alt="" />
-          <div class="portfolio-info">
-            <h4>Web 3</h4>
-            <p>Web</p>
-            <a href="images/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
-              class="portfolio-lightbox preview-link" title="Web 3"><i class="bi bi-play"></i></a>
-          </div>
-        </div>
+
       </div>
     </div>
   </section>
@@ -359,15 +432,15 @@
         <ul class="footerList1">
           <li class="footerList1items">
             Parampara
-            <div class="footerUnderline"></div>
+            <!-- <div class="footerUnderline"></div> -->
           </li>
           <li class="footerList1items">
             Pratishtha
-            <div class="footerUnderline"></div>
+            <!-- <div class="footerUnderline"></div> -->
           </li>
           <li class="footerList1items">
             Anushasan
-            <div class="footerUnderline"></div>
+            <!-- <div class="footerUnderline"></div> -->
           </li>
         </ul>
       </div>
@@ -435,6 +508,19 @@
       </div>
     </div>
   </footer>
+
+  <!-- youtube iframe section -->
+  <section class="iframeSection display-none ">
+    <!-- <div class="container "> -->
+    <div class="iframeCrossDiv" onclick="hideThis('.iframeSection');stopVideo()">
+      <i class="iframeCrossIcon bi bi-x-circle"></i>
+    </div>
+    <iframe class="iframeSectionVideo" width="800" height="350" src="
+        " title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <!-- </div> -->
+  </section>
 
   <!-- bootstrap script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

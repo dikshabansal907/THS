@@ -276,6 +276,16 @@ $(".owlPrevButton").click(function () {
   $(".owl-carousel").trigger("prev.owl.carousel");
 });
 
+// testimonial carousel
+$(".carousel-control-prev").on("click", function () {
+  $("#customerSliderCarousel").carousel("prev");
+});
+
+$(".carousel-control-next").on("click", function () {
+  $("#customerSliderCarousel").carousel("next");
+});
+
+
 new Skroll()
   .add(".instagramGridContainer > .instagramGridItem:nth-child(3n)", {
     animation: "fadeInUp",
