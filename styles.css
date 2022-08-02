@@ -133,6 +133,11 @@ ul {
   background-color: transparent !important;
   color: white;
 }
+
+/* #gallery-dropdown-button {
+  pointer-events: none;
+} */
+
 .dropdown-item:hover {
   color: #dd4d4b;
   font-weight: bold;
@@ -839,15 +844,15 @@ ul {
   opacity: 1;
   left: calc(70px);
 }
-.floatingContactEmailIcon{
-  animation: flip 2s infinite ;
+.floatingContactEmailIcon {
+  animation: flip 2s infinite;
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 @keyframes flip {
-  0%{
+  0% {
     transform: rotate(0deg);
   }
-  100%{
+  100% {
     transform: rotate(360deg);
   }
 }
@@ -1821,6 +1826,9 @@ about us Page ends
   .portfolio #portfolio-flters li {
     line-height: 1;
   }
+  .contactMap {
+    margin-top: -30%;
+  }
   /* aboutUs page */
   .circleImageDiv {
     height: 120px;
@@ -1838,7 +1846,7 @@ about us Page ends
   .circleHiddenSocialHandleIcon {
     font-size: 1rem;
   }
-  .teamSection h1{
+  .teamSection h1 {
     margin-left: 2rem;
     font-size: 2.5rem;
   }

@@ -13,6 +13,8 @@ dropdownForGalleryOptions.addEventListener("mouseout", () => {
   document.getElementById("gallery-dropdown").style.display = "none";
 });
 
+$('#gallery-dropdown-button').click(function(){return false;});
+
 if (history.scrollRestoration) {
   history.scrollRestoration = "manual";
 } else {
@@ -36,9 +38,6 @@ const passIframeSrc = (src) => {
 const stopVideo = () => {
   $(".iframeSectionVideo").attr("src", "");
 };
-
-
-
 
 // $(document).ready(function () {
 //   const tl2 = gsap.timeline({
