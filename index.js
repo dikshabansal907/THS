@@ -285,6 +285,10 @@ $(".carousel-control-next").on("click", function () {
   $("#customerSliderCarousel").carousel("next");
 });
 
+// floating contact us
+setInterval(() => {
+  $(".floatingContactEmailIcon").toggleClass("animation-paused");
+}, 2000);
 
 new Skroll()
   .add(".instagramGridContainer > .instagramGridItem:nth-child(3n)", {

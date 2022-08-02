@@ -72,12 +72,12 @@
         </li>
         <li class="navbarItem">
           <!-- <a href="./brandWork.html" data-hover="Gallery">Gallery</a> -->
-          <a href="./brandWork.html" id="gallery-dropdown-button" data-hover="Gallery" role="button"
+          <a href="" id="gallery-dropdown-button" data-hover="Gallery" role="button"
             data-bs-toggle="dropdown" aria-expanded="false">Gallery</a>
           <!-- From This  -->
           <ul class="dropdown-menu" id="gallery-dropdown" style="display: none">
-            <button class="dropdown-item dropdown-item-brand">Brand Films</button>
-            <button class="dropdown-item">Original Films</button>
+            <button onclick="window.location.href = 'brandWork.html';" class="dropdown-item dropdown-item-brand"> Brand Films</button>
+            <button onclick="window.location.href = 'originalWork.html';" class="dropdown-item">Original Films</button>
           </ul>
           <!-- To This  -->
         </li>
@@ -286,7 +286,7 @@
         </div>
       </div>
     </div>
-    <img class="scribble scribble15" src="./images/Scribbles/scribble15.png" alt="" />
+    <!-- <img class="scribble scribble15" src="./images/Scribbles/scribble15.png" alt="" /> -->
     <div class="owlButtons">
       <div class="owlButton owlPrevButton">
         <i class="bi bi-arrow-left"></i>
@@ -494,12 +494,17 @@
 
 
 
-<div class="contactUsBanner">
-  <!-- <p>Lorem ipsum dolor sit amet.</p> -->
-<div class="contactUsAfterBrand">
-  <button data-toggle="modal" data-target="#exampleModalCenter" class="contactUsAfterBrandButton" type="submit">Contact Us</button>
-</div>
-</div>
+<!-- contact US banner with button -->
+<section class="contactUsBannerSection">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 contactUsBanner">
+        <h1 class="contactUsBannerText">Lorem ipsum dolor sit amet.</h1>
+        <button data-toggle="modal" data-target="#exampleModalCenter" class="contactUsBannerButton" type="submit">Contact Us</button>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 

@@ -1,7 +1,7 @@
 .serviceSubmitButton {
-    border: 2px solid #fa4753;
+    border: 2px solid #dd4d4b;
     background-color: white;
-    color: #fa4753;
+    color: #dd4d4b;
     font-size: 1.1rem;
     font-weight: 600;
     transition: all 0.5s linear;
@@ -11,7 +11,7 @@
     box-shadow: none;
   }
   .serviceSubmitButton:hover {
-    background-color: #fa4753;
+    background-color: #dd4d4b;
     color: white;
     border: 2px solid white;
   }
@@ -19,5 +19,5 @@
     color: black;
   }
   .contactUsInput.form-control:focus {
-    box-shadow: 0 0 0 0.1rem #fa4753;
+    box-shadow: 0 0 0 0.1rem #dd4d4b;
   }

@@ -54,9 +54,9 @@ p {
   font-family: sans-serif;
 } */
 .serviceSubmitButton {
-  border: 2px solid #fa4753;
+  border: 2px solid #dd4d4b;
   background-color: white;
-  color: #fa4753;
+  color: #dd4d4b;
   font-size: 1.1rem;
   font-weight: 600;
   transition: all 0.5s linear;
@@ -66,7 +66,7 @@ p {
   box-shadow: none;
 }
 .serviceSubmitButton:hover {
-  background-color: #fa4753;
+  background-color: #dd4d4b;
   color: white;
   border: 2px solid white;
 }
@@ -74,7 +74,7 @@ p {
   color: black;
 }
 .contactUsInput.form-control:focus {
-  box-shadow: 0 0 0 0.1rem #fa4753;
+  box-shadow: 0 0 0 0.1rem #dd4d4b;
 }
 
 
@@ -162,6 +162,29 @@ Services Page Ends
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
   bottom: 0;
+}
+
+.dropdown-item {
+  font-weight: 900;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: transparent !important;
+  color: #dd4d4b;
+}
+
+.dropdown-item:hover {
+  background-color: #dd4d4b !important;
+  color: white;
+}
+
+.dropdown-menu {
+  background-color: white !important;
+  border: 1px #dd4d4b solid;
+  padding: 0;
+}
+
+.dropdown-item-brand {
+  border-bottom: 1px #dd4d4b solid;
 }
 
 

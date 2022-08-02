@@ -134,7 +134,7 @@ ul {
   color: white;
 }
 .dropdown-item:hover {
-  color: #fa4753;
+  color: #dd4d4b;
   font-weight: bold;
   background-color: #fff !important;
 }
@@ -280,7 +280,7 @@ ul {
   background-color: #3b4264;
   border: 2px solid #3b4264;
   border-radius: 50%;
-  box-shadow: #fa4753 2px 2px 0 0;
+  box-shadow: #dd4d4b 2px 2px 0 0;
   color: #ffff;
   display: flex;
   justify-content: center;
@@ -669,7 +669,7 @@ ul {
   width: 15%;
   padding: 0;
   /* color: #000; */
-  color: #fa4753;
+  color: #dd4d4b;
   text-align: center;
   background: 0 0;
   border: 0;
@@ -682,7 +682,7 @@ ul {
 .carousel-control-next:hover,
 .carousel-control-prev:focus,
 .carousel-control-prev:hover {
-  color: #fa4753;
+  color: #dd4d4b;
   text-decoration: none;
   outline: 0;
   opacity: 0.9;
@@ -773,7 +773,7 @@ ul {
   transform: scale(2);
 }
 .contactUsFloatingDiv {
-  background-color: #fa4753;
+  background-color: #dd4d4b;
   color: white;
   width: 70px;
   height: 70px;
@@ -840,7 +840,7 @@ ul {
   left: calc(70px);
 }
 .floatingContactEmailIcon{
-  animation: flip 2s 1s infinite ;
+  animation: flip 2s infinite ;
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 @keyframes flip {
@@ -851,41 +851,51 @@ ul {
     transform: rotate(360deg);
   }
 }
+.animation-paused {
+  animation-play-state: paused;
+}
 /* contact container ends */
-
-/* contact us after brand */
-/* .contactUsAfterBrand {
-  text-align: center;
-  padding: 2rem;
-} */
+/* conactUs banner */
 .contactUsBanner {
+  background-color: #dd4d4b;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contactUsBanner h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.contactUsBannerButton {
+  background-color: white;
+  color: #dd4d4b;
+  padding: 0.5rem 1rem;
+  text-align: center;
   display: flex;
   justify-content: center;
-  /* gap: 50px; */
-  /* background-color: #0074af0f; */
   align-items: center;
-  height: 90px;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  transition: all 0.1s linear;
 }
-.contactUsBanner p {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 0rem !important;
+
+.contactUsBannerButton:hover {
+  letter-spacing: 0.1rem;
+  transform: scale(1.05);
+  transition: all 0.1s linear;
 }
-.contactUsAfterBrandButton {
-  border: 2px solid #0074af;
-  border-radius: 20px;
-  padding: 0.3rem;
-  color: #dd4d4b;
-  font-size: 1.5rem;
-  font-weight: 600;
+
+.contactUsBannerSection {
+  padding: 4rem;
 }
-.contactUsAfterBrandButton:hover {
-  background-color: #78b2cf;
-  color: white;
-  font-weight: 900;
-}
+
+/* contact us banner ends */
 /* scrollbar */
 /* width */
 ::-webkit-scrollbar {
@@ -1038,14 +1048,14 @@ ul {
   transform: rotate(15deg);
   opacity: 0.5;
 }
-.scribble15 {
+/* .scribble15 {
   position: absolute;
   z-index: -1;
   top: 27rem;
   width: 7%;
   transform: scale(0.7);
   right: 7%;
-}
+} */
 /* footer */
 .footerSection {
   display: flex;
@@ -1610,6 +1620,16 @@ about us Page ends
     padding-bottom: 2.5rem;
     transform: scale(2.5) translateY(10px);
   }
+  /* contact us banner */
+  .contactUsBanner {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .contactUsBanner h1 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1812,6 +1832,8 @@ about us Page ends
   }
   .designation {
     font-size: 0.7rem;
+    line-height: 0.7rem;
+    margin-bottom: 0;
   }
   .circleHiddenSocialHandleIcon {
     font-size: 1rem;
@@ -1876,5 +1898,23 @@ about us Page ends
   }
   .contactContainer img {
     left: 1.4rem;
+  }
+  /* contact us banner */
+  .contactUsBanner {
+    flex-direction: column;
+  }
+
+  .contactUsBanner h1 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .contactUsBannerButton {
+    padding: 5px;
+    font-size: 0.9rem;
+  }
+
+  .contactUsBannerSection {
+    padding: 2rem;
   }
 }
