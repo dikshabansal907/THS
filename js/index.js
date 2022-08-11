@@ -53,8 +53,8 @@ const runTimer = () => {
   let countCustomers = document.querySelector(".brandCountCustomers");
   let countProjects = document.querySelector(".brandCountProjects");
   let countAwards = document.querySelector(".brandCountAwards");
-  let customerUpto = 159;
-  let projectUpto = 20;
+  let customerUpto = 20;
+  let projectUpto = 100;
   let awardsUpto = 115;
   let i = 0;
   let j = 0;
@@ -63,7 +63,7 @@ const runTimer = () => {
     if (i == customerUpto) {
       clearInterval(counterC);
     }
-    countCustomers.innerText = `${i}K+`;
+    countCustomers.innerText = `${i}+`;
     i = i + 1;
   }, 20);
   document.querySelector(".brandCountCustomers").style.color =
@@ -104,9 +104,9 @@ const runOriginalTimer = () => {
   let countCustomers = document.querySelector(".originalCountCustomers");
   let countProjects = document.querySelector(".originalCountProjects");
   let countAwards = document.querySelector(".originalCountAwards");
-  let customerUpto = 120;
-  let projectUpto = 50;
-  let awardsUpto = 10;
+  let customerUpto = 150;
+  let projectUpto = 20;
+  let awardsUpto = 115;
   let i = 0;
   let j = 0;
   let k = 0;
@@ -123,7 +123,7 @@ const runOriginalTimer = () => {
     if (j == projectUpto) {
       clearInterval(counterP);
     }
-    countProjects.innerText = `${j}K+`;
+    countProjects.innerText = `${j}M+`;
     j = j + 1;
   }, 50);
   document.querySelector(".originalCountProjects").style.color =
@@ -132,7 +132,7 @@ const runOriginalTimer = () => {
     if (k == awardsUpto) {
       clearInterval(counterA);
     }
-    countAwards.innerText = `${k}K+`;
+    countAwards.innerText = `${k}+`;
     k = k + 1;
   }, 50);
   document.querySelector(".originalCountAwards").style.color =

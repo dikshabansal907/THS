@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Yeseva+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Yeseva+One&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -19,12 +18,14 @@ h1 {
   /* font-weight: 300; */
   /* font-family: "Yeseva One", sans-serif; */
 }
-h2,h4,h6{
-  font-family: "Josefin Sans",serif;
+h2,
+h4,
+h6 {
+  font-family: "Josefin Sans", serif;
 }
 h3 {
   font-size: 1rem;
-  font-family: "Josefin Sans",serif;
+  font-family: "Josefin Sans", serif;
   font-weight: 300;
 }
 /* navigation bar css starts */
@@ -238,7 +239,6 @@ ul {
   letter-spacing: 0;
   /* font-family: inherit; */
   font-family: "Josefin sans", sans-serif;
-
 }
 .gradient {
   margin-top: 1.8rem;
@@ -438,16 +438,16 @@ ul {
   font-size: 2.3rem;
   font-weight: bold;
   color: white;
-  font-family: "Yeseva One",serif;
+  font-family: "Yeseva One", serif;
 }
 .info h3 {
   font-size: 1.3rem;
   font-weight: 900;
-  font-family: "Josefin Sans",serif;
+  font-family: "Josefin Sans", serif;
 }
 .info p {
   font-size: 1rem;
-  font-family: "Josefin Sans",serif;
+  font-family: "Josefin Sans", serif;
 }
 @media (min-width: 768px) {
   .owlButton {
@@ -1061,6 +1061,7 @@ ul {
   display: flex;
   list-style-type: none;
   justify-content: center;
+  cursor: pointer;
 }
 .footerButtons {
   display: flex;
@@ -1176,11 +1177,8 @@ ul {
 .text-muted {
   color: #6c757d !important;
 }
-/* 
 
-######################about us team section ###########################
-
-*/
+/*#####################about us team section ###########################*/
 
 .teamContainerDiv {
   margin-bottom: 3rem;
@@ -1262,6 +1260,13 @@ ul {
 .teamMemberDiv a {
   text-decoration: none;
   color: #000;
+}
+.careerSection{
+  padding:2rem 8rem 2rem 8rem;
+}
+.careerTitle{
+  font-size: 3rem;
+  color: #dd4d4b;
 }
 /* 
 about us Page ends 
@@ -1382,16 +1387,23 @@ about us Page ends
 }
 /* doing it 850 from 768 */
 @media screen and (max-width: 850px) {
+  /* about us */
+  .aboutUsContent{
+    padding: 0rem 3rem 0rem 3rem;
+  }
   /* about us team */
   .circleImageDiv {
     height: 150px;
     width: 150px;
   }
-  /* team section */
   .circleHiddenDiv {
     padding-top: 0px;
   }
-
+  /* career section */
+  .careerSection{
+    padding: 3rem;
+  }
+  /* navbar section */
   video {
     width: auto;
     transform: translateX(-32%);
@@ -1763,6 +1775,10 @@ about us Page ends
   }
   .teamMemberName {
     font-size: 0.9rem;
+  }
+  /* career section */
+  .careerSection{
+    padding: 3rem;
   }
   /* customer review section */
   .customerCircles {
