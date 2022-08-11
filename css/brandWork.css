@@ -1,3 +1,31 @@
+/* brand work */
+.brandHeadingDiv {
+  margin-left: 7rem;
+  margin-top: 2rem;
+}
+.brandWorkScribble {
+  position: fixed;
+  z-index: -1;
+}
+.brandWorkScribbleTriangle{
+  top: 50vh;
+  transform: scale(0.4) rotate(15deg);
+  right: 1vw;
+}
+.brandWorkItem {
+  border-radius: 5%;
+  overflow: hidden;
+}
+
+.brandWorkItem:hover .brandWorkTransparentDiv {
+  transform: translateX(0%);
+  transition: all 0.4s linear;
+  opacity: 1;
+}
+.brandWorkPlayButton:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
 .serviceSubmitButton {
     border: 2px solid #dd4d4b;
     background-color: white;
@@ -51,4 +79,12 @@
   .dropdown-menu{
     right:1rem;
   }
+    /* brandwork */
+    .brandHeadingDiv {
+      margin-left: 1rem;
+      margin-top: 2rem;
+    }
+    .brandHeadingDiv h1 {
+      font-size: 2rem;
+    }
 }

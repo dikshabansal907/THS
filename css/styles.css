@@ -219,7 +219,7 @@ ul {
   width: 50vw;
 }
 .portfolioDiv a {
-  font-family: "Yeseva One", sans-serif;
+  font-family: "Josefin sans", sans-serif;
   font-weight: 400;
   font-size: 20px;
   letter-spacing: 0.15em;
@@ -236,7 +236,9 @@ ul {
 .arrow {
   transition: margin-left 0.5s ease;
   letter-spacing: 0;
-  font-family: inherit;
+  /* font-family: inherit; */
+  font-family: "Josefin sans", sans-serif;
+
 }
 .gradient {
   margin-top: 1.8rem;
@@ -966,26 +968,6 @@ ul {
   }
 }
 /* scribbles */
-.scribble1 {
-  position: absolute;
-  z-index: -1;
-  width: 18%;
-  right: 0rem;
-}
-.scribble2 {
-  position: absolute;
-  z-index: -1;
-  width: 7%;
-  top: 17%;
-  left: 5rem;
-}
-.scribble3 {
-  position: absolute;
-  z-index: -1;
-  width: 7%;
-  top: 85%;
-  left: 45rem;
-}
 .scribble4 {
   position: absolute;
   z-index: -1;
@@ -993,29 +975,6 @@ ul {
   top: 87%;
   left: 22rem;
   opacity: 0.2;
-}
-.scribble5 {
-  position: absolute;
-  z-index: -1;
-  width: 7%;
-  top: 17%;
-  left: 0rem;
-  /* opacity: 0.2; */
-}
-.scribble6 {
-  position: absolute;
-  z-index: -1;
-  width: 7%;
-  top: 28%;
-  left: 0rem;
-}
-.scribble7 {
-  position: absolute;
-  z-index: -1;
-  width: 7%;
-  top: 0%;
-  /* left: 0rem; */
-  right: -3rem;
 }
 .scribble8 {
   position: absolute;
@@ -1033,21 +992,6 @@ ul {
   left: 6rem;
   opacity: 0.5;
 }
-.scribble11 {
-  position: absolute;
-  z-index: -1;
-  width: 7%;
-  top: 95%;
-  left: 4rem;
-  opacity: 0.7;
-}
-.scribble12 {
-  position: absolute;
-  z-index: -1;
-  width: 7%;
-  transform: scale(0.5);
-  right: 5%;
-}
 .scribble13 {
   position: absolute;
   z-index: -1;
@@ -1064,14 +1008,6 @@ ul {
   transform: rotate(15deg);
   opacity: 0.5;
 }
-/* .scribble15 {
-  position: absolute;
-  z-index: -1;
-  top: 27rem;
-  width: 7%;
-  transform: scale(0.7);
-  right: 7%;
-} */
 /* footer */
 .footerSection {
   display: flex;
@@ -1439,34 +1375,6 @@ about us Page ends
   border: inherit;
 }
 
-/* brand work */
-.brandHeadingDiv {
-  margin-left: 7rem;
-  margin-top: 2rem;
-}
-.brandWorkScribble {
-  position: fixed;
-  z-index: -1;
-}
-.brandWorkScribbleTriangle {
-  top: 76vh;
-  transform: scale(0.4) rotate(15deg);
-  right: 1vw;
-}
-.brandWorkItem {
-  border-radius: 5%;
-  overflow: hidden;
-}
-
-.brandWorkItem:hover .brandWorkTransparentDiv {
-  transform: translateX(0%);
-  transition: all 0.4s linear;
-  opacity: 1;
-}
-.brandWorkPlayButton:focus {
-  box-shadow: none !important;
-  outline: none !important;
-}
 @media screen and (max-width: 1350px) {
   .customerCircles {
     display: none;
@@ -1695,9 +1603,7 @@ about us Page ends
   .whoWeAreSection {
     margin-bottom: 2rem;
   }
-  .scribble16 {
-    left: 70%;
-  }
+
   .scribble {
     display: none;
   }
@@ -1800,14 +1706,7 @@ about us Page ends
     justify-content: center;
     align-items: center;
   }
-  /* brandwork */
-  .brandHeadingDiv {
-    margin-left: 1rem;
-    margin-top: 2rem;
-  }
-  .brandHeadingDiv h1 {
-    font-size: 2rem;
-  }
+
   /* services */
   .portfolio {
     padding: 2rem 2rem 0rem 2rem;
@@ -1820,9 +1719,6 @@ about us Page ends
   }
   .portfolio #portfolio-flters li {
     line-height: 1;
-  }
-  .scribble16 {
-    left: 70%;
   }
   .storiesText {
     font-size: 2rem;
