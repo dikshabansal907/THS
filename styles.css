@@ -1,13 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Yeseva+One&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Nunito", sans-serif;
+  font-family: "Yeseva One", sans-serif;
 }
 body {
   overflow-x: hidden;
@@ -15,13 +12,20 @@ body {
 }
 p {
   font-size: 1.2rem;
+  font-family: "Josefin Sans", sans-serif;
 }
 h1 {
-  font-size: 4rem;
-  font-weight: 700;
+  font-size: 3rem;
+  /* font-weight: 300; */
+  /* font-family: "Yeseva One", sans-serif; */
+}
+h2,h4,h6{
+  font-family: "Josefin Sans",serif;
 }
 h3 {
   font-size: 1rem;
+  font-family: "Josefin Sans",serif;
+  font-weight: 300;
 }
 /* navigation bar css starts */
 .navigationBarSection {
@@ -69,7 +73,7 @@ ul {
 }
 /* codepen */
 .snip1226 {
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: "Yeseva One", sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-weight: 500;
@@ -91,6 +95,7 @@ ul {
   position: relative;
   display: inline-block;
   letter-spacing: 1px;
+  font-weight: 100;
   margin: 0;
   text-decoration: none;
 }
@@ -172,6 +177,7 @@ ul {
   cursor: pointer;
 }
 .viewVideoHeading {
+  /* font-family: "Yeseva One", sans-serif; */
   cursor: pointer;
   font-size: 2em;
   letter-spacing: 3px;
@@ -213,14 +219,14 @@ ul {
   width: 50vw;
 }
 .portfolioDiv a {
-  font-family: "Manrope", sans-serif;
+  font-family: "Yeseva One", sans-serif;
   font-weight: 400;
   font-size: 20px;
   letter-spacing: 0.15em;
   text-decoration: none;
 }
 .portfolioSection a {
-  font-family: "Manrope", sans-serif;
+  font-family: "Yeseva One", sans-serif;
   font-weight: 400;
   font-size: 20px;
   letter-spacing: 0.15em;
@@ -230,13 +236,13 @@ ul {
 .arrow {
   transition: margin-left 0.5s ease;
   letter-spacing: 0;
+  font-family: inherit;
 }
 .gradient {
   margin-top: 1.8rem;
   font-size: 1.2rem;
   color: #56d1c6;
   overflow: hidden;
-  font-weight: 800;
 }
 .gradient:hover .arrow {
   margin-left: 0.5em;
@@ -400,6 +406,7 @@ ul {
   opacity: 1;
 }
 .item-container .info {
+  background-color: #000000d4;
   color: white;
   position: relative;
   z-index: 4;
@@ -418,6 +425,7 @@ ul {
   transition: all 0.3s ease-out;
   opacity: 1;
   transform: translateY(0px);
+  cursor: pointer;
 }
 .item-container:hover .infoBackground {
   top: 0%;
@@ -428,14 +436,16 @@ ul {
   font-size: 2.3rem;
   font-weight: bold;
   color: white;
+  font-family: "Yeseva One",serif;
 }
 .info h3 {
   font-size: 1.3rem;
   font-weight: 900;
+  font-family: "Josefin Sans",serif;
 }
 .info p {
   font-size: 1rem;
-  font-weight: 600;
+  font-family: "Josefin Sans",serif;
 }
 @media (min-width: 768px) {
   .owlButton {
@@ -519,6 +529,7 @@ ul {
 .originalGridItem:hover .originalTransparentDiv {
   transform: translateX(0%);
   transition: transform 0.5s linear;
+  cursor: pointer;
 }
 .originalGridHeading {
   position: absolute;
@@ -814,7 +825,7 @@ ul {
 .contactUsFloatingDiv i {
   /* transform: translate(-50%, -50%); */
   position: absolute;
-  top: 35%;
+  top: 32.5%;
   left: calc(45px / 2);
   /* top: 50%;
   left: calc(70px / 2); */
@@ -1095,7 +1106,7 @@ ul {
 .footerList1items,
 .footerList2items {
   overflow: hidden;
-  font-weight: 600;
+  font-family: "Josefin Sans", sans-serif;
 }
 .footerUnderline {
   height: 2px;
@@ -1155,7 +1166,7 @@ ul {
 .footerText2 p {
   color: #6c757d;
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 500;
   margin-right: 0.7rem;
   margin-bottom: 0;
   transition: color 0.1s linear;
@@ -1164,12 +1175,12 @@ ul {
   color: white;
   transition: color 0.1s linear;
 }
-.footerBrandName {
-  font-family: "Just Another Hand", cursive;
+/* .footerBrandName {
+  font-family: "Yeseva One", cursive;
   font-size: 4rem;
   letter-spacing: 0.5rem;
   word-spacing: 0.8rem;
-}
+} */
 .owlButton a {
   font-size: 1rem;
 }
@@ -1207,25 +1218,24 @@ ul {
 ########################################## about us Page Starts ################################
 */
 .about-us-content {
-  font-size: larger;
-  font-family: "Poppins";
+  /* font-size: larger; */
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .about-us-heading {
-  font-size: 4rem;
-  font-family: "Poppins";
-  /* font-weight:bold; */
+  font-size: 2rem;
+  font-family: "Yeseva One", sans-serif;
   font-weight: 300;
   color: #263238;
   margin-bottom: 2rem;
 }
 .bold {
+  font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
-  font-size: larger;
 }
 .email {
   font-size: medium;
-  font-family: "Poppins";
+  font-family: "Josefin Sans", sans-serif;
 }
 .text-muted {
   color: #6c757d !important;
@@ -1240,6 +1250,7 @@ ul {
   margin-bottom: 3rem;
 }
 .teamMemberName {
+  font-family: "Josefin Sans", sans-serif;
   margin-top: 0.5rem;
   text-align: center;
   font-size: 1.1rem;
@@ -1308,7 +1319,7 @@ ul {
 .designation {
   margin-bottom: 0.2rem;
   font-size: 0.9rem;
-  font-weight: bolder;
+  /* font-weight: bolder; */
   /* line-height: 1.1; */
 }
 
@@ -1335,14 +1346,6 @@ about us Page ends
 .servicesLogo {
   width: 22%;
 }
-.servicesBrandName {
-  font-family: "Just Another Hand", cursive;
-  font-size: 2rem;
-  letter-spacing: 0.5rem;
-  color: white;
-  line-height: inherit;
-  margin-bottom: 0%;
-}
 .brandNameContainter {
   align-items: center;
 }
@@ -1352,13 +1355,13 @@ about us Page ends
 }
 .storiesText {
   color: #dd4d4b;
-  font-size: 5rem;
+  font-size: 3.5rem;
   letter-spacing: normal;
 }
 /* contact us to be shared by services brandwork and original work */
 /* services contact us */
 .contact4 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Yeseva One", sans-serif;
   color: #8d97ad;
   font-weight: 300;
 }
@@ -1464,7 +1467,11 @@ about us Page ends
   box-shadow: none !important;
   outline: none !important;
 }
-
+@media screen and (max-width: 1350px) {
+  .customerCircles {
+    display: none;
+  }
+}
 /* doing it 850 from 768 */
 @media screen and (max-width: 850px) {
   /* about us team */
@@ -1630,7 +1637,9 @@ about us Page ends
     flex-direction: column;
     padding: 1rem;
   }
-
+  .customerCircles {
+    display: none;
+  }
   .contactUsBanner h1 {
     font-size: 1.7rem;
     margin-bottom: 20px;
@@ -1660,6 +1669,12 @@ about us Page ends
   .logoContainter {
     position: static;
     text-align: center;
+  }
+  .slide-track {
+    gap: 1em;
+  }
+  .logo-slide img {
+    width: 190px;
   }
   .snip1226 li {
     font-size: 0.6rem;
@@ -1791,7 +1806,7 @@ about us Page ends
     margin-top: 2rem;
   }
   .brandHeadingDiv h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   /* services */
   .portfolio {
@@ -1810,7 +1825,7 @@ about us Page ends
     left: 70%;
   }
   .storiesText {
-    font-size: 4rem;
+    font-size: 2rem;
   }
   .servicesLogo {
     text-align: center;
@@ -1848,7 +1863,7 @@ about us Page ends
   }
   .teamSection h1 {
     margin-left: 2rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .teamMemberName {
     font-size: 0.9rem;

@@ -24,6 +24,7 @@
 }
 .servicesPageText {
   font-size: 1.2rem;
+  font-family: "Josefin Sans", sans-serif;
 }
 .servicesPageHeadingDiv {
   padding: 4rem 8rem 0rem 8rem;
@@ -165,7 +166,7 @@ Services Page Ends
 }
 
 .dropdown-item {
-  font-weight: 900;
+  /* font-weight: 900; */
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: transparent !important;
@@ -209,7 +210,7 @@ Services Page Ends
     left: 70%;
   }
   .storiesText {
-    font-size: 4rem;
+    font-size: 2rem;
   }
   .servicesLogo {
     text-align: center;
@@ -224,5 +225,9 @@ Services Page Ends
   }
   .portfolio #portfolio-flters li {
     line-height: 1;
+  }
+  /* dropdown menu */
+  .dropdown-menu{
+    right: 1rem;
   }
 }

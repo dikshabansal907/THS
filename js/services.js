@@ -13,6 +13,9 @@ dropdownForGalleryOptions.addEventListener("mouseout", () => {
   document.getElementById("gallery-dropdown").style.display = "none";
 });
 
+$('#gallery-dropdown-button').click(function(){return false;});
+
+
 const select = (el, all = false) => {
   el = el.trim();
   if (all) {

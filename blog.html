@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Happy Slate | Blog</title>
+    <!--CSS -->
+    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- navbar section -->
+    <nav class="servicesNavbar">
+        <div class="brandNameContainter serviceBrandNameContainer">
+            <img class="servicesLogo " src="./images/THS-Logos/LogoRGB Landscape.png" alt="" />
+
+            <ul class="snip1226">
+                <li class="navbarItem">
+                    <a href="./index.html" data-hover="Home">Home</a>
+                </li>
+                <li class="navbarItem">
+                    <a href="./about.html" data-hover="About Us">About Us</a>
+                </li>
+                <li class="navbarItem">
+                    <a href="./services.html" data-hover="Services">Services</a>
+                </li>
+                <li class="navbarItem">
+                    <a id="gallery-dropdown-button" data-hover="Gallery" role="button" aria-expanded="false">Gallery</a>
+                    <!-- From This  -->
+                    <ul class="dropdown-menu dropdown-menu-lg-end" id="gallery-dropdown" style="display: none;">
+                        <button onclick="window.location.href = 'brandWork.html';"
+                            class="dropdown-item dropdown-item-brand">Brand
+                            Films</button>
+                        <button onclick="window.location.href = 'originalWork.html';" class="dropdown-item">Original
+                            Films</button>
+                    </ul>
+                    <!-- To This  -->
+                </li>
+                <li class="navbarItem">
+                    <a data-toggle="modal" data-target="#exampleModalCenter" data-hover="Contact">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="blogSection">
+        <h1 class="servicesPageHeading">
+            <span class="storiesText">Blogs</span>
+        </h1>
+
+        <div class="blogContainer">
+            <div class="blogPost">
+                <img src="./images/THS-WHITE-LOGO Svg.svg" class="blogPostImage" alt="blog 1" />
+                <div class="blogPostContent">
+                    <div class="blogPostTitleDiv">
+                        <h1 class="blogPostTitle">
+                            Title</h1>
+                        <p class="blogPostByLine">
+                            <i>by <span class="blogPostAuthorName"><strong>Author Name</strong></span></i> | <i>9th July
+                                2022</i>
+                        </p>
+                    </div>
+                    <p class="blogPostText">
+                        Visual storytelling, especially the medium of art and animation, has the power of universality -
+                        it speaks to the soul of the audience, going beyond boundaries of culture, language, religion,
+                        gender, nationality, etc. This can be seen in the works of Japanese masters like Miyazaki and
+                        Takahata and American masters like Disney and Lasseter. Their films are a testimony to the power
+                        of animation that speaks to our core, irrespective of who we are and where we are from.
+                    </p>
+                    <a href="./blogpost.html" class="blogPostLink">
+                        Read More</a>
+                </div>
+            </div>
+            </div>
+
+            
+
+    </section>
+
+
+    <!-- footer section -->
+    <footer class="footerSection">
+        <img class="footerImg" src="./images/THS-Logos/LogoRGB Landscape_2.png" alt="" />
+        <div class="footerDiv">
+            <!-- <h5 class="footerBrandName">THE HAPPY SLATE</h5> -->
+            <div class="footerList1Div">
+                <ul class="footerList1">
+                    <li class="footerList1items">
+                        Parampara
+                        <!-- <div class="footerUnderline"></div> -->
+                    </li>
+                    <li class="footerList1items">
+                        Pratishtha
+                        <!-- <div class="footerUnderline"></div> -->
+                    </li>
+                    <li class="footerList1items">
+                        Anushasan
+                        <!-- <div class="footerUnderline"></div> -->
+                    </li>
+                </ul>
+            </div>
+            <hr style="color: black; height: 2px" />
+            <div class="footerList2Div">
+                <ul class="footerList2">
+                    <li class="footerList2items">
+                        About Us
+                        <div class="footerUnderline"></div>
+                    </li>
+                    <li class="footerList2items">
+                        Services
+                        <div class="footerUnderline"></div>
+                    </li>
+                    <li class="footerList2items">
+                        Portfolio
+                        <div class="footerUnderline"></div>
+                    </li>
+                    <li class="footerList2items">
+                        Careers
+                        <div class="footerUnderline"></div>
+                    </li>
+                    <li class="footerList2items">
+                        Social
+                        <div class="footerUnderline"></div>
+                    </li>
+                    <!-- <li class="footerList2items">
+                Lorem
+                <div class="footerUnderline"></div>
+              </li>
+              <li class="footerList2items">
+                Lorem
+                <div class="footerUnderline"></div>
+              </li> -->
+                </ul>
+            </div>
+            <div class="footerButtonsDiv">
+                <ul class="footerButtons">
+                    <div class="footerCircles footerListButtons">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="footerCircles footerListButtons">
+                        <i class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i>
+                    </div>
+                    <div class="footerCircles footerListButtons">
+                        <i class="fa-brands circleHiddenSocialHandleIcon fa-youtube"></i>
+                    </div>
+                    <div class="footerCircles footerListButtons">
+                        <i class="fa-brands circleHiddenSocialHandleIcon fa-twitter"></i>
+                    </div>
+                    <div class="footerCircles footerListButtons">
+                        <i class="fa-brands circleHiddenSocialHandleIcon fa-linkedin-in"></i>
+                    </div>
+                </ul>
+            </div>
+            <div class="footerText">
+                <div class="footerText1 text-muted">
+                    <p class="footerText1paragraphs">Terms&conditions</p>
+                    <p class="footerText1paragraphs">Privacy Policy</p>
+                </div>
+                <div class="footerText2 mt-2 text-muted">
+                    <p>Copyright © 2022 The Happy Slate.</p>
+                    <p>All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</body>
+
+</html>

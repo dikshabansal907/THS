@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Yeseva+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Yeseva One", sans-serif;
+}
+p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 100;
+}
+.servicesNavbar {
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #263238;
+  overflow: hidden;
+}
+.servicesLogo {
+  width: 22%;
+}
+.brandNameContainter {
+  align-items: center;
+}
+.serviceBrandNameContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.snip1226 {
+  overflow: hidden;
+  /* margin-top: 1.3rem; */
+}
+.snip1226 a {
+  padding: 0.3em 0;
+  color: rgba(255, 255, 255, 0.5) !important;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+.snip1226 ol,
+ul {
+  padding-left: 0rem !important;
+  margin-bottom: 0rem !important ;
+}
+.snip1226 {
+  font-family: "Yeseva One", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.snip1226 * {
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1226 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1em;
+  overflow: hidden;
+}
+.snip1226 a {
+  padding: 0.3em 0;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+  font-weight: 100;
+  margin: 0;
+  text-decoration: none;
+}
+.snip1226 a:before,
+.snip1226 a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1226 a:before {
+  bottom: 100%;
+  display: block;
+  height: 3px;
+  width: 100%;
+  content: "";
+  background-color: #e67e22;
+}
+.snip1226 a:after {
+  padding: 0.3em 0;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  content: attr(data-hover);
+  color: white;
+  white-space: nowrap;
+}
+.snip1226 li:hover a,
+.snip1226 .current a {
+  transform: translateY(100%);
+}
+/* heading */
+.servicesPageHeading {
+  letter-spacing: 5px;
+  white-space: nowrap;
+  width: fit-content;
+  overflow: hidden;
+}
+.storiesText {
+  color: #dd4d4b;
+  font-size: 3.5rem;
+  letter-spacing: normal;
+}
+
+/* blog section */
+
+.blogSection {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding: 2rem 8rem 3rem 8rem;
+  position: relative;
+  /* margin-bottom: ; */
+}
+
+.blogContainer {
+  margin-top: 2rem;
+}
+
+.blogPost {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* padding: 2rem; */
+  height: 40vh;
+  border: #26323871 0.5px solid;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.blogPostImage {
+  /* width: 30%; */
+  height: 100%;
+  /* background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; */
+}
+
+.blogPostContent {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.blogPostTitle {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #263238;
+  letter-spacing: 1px;
+  margin-bottom: 0.1rem;
+}
+
+.blogPostByLine {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: gray;
+  letter-spacing: 1px;
+  /* margin-bottom: 1rem; */
+}
+
+.blogPostAuthorName {
+  color: #263238;
+}
+
+.blogPostText {
+  font-family: "josefin sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #263238;
+  letter-spacing: 1px;
+  margin-bottom: 0.1rem;
+}
+
+.blogPostLink {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #f15957;
+  letter-spacing: 1px;
+  margin-bottom: 0.1rem;
+  text-decoration: none;
+  text-align: right;
+  transition: all 0.15s ease;
+}
+
+.blogPostLink:hover {
+  color: #dd4d4b;
+  letter-spacing: 1.5px;
+}
+
+/* footer css */
+.footerServiceSection {
+  padding-top: 0rem;
+}
+.footerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #263238;
+}
+.footerImg {
+  width: 10%;
+  transform: translateY(-30%);
+  padding-bottom: 2rem;
+  transform: scale(1.5);
+}
+.footerBrandName {
+  text-align: center;
+}
+.footerDiv {
+  color: white;
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 1.5rem;
+}
+.footerList1 {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  margin-bottom: 0;
+  gap: 20px;
+}
+.footerList1items,
+.footerList2items {
+  overflow: hidden;
+  font-family: "Josefin Sans", sans-serif;
+}
+.footerUnderline {
+  height: 2px;
+  width: 100%;
+  margin-right: 1.5rem;
+  background-color: white;
+  transform: translateX(-110%);
+  transition: transform 0.4s ease-out;
+}
+.footerList2items:hover .footerUnderline {
+  transition: transform 0.4s ease-out;
+  transform: translateX(0%);
+}
+.footerList2 {
+  gap: 20px;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+.footerButtons {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  gap: 20px;
+}
+.footerListButtons {
+  margin-top: 1rem;
+}
+.footerCircles {
+  border-radius: 50%;
+  padding: 1rem;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border-color 0.2s linear;
+}
+.footerCircles:hover {
+  border: 1px solid white;
+  transition: border-color 0.1s linear;
+}
+.footerButtonIcons {
+  width: 35%;
+}
+.footerText {
+  margin-top: 1.5rem;
+}
+.footerText1,
+.footerText2 {
+  display: flex;
+  justify-content: center;
+}
+.footerText1 p,
+.footerText2 p {
+  color: #6c757d;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-right: 0.7rem;
+  margin-bottom: 0;
+  transition: color 0.1s linear;
+}
+.footerText1 p:hover {
+  color: white;
+  transition: color 0.1s linear;
+}
+/* css for blogpost.html */
+.postSection {
+  padding: 2rem 8rem 3rem 8rem;
+}
+.post {
+  display: flex;
+  flex-direction: column;
+}
+.postImage {
+  height: 50vh;
+  margin-bottom: 2rem;
+}
+.postText {
+  font-family: "josefin sans", sans-serif;
+  /* font-size: 0.9rem; */
+  font-weight: 400;
+  color: #263238;
+  letter-spacing: 1px;
+  margin-bottom: 0.1rem;
+}
+
+@media screen and (max-width: 850px) {
+  /* blog section */
+  .blogSection,
+  .blogPostContent {
+    padding: 1rem;
+  }
+  .blogPost{
+      height: 30vh;
+      padding: 0;
+  }
+  /* .blogPostImage {
+    height: 100%;
+  } */
+  /* blogpost.html */
+  .postSection {
+    padding: 2rem 4rem 3rem 4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .servicesLogo {
+    text-align: center;
+    width: 40%;
+    margin-bottom: 10px;
+  }
+  .snip1226 li {
+    font-size: 0.6rem;
+    margin: 0 0.7em;
+  }
+  .serviceBrandNameContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  /* blog section */
+  .blogSection,
+  .blogPostContent {
+    padding: 1rem;
+  }
+  .blogPost {
+    flex-direction: column;
+    align-items: inherit;
+    height: auto;
+  }
+
+  .blogContainer {
+    margin-top: 1rem;
+  }
+  /* footer */
+  .footerDiv {
+    width: 90%;
+  }
+  .footerBrandName {
+    font-size: 1.7rem;
+    letter-spacing: 0.3rem;
+  }
+  .footerImg {
+    padding-bottom: 2.3rem;
+    transform: scale(3.5) translateY(13px);
+  }
+  .footerList1items,
+  .footerList2items {
+    font-size: 0.9rem;
+  }
+  .footerList2items {
+    margin-right: 0;
+  }
+  .footerList2,
+  .footerList1 {
+    padding-left: 0rem;
+    gap: 15px;
+  }
+  .footerText2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* blogpost.html */
+  .postImage {
+    height: 26vh;
+  }
+  .postSection {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+}

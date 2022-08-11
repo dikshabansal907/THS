@@ -21,3 +21,34 @@
   .contactUsInput.form-control:focus {
     box-shadow: 0 0 0 0.1rem #dd4d4b;
   }
+
+  /* gallery dropdown  */
+  .dropdown-item {
+    /* font-weight: 900; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: transparent !important;
+    color: #dd4d4b;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #dd4d4b !important;
+    color: white;
+  }
+  
+  .dropdown-menu {
+    background-color: white !important;
+    border: 1px #dd4d4b solid;
+    padding: 0;
+  }
+  
+  .dropdown-item-brand {
+    border-bottom: 1px #dd4d4b solid;
+  }
+
+/* media query */
+@media screen and (max-width:480px) {
+  .dropdown-menu{
+    right:1rem;
+  }
+}
