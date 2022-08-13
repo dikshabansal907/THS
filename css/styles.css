@@ -29,41 +29,40 @@ h3 {
   font-weight: 300;
 }
 /* navigation bar css starts */
-.navigationBarSection {
-  height: 100vh;
+.navbarSection {
+  /* height: 100vh; */
   position: relative;
-  overflow: hidden;
+  /* overflow-x: hidden; */
   padding: 0;
+  /* background-color: #000; */
 }
-video {
+.navbarVideo {
   width: 100vw;
-  position: absolute;
+  position: relative;
   z-index: -1;
 }
-.snip1226 {
+
+.navbarList {
   overflow: hidden;
   /* margin-top: 1.3rem; */
 }
-.snip1226 a {
-  padding: 0.3em 0;
-  color: rgba(255, 255, 255, 0.5) !important;
-  position: relative;
-  display: inline-block;
-  letter-spacing: 1px;
-  margin: 0;
-  text-decoration: none;
-  cursor: pointer;
-}
-.snip1226 ol,
+
+
+.navbarList ol,
 ul {
   padding-left: 0rem !important;
   margin-bottom: 0rem !important ;
 }
-.navigationBar {
+.navbar {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: 3.5rem 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
 }
 .navBarItem {
   display: inline-block;
@@ -73,48 +72,51 @@ ul {
   color: white;
 }
 /* codepen */
-.snip1226 {
+.navbarList {
   font-family: "Yeseva One", sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-weight: 500;
 }
-.snip1226 * {
+.navbarList * {
   box-sizing: border-box;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
-.snip1226 li {
+.navbarList li {
   display: inline-block;
   list-style: outside none none;
   margin: 0 1em;
   overflow: hidden;
 }
-.snip1226 a {
+.navbarList a {
   padding: 0.3em 0;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255);
   position: relative;
   display: inline-block;
   letter-spacing: 1px;
   font-weight: 100;
   margin: 0;
   text-decoration: none;
+  cursor: pointer;
 }
-.snip1226 a:before,
-.snip1226 a:after {
+
+.navbarList a:before,
+.navbarList a:after {
   position: absolute;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
-.snip1226 a:before {
+.navbarList a:before {
   bottom: 100%;
   display: block;
   height: 3px;
   width: 100%;
   content: "";
   background-color: #e67e22;
+  /* color: #dd4d4b; */
 }
-.snip1226 a:after {
+.navbarList a:after {
   padding: 0.3em 0;
   position: absolute;
   bottom: 100%;
@@ -123,10 +125,13 @@ ul {
   color: white;
   white-space: nowrap;
 }
-.snip1226 li:hover a,
-.snip1226 .current a {
+.navbarList li:hover a,
+.navbarList .current a {
   transform: translateY(100%);
+  color: white;
 }
+
+
 /* gallery dropdown */
 .dropdown-menu {
   background-color: transparent !important;
@@ -210,7 +215,7 @@ ul {
 .portfolio {
   display: flex;
   flex-direction: column;
-  padding: 6rem 8rem 0rem 8rem;
+  padding: 2rem 8rem 0rem 8rem;
   position: relative;
 }
 .portfolioDiv {
@@ -607,11 +612,25 @@ ul {
   padding: 2rem;
   position: relative;
 }
-.customerSliderImage {
+.customerSliderImageDiv {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  position: relative;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
   box-shadow: 0px 7px 20px 5px rgb(175 173 173 / 41%);
+}
+
+.customerSliderImage {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  /* height: 100%; */
+  /* border-radius: 50%; */
 }
 .customerSliderContent {
   padding: 30px;
@@ -640,8 +659,8 @@ ul {
 .customerSliderInfo h4 {
   font-size: 1.6rem;
   font-weight: bold;
-  margin-bottom: 10px;
-  line-height: 0;
+  margin-bottom: 17px;
+  line-height: 1;
 }
 .customerSliderInfo {
   font-size: 1.2rem;
@@ -809,7 +828,7 @@ ul {
   height: 70px;
   right: 40px;
   bottom: 40px;
-  z-index: 1;
+  z-index: 2001;
 }
 .contactContainer img {
   position: absolute;
@@ -884,7 +903,7 @@ ul {
   align-items: center;
 }
 .contactUsBanner h1 {
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   font-weight: bold;
   margin-bottom: 0;
 }
@@ -1008,6 +1027,14 @@ ul {
   transform: rotate(15deg);
   opacity: 0.5;
 }
+.scribble16 {
+  transform: scale(0.5);
+  position: absolute;
+  opacity: 0.7;
+  bottom: 0%;
+  left: 30%;
+}
+
 /* footer */
 .footerSection {
   display: flex;
@@ -1068,9 +1095,14 @@ ul {
   list-style-type: none;
   justify-content: center;
   gap: 20px;
+  
 }
 .footerListButtons {
   margin-top: 1rem;
+}
+.footerButtons a{
+  color: white;
+
 }
 .footerCircles {
   border-radius: 50%;
@@ -1261,10 +1293,10 @@ ul {
   text-decoration: none;
   color: #000;
 }
-.careerSection{
-  padding:2rem 8rem 2rem 8rem;
+.careerSection {
+  padding: 2rem 8rem 2rem 8rem;
 }
-.careerTitle{
+.careerTitle {
   font-size: 3rem;
   color: #dd4d4b;
 }
@@ -1388,7 +1420,7 @@ about us Page ends
 /* doing it 850 from 768 */
 @media screen and (max-width: 850px) {
   /* about us */
-  .aboutUsContent{
+  .aboutUsContent {
     padding: 0rem 3rem 0rem 3rem;
   }
   /* about us team */
@@ -1400,15 +1432,15 @@ about us Page ends
     padding-top: 0px;
   }
   /* career section */
-  .careerSection{
+  .careerSection {
     padding: 3rem;
   }
   /* navbar section */
   video {
-    width: auto;
-    transform: translateX(-32%);
+    /* width: auto;
+    transform: translateX(-32%); */
   }
-  .navigationBar {
+  .navbar {
     justify-content: space-between;
     padding: 1.5rem;
   }
@@ -1418,7 +1450,7 @@ about us Page ends
   .logo {
     position: static;
   }
-  .portfolio,
+
   .customerReviews,
   .whoWeAre,
   .brandCountDiv,
@@ -1427,6 +1459,7 @@ about us Page ends
   .portfolioSection {
     padding: 2rem 4rem 0rem 4rem;
   }
+
   .portfolio #portfolio-flters li {
     font-size: 10px;
   }
@@ -1470,7 +1503,7 @@ about us Page ends
   .logoSlider {
     padding: 2rem 2rem;
   }
-  .snip1226 {
+  .navbarList {
     padding: 0;
   }
   .headerSectionText {
@@ -1518,7 +1551,7 @@ about us Page ends
     display: flex;
     flex-direction: column;
   }
-  .snip1226 li {
+  .navbarList li {
     font-size: 0.8rem;
   }
   .portfolio {
@@ -1566,25 +1599,30 @@ about us Page ends
   }
 }
 
+.navbarOverlay {
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  background-color: rgba(0, 0, 0,0.3);
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
 @media screen and (max-width: 480px) {
   /* navigation bar */
-  .navigationBarSection {
-    height: 90vh;
-  }
-  .navbarSectionVideo {
-    height: 90vh;
-  }
+
   video {
-    width: auto;
-    transform: translateX(-32%);
+    /* width: 147vw; */
+    /* transform: translateX(-32%); */
   }
-  .navigationBar {
-    padding: 1.5rem 1rem;
+  .navbar {
+    padding: 0rem;
     flex-direction: column;
   }
   .logo {
     position: static;
-    width: 70%;
+    width: 35%;
   }
   .logoContainter {
     position: static;
@@ -1596,13 +1634,12 @@ about us Page ends
   .logo-slide img {
     width: 190px;
   }
-  .snip1226 li {
+  .navbarList li {
     font-size: 0.6rem;
     margin: 0 0.7em;
   }
   /* paddings of sections */
   .whoWeAreSection,
-  .portfolio,
   .customerReviews,
   .whoWeAre,
   .brandCountDiv,
@@ -1615,7 +1652,9 @@ about us Page ends
   .whoWeAreSection {
     margin-bottom: 2rem;
   }
-
+  .portfolio {
+    padding: 2rem 2rem 0rem 2rem;
+  }
   .scribble {
     display: none;
   }
@@ -1720,13 +1759,13 @@ about us Page ends
   }
 
   /* services */
-  .portfolio {
-    padding: 2rem 2rem 0rem 2rem;
-  }
+  /* .portfolio {
+    padding: 6rem 2rem 0rem 2rem;
+  } */
   .servicesPageHeadingDiv {
     padding: 4rem 2rem 0rem 2rem;
   }
-  .snip1226 li {
+  .navbarList li {
     font-size: 0.6rem;
   }
   .portfolio #portfolio-flters li {
@@ -1777,8 +1816,11 @@ about us Page ends
     font-size: 0.9rem;
   }
   /* career section */
-  .careerSection{
-    padding: 3rem;
+  .careerSection {
+    padding: 0rem 3rem 1rem;
+  }
+  .careerTitle {
+    font-size: 2rem;
   }
   /* customer review section */
   .customerCircles {
@@ -1852,4 +1894,11 @@ about us Page ends
   .contactUsBannerSection {
     padding: 2rem;
   }
+}
+
+@media screen and (max-width:300px) {
+  .navbarList li{
+    font-size: 0.45rem;
+  }
+  
 }

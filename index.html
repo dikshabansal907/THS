@@ -35,37 +35,22 @@
 </head>
 
 <body>
-
-  <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> -->
-
   <!-- Navigation Bar Starts -->
 
-  <section class="navigationBarSection">
-    <!-- loader starts -->
-
-    <!-- <div class="loaderBackground1"></div>
-    <div class="loaderBackground2"></div> -->
-
-    <!-- loader ends -->
-
-
-    <video class="navbarSectionVideo" loop autoplay="true">
-      <source src="./images/blublu.mp4" type="video/mp4" />
-    </video>
-    <nav class="navigationBar">
+  <section class="navbarSection">
+    <nav class="navbar">
       <div class="logoContainter">
         <a href="./index.html"><img loading="lazy" class="logo"
             src="https://static.wixstatic.com/media/c7b6c9_a8c30ef23499423abf083e7d57863dfe~mv2.png/v1/fill/w_132,h_136,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/THS%20LOGO_%20WhiteBG.png"
             alt="logo-the happy slate" /></a>
       </div>
-      <ul class="snip1226">
+      <ul class="navbarList">
         <li class="current navbarItem">
           <a href="./index.html" data-hover="Home">Home</a>
         </li>
         <li class="navbarItem">
           <a href="./about.html" data-hover="About Us">About Us</a>
         </li>
-        <!-- <li><a href="#" data-hover="Blog">Blog</a></li> -->
         <li class="navbarItem">
           <a href="./services.html" data-hover="Services">Services</a>
         </li>
@@ -82,60 +67,20 @@
         </li>
         </div>
         <li class="navbarItem">
-          <a data-toggle="modal" data-target="#exampleModalCenter" data-hover="Contact Us">
+          <a class="text-white" data-toggle="modal" data-target="#exampleModalCenter" data-hover="Contact Us">
             Contact
           </a>
         </li>
-        <!-- <li><a href="#" data-hover="Contact">Contact</a></li> -->
       </ul>
-      <!-- Navigation Bar Ends -->
-
     </nav>
+    <video class="navbarVideo" loop autoplay="true" muted playsinline>
+      <source src="./images/demo.mp4" type="video/mp4" />
+    </video>
+    <div class="navbarOverlay"></div>
 
-
-    <!-- <h3 class="headerSectionText">WE MAKE <br> STORIES!</h3> -->
-    <div class="viewVideoButton">
-      <!-- icon -->
-      <!-- <h4><i class="bi bi-play-circle"></i> View Video</h4> -->
-    </div>
   </section>
 
   <!-- Navigation Bar ends---------------------------- -->
-
-  <!-- about us section starts--------------------------------------- -->
-  <!-- <section id="aboutUs" class="aboutUs">
-    <img loading="lazy" class="scribble scribble1" src="./images/Scribbles/scibble1.png" alt="" />
-    <img loading="lazy" class="scribble scribble2" src="./images/Scribbles/scribble3.png" alt="" />
-    <img loading="lazy" class="scribble scribble3" src="./images/Scribbles/scribble2.png" alt="" />
-
-    <div class="aboutUsDiv container-fluid">
-      <div class="textAndArrow">
-        <h3>About Us</h3>
-        <img loading="lazy" class="downArrow" src="./images/downArrow.png" alt="" />
-      </div>
-
-      <div>
-        <h1 class="typing-demo1 text-break ">Bringing <span class="home">authentic</span> Indian <br>
-          stories to life!
-        </h1>
-      </div>
-      <div data-aos="fade-up" class="aboutUsParagraphs">
-        <p>
-          We’re a young, homegrown animation studio driven by an experienced team of artists and creators, bringing
-          authentic Indian stories to people, one film at a time.
-        </p>
-      </div>
-      <div class="learnMoreDiv viewMoreDiv">
-        <a href="./about.html" class="gradient">Learn More<span class="arrow">-></span></a>
-        <div class="gradientUnderline"></div>
-      </div>
-    </div>
-
-  </section> -->
-
-  <!-- about us section ends ---------------------------------------------->
-
-
 
   <!-- portfolio section starts ----------------------------------------------->
   <section id="portfolio" class="portfolio">
@@ -237,7 +182,8 @@
       </div>
       <div class="item">
         <div class="item-container">
-          <img loading="lazy" src="./images/BrandImages/brandfilmsthumbs_0007_Bloomvalue.jpg" alt="brand-an interesting product motion graphics video that garnered immense love" />
+          <img loading="lazy" src="./images/BrandImages/brandfilmsthumbs_0007_Bloomvalue.jpg"
+            alt="brand-an interesting product motion graphics video that garnered immense love" />
           <div class="info" onclick="showThis('.iframeSection'); passIframeSrc('Zfj24ypr4zU')">
             <h2 class="brandName">Bloomvalue</h2>
             <h3>Bloomvalue Product Explainer</h3>
@@ -253,7 +199,8 @@
       </div>
       <div class="item">
         <div class="item-container">
-          <img loading="lazy" src="./images/BrandImages/brandfilmsthumbs_0001_Anviti.jpg" alt="brand-anviti decided to rebrand their company and we came up with this" />
+          <img loading="lazy" src="./images/BrandImages/brandfilmsthumbs_0001_Anviti.jpg"
+            alt="brand-anviti decided to rebrand their company and we came up with this" />
           <div class="info" onclick="showThis('.iframeSection'); passIframeSrc('-0jMfPhg-DA')">
             <h2 class="brandName">Anviti</h2>
             <h3>Anviti Rebranding</h3>
@@ -269,7 +216,8 @@
       </div>
       <div class="item">
         <div class="item-container">
-          <img loading="lazy" src="./images/BrandImages/brandfilmsthumbs_0003_Squirro.jpg" alt="brand-A day in Eric’s life and how Squirro Cognitive Search was key for him" />
+          <img loading="lazy" src="./images/BrandImages/brandfilmsthumbs_0003_Squirro.jpg"
+            alt="brand-A day in Eric’s life and how Squirro Cognitive Search was key for him" />
           <div class="info" onclick="showThis('.iframeSection'); passIframeSrc('nK1z7JqjxPE')">
             <h2 class="brandName">Squirro</h2>
             <h3>Squirro Product Explainer</h3>
@@ -350,7 +298,7 @@
     <!-- <img loading="lazy" class="scribble scribble5" src="./images/scibble5.png" alt=""> -->
     <div class="slide-track">
       <div class="logoSlide">
-        <img loading="lazy" src="./images/BrandLogos/Logos_0000_Layer-16.png" alt="logo"/>
+        <img loading="lazy" src="./images/BrandLogos/Logos_0000_Layer-16.png" alt="logo" />
       </div>
       <div class="logoSlide">
         <img loading="lazy" src="./images/BrandLogos/Logos_0001_Layer-15.png" alt="logo" />
@@ -368,7 +316,7 @@
         <img loading="lazy" src="./images/BrandLogos/Logos_0005_Layer-11.png" alt="logo" />
       </div>
       <div class="logoSlide">
-        <img loading="lazy" src="./images/BrandLogos/Logos_0006_Layer-10.png" alt="logo"/>
+        <img loading="lazy" src="./images/BrandLogos/Logos_0006_Layer-10.png" alt="logo" />
       </div>
       <div class="logoSlide">
         <img loading="lazy" src="./images/BrandLogos/Logos_0007_Layer-9.png" alt="logo" />
@@ -419,78 +367,182 @@
       <div class="customerReviewHeading">
         <h3 class="text-center ">Our clients send us bunch of smiles and we love them</h3>
       </div>
-      <img loading="lazy" class="customerCircles customerYellowCircleLeft" src="./images/CustomerReviews/lightYellowCircle.png" alt="testimoinial">
-      <img loading="lazy" class="customerCircles customerYellowCircleRight" src="./images/CustomerReviews/lightYellowCircle.png"
+      <img loading="lazy" class="customerCircles customerYellowCircleLeft"
+        src="./images/CustomerReviews/lightYellowCircle.png" alt="testimoinial">
+      <img loading="lazy" class="customerCircles customerYellowCircleRight"
+        src="./images/CustomerReviews/lightYellowCircle.png" alt="testimoinial">
+      <img loading="lazy" class=" customerCircles customerBlueCircle" src="./images/CustomerReviews/lightBlueCircle.png"
         alt="testimoinial">
-      <img loading="lazy" class=" customerCircles customerBlueCircle" src="./images/CustomerReviews/lightBlueCircle.png" alt="testimoinial">
-      <img loading="lazy" class=" customerCircles customerPinkCircle" src="./images/CustomerReviews/pinkCircle.png" alt="testimoinial">
-      <img loading="lazy" class=" customerCircles customerPinkCircleBottom" src="./images/CustomerReviews/pinkCircle.png" alt="testimoinial">
-      <img loading="lazy" class=" customerCircles customerPurpleCircle" src="./images/CustomerReviews/purpleCircle.png" alt="testimoinial">
-      <img loading="lazy" class=" customerCircles customerRedCircle" src="./images/CustomerReviews/redCircle.png" alt="testimoinial">
-      <img loading="lazy" class=" customerCircles customerYellowCircle" src="./images/CustomerReviews/lightYellowCircle.png" alt="testimoinial">
+      <img loading="lazy" class=" customerCircles customerPinkCircle" src="./images/CustomerReviews/pinkCircle.png"
+        alt="testimoinial">
+      <img loading="lazy" class=" customerCircles customerPinkCircleBottom"
+        src="./images/CustomerReviews/pinkCircle.png" alt="testimoinial">
+      <img loading="lazy" class=" customerCircles customerPurpleCircle" src="./images/CustomerReviews/purpleCircle.png"
+        alt="testimoinial">
+      <img loading="lazy" class=" customerCircles customerRedCircle" src="./images/CustomerReviews/redCircle.png"
+        alt="testimoinial">
+      <img loading="lazy" class=" customerCircles customerYellowCircle"
+        src="./images/CustomerReviews/lightYellowCircle.png" alt="testimoinial">
 
       <div id="customerSliderCarousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="customerSliderContent">
-              <img loading="lazy" class="customerSliderImage" src="./images/Team/boyAvatar.png" alt="testimoinial">
+              <div class="customerSliderImageDiv">
+                <img loading="lazy" class="customerSliderImage"
+                  src="./images/CustomerReviews/logo testimonials_Squirro.png" alt="testimoinial">
+              </div>
               <div class="customerSliderInfo">
-                <h4 class="customerName">Some Name</h4>
-                <p>lorem ipsum</p>
+                <h4 class="customerName">Gloria Fernandez</h4>
+                <p> Head of Marketing EMEA & Asia, Squirro
+                </p>
               </div>
               <!-- <img loading="lazy" class="customerReviewStars" src="" alt=""> -->
               <div class="customerSliderReviewDiv">
                 <i class="bi bi-quote customerSliderQuoteIcon customerSliderQuoteIconStart"></i>
                 <i class="bi bi-quote customerSliderQuoteIcon customerSliderQuoteIconEnd"></i>
-                <p class="customerSliderReview text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Minima, reiciendis perferendis corrupti sequi laborum laudantium blanditiis saepe voluptatum ad
-                  provident atque modi labore iste dolorem alias voluptas ducimus sint suscipit, aliquam error dolore,
-                  aspernatur pariatur necessitatibus! Dignissimos, harum commodi magni, nesciunt numquam, maiores non
-                  amet laborum earum omnis eos atque molestiae necessitatibus. Saepe, quae accusamus? Tenetur, aut? Rem
-                  ipsam deserunt aperiam accusantium, repudiandae modi dolorum sint doloribus asperiores voluptates
-                  voluptate!</p>
+                <p class="customerSliderReview text-center">We found in The Happy Slate a trusted and very valuable
+                  partner for our content strategy. They go always to the extra mile to provide top quality and top
+                  performing videos, meeting the goals and timelines of the project. Working with them is always a
+                  pleasure, as they show a friendly and productive engagement. We would definitely recommend working
+                  with them as a video provider”.</p>
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="customerSliderContent">
-              <img loading="lazy" class="customerSliderImage" src="./images/Team/boyAvatar.png" alt="testimoinial">
+              <div class="customerSliderImageDiv">
+                <img loading="lazy" class="customerSliderImage"
+                  src="./images/CustomerReviews/logo testimonials_Logicroots.png" alt="testimoinial">
+              </div>
               <div class="customerSliderInfo">
-                <h4 class="customerName">Some Name</h4>
-                <p>lorem ipsum</p>
+                <h4 class="customerName">Kunal Gandhi </h4>
+                <p>CEO, Logicroots</p>
               </div>
               <!-- <img loading="lazy" class="customerReviewStars" src="" alt=""> -->
               <div class="customerSliderReviewDiv">
                 <i class="bi bi-quote customerSliderQuoteIcon customerSliderQuoteIconStart"></i>
                 <i class="bi bi-quote customerSliderQuoteIcon customerSliderQuoteIconEnd"></i>
-                <p class="customerSliderReview text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Minima, reiciendis perferendis corrupti sequi laborum laudantium blanditiis saepe voluptatum ad
-                  provident atque modi labore iste dolorem alias voluptas ducimus sint suscipit, aliquam error dolore,
-                  aspernatur pariatur necessitatibus! Dignissimos, harum commodi magni, nesciunt numquam, maiores non
-                  amet laborum earum omnis eos atque molestiae necessitatibus. Saepe, quae accusamus? Tenetur, aut? Rem
-                  ipsam deserunt aperiam accusantium, repudiandae modi dolorum sint doloribus asperiores voluptates
-                  voluptate!</p>
+                <p class="customerSliderReview text-center">I have had a chance of working with The Happy Slate when we
+                  were making an animation video about my company. It was to be a concept video explaining the fear of
+                  math in kids in a fun way and connecting with our product.
+                  Working with them has been an absolute joy. I always felt we got much much more than our money's worth
+                  with them . Here is why ...<br>
+                  1. They are very process oriented. They will start with extensive secondary research to find the best
+                  ideas and executions currently done. He will also define a work plan with dates and elements. This is
+                  amazing. It is one thing that I always lacked in creative people and what Happy Slate brings<br>
+
+                  2. They have their own style. They brings innovative and earthy flavor to your vodeo. Just look at the
+                  animation for Logic Roots to understand<br>
+
+                  3. They owns the work. Once you give them a work, its their work. I realized its not my problem any
+                  more. They will even fight with you for his belief and make sure that the best gets delivered<br>
+
+                  Output is a testimony to the input. I am very happy about the video that we got and has been viewed
+                  and shared over a hundred thousand times now. Brilliant work and great work ethics. Best wishes.
+                </p>
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="customerSliderContent">
-              <img loading="lazy" class="customerSliderImage" src="./images/Team/boyAvatar.png" alt="testimoinial">
+              <div class="customerSliderImageDiv">
+                <img loading="lazy" class="customerSliderImage"
+                  src="./images/CustomerReviews/logo testimonials_Potlibaba.png" alt="testimoinial">
+              </div>
               <div class="customerSliderInfo">
-                <h4 class="customerName">Some Name</h4>
-                <p>lorem ipsum</p>
+                <h4 class="customerName text-break">Arjun Chauhan and M.S.Belliappa</h4>
+                <p>Potli Baba Mediahouse</p>
               </div>
               <!-- <img loading="lazy" class="customerReviewStars" src="" alt=""> -->
               <div class="customerSliderReviewDiv">
                 <i class="bi bi-quote customerSliderQuoteIcon customerSliderQuoteIconStart"></i>
                 <i class="bi bi-quote customerSliderQuoteIcon customerSliderQuoteIconEnd"></i>
-                <p class="customerSliderReview text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Minima, reiciendis perferendis corrupti sequi laborum laudantium blanditiis saepe voluptatum ad
-                  provident atque modi labore iste dolorem alias voluptas ducimus sint suscipit, aliquam error dolore,
-                  aspernatur pariatur necessitatibus! Dignissimos, harum commodi magni, nesciunt numquam, maiores non
-                  amet laborum earum omnis eos atque molestiae necessitatibus. Saepe, quae accusamus? Tenetur, aut? Rem
-                  ipsam deserunt aperiam accusantium, repudiandae modi dolorum sint doloribus asperiores voluptates
-                  voluptate!</p>
+                <p class="customerSliderReview text-center">Rakesh and team were a smooth, co-operative experience with
+                  constant offering of insights and ideas to continually improve the product through its journey of
+                  creation. With a keen sense of detailing and and eye for uncompromising good craft, they go the extra
+                  mile to make the end result better than was expected.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="customerSliderContent">
+              <div class="customerSliderImageDiv">
+                <img loading="lazy" class="customerSliderImage" src="./images/CustomerReviews/logo testimonials_YT.png"
+                  alt="testimoinial">
+              </div>
+              <div class="customerSliderInfo">
+                <h4 class="customerName">Dr. sha </h4>
+                <!-- <p>lorem ipsum</p> -->
+              </div>
+              <!-- <img loading="lazy" class="customerReviewStars" src="" alt=""> -->
+              <div class="customerSliderReviewDiv">
+                <i class="bi bi-quote customerSliderQuoteIcon customerSliderQuoteIconStart"></i>
+                <i class="bi bi-quote customerSliderQuoteIcon customerSliderQuoteIconEnd"></i>
+                <p class="customerSliderReview text-center">The only channel where I hit the like button first and then
+                  watch the video. Beautiful illustration and voice. God bless 🥰🥳💜</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="customerSliderContent">
+              <div class="customerSliderImageDiv">
+                <img loading="lazy" class="customerSliderImage" src="./images/CustomerReviews/logo testimonials_YT.png"
+                  alt="testimoinial">
+              </div>
+              <div class="customerSliderInfo">
+                <h4 class="customerName">Anjali Ranka </h4>
+                <!-- <p>lorem ipsum</p> -->
+              </div>
+              <!-- <img loading="lazy" class="customerReviewStars" src="" alt=""> -->
+              <div class="customerSliderReviewDiv">
+                <i class="bi bi-quote customerSliderQuoteIcon customerSliderQuoteIconStart"></i>
+                <i class="bi bi-quote customerSliderQuoteIcon customerSliderQuoteIconEnd"></i>
+                <p class="customerSliderReview text-center">I don't have words to express how this video has made my
+                  day!
+                  The Happy Slate truly knows how to make us happy ✨✨!!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="customerSliderContent">
+              <div class="customerSliderImageDiv">
+                <img loading="lazy" class="customerSliderImage" src="./images//CustomerReviews/logo testimonials_YT.png"
+                  alt="testimoinial">
+              </div>
+              <div class="customerSliderInfo">
+                <h4 class="customerName">Shreya Das </h4>
+                <!-- <p>lorem ipsum</p> -->
+              </div>
+              <!-- <img loading="lazy" class="customerReviewStars" src="" alt=""> -->
+              <div class="customerSliderReviewDiv">
+                <i class="bi bi-quote customerSliderQuoteIcon customerSliderQuoteIconStart"></i>
+                <i class="bi bi-quote customerSliderQuoteIcon customerSliderQuoteIconEnd"></i>
+                <p class="customerSliderReview text-center">My favourite channel ❤️
+                  This channel is a part of my life
+                  Keep going 🤗
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="customerSliderContent">
+              <div class="customerSliderImageDiv">
+                <img loading="lazy" class="customerSliderImage" src="./images//CustomerReviews/logo testimonials_YT.png"
+                  alt="testimoinial">
+              </div>
+              <div class="customerSliderInfo">
+                <h4 class="customerName">Afsha Siddiquie</h4>
+                <!-- <p>lorem ipsum</p> -->
+              </div>
+              <!-- <img loading="lazy" class="customerReviewStars" src="" alt=""> -->
+              <div class="customerSliderReviewDiv">
+                <i class="bi bi-quote customerSliderQuoteIcon customerSliderQuoteIconStart"></i>
+                <i class="bi bi-quote customerSliderQuoteIcon customerSliderQuoteIconEnd"></i>
+                <p class="customerSliderReview text-center">You guys deserve more and more subscribers…. Love all your
+                  videos ❤️
+                </p>
               </div>
             </div>
           </div>
@@ -517,7 +569,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 contactUsBanner">
-          <h1 class="contactUsBannerText">Lorem ipsum dolor sit amet.</h1>
+          <h1 class="contactUsBannerText">If you have a story to tell, we have a way to tell it better.</h1>
           <button data-toggle="modal" data-target="#exampleModalCenter" class="contactUsBannerButton"
             type="submit">Contact Us</button>
         </div>
@@ -547,7 +599,8 @@
     <img loading="lazy" class="scribble scribble8" src="./images/Scribbles/scribble8.png" alt="scribbles for fun" />
     <div class="originalGridContainer">
       <div class="originalGridItem originalGridItem1">
-        <img loading="lazy" class="originalGridItemImg" src="./images/originals/HomepageThumbs_1.png" alt="Original IMG 1" />
+        <img loading="lazy" class="originalGridItemImg" src="./images/originals/garmiKiChuttiyan.png"
+          alt="Original IMG 1" />
         <div class="originalTransparentDiv" onclick="showThis('.iframeSection'); passIframeSrc('aZ4-Vlse91U')">
 
           <!-- icon -->
@@ -558,7 +611,8 @@
       </div>
 
       <div class="originalGridItem originalGridItem2">
-        <img loading="lazy" class="originalGridItemImg" src="./images/originals/HomePage_Thumbs_2.png" alt="Original IMG 2" />
+        <img loading="lazy" class="originalGridItemImg" src="./images/originals/HomePage_Thumbs_2.png"
+          alt="Original IMG 2" />
         <div class="originalTransparentDiv" onclick="showThis('.iframeSection'); passIframeSrc('YaqpyaTZXZQ')">
           <!-- icon -->
           <i class="bi bi-play-circle viewVideoIcon"></i>
@@ -569,7 +623,8 @@
         </div>
       </div>
       <div class="originalGridItem originalGridItem3">
-        <img loading="lazy" class="originalGridItemImg" src="./images/originals/Homepage_Thumbs_3.png" alt="Original IMG 3" />
+        <img loading="lazy" class="originalGridItemImg" src="./images/originals/Homepage_Thumbs_3.png"
+          alt="Original IMG 3" />
         <div class="originalTransparentDiv" onclick="showThis('.iframeSection'); passIframeSrc('Spz6xweCMnU')">
           <!-- icon -->
           <i class="bi bi-play-circle viewVideoIcon"></i>
@@ -580,7 +635,8 @@
         </div>
       </div>
       <div class="originalGridItem originalGridItem4">
-        <img loading="lazy" class="originalGridItemImg" src="./images/originals/Homepage_Thumbs_3_2.png" alt="Original IMG 3" />
+        <img loading="lazy" class="originalGridItemImg" src="./images/originals/Homepage_Thumbs_3_2.png"
+          alt="Original IMG 3" />
         <div class="originalTransparentDiv" onclick="showThis('.iframeSection'); passIframeSrc('R9OeUYUOsAE')">
           <!-- icon -->
           <i class="bi bi-play-circle viewVideoIcon"></i>
@@ -591,7 +647,8 @@
         </div>
       </div>
       <div class="originalGridItem originalGridItem5">
-        <img loading="lazy" class="originalGridItemImg" src="./images/originals/HomepageThumbs_1_2.png" alt="Original IMG 3" />
+        <img loading="lazy" class="originalGridItemImg" src="./images/originals/HomepageThumbs_1_2.png"
+          alt="Original IMG 3" />
         <div class="originalTransparentDiv" onclick="showThis('.iframeSection'); passIframeSrc('ruZn2hyP4-o')">
           <!-- icon -->
           <i class="bi bi-play-circle viewVideoIcon"></i>
@@ -602,7 +659,8 @@
         </div>
       </div>
       <div class="originalGridItem originalGridItem6">
-        <img loading="lazy" class="originalGridItemImg" src="./images/originals/Homepage_Thumbs_4.png" alt="Original IMG 1" />
+        <img loading="lazy" class="originalGridItemImg" src="./images/originals/Homepage_Thumbs_4.png"
+          alt="Original IMG 1" />
         <div class="originalTransparentDiv" onclick="showThis('.iframeSection'); passIframeSrc('fqF5evUS1dg')">
           <!-- icon -->
           <i class="bi bi-play-circle viewVideoIcon"></i>
@@ -613,8 +671,9 @@
         </div>
       </div>
       <div class="originalGridItem originalGridItem7">
-        <img loading="lazy" class="originalGridItemImg" src="./images/originals/Homepage_thumbs_5.png" alt="Original IMG 1" />
-        <div class="originalTransparentDiv">
+        <img loading="lazy" class="originalGridItemImg" src="./images/originals/Homepage_thumbs_5.png"
+          alt="Original IMG 1" />
+        <div class="originalTransparentDiv" onclick="showThis('.iframeSection'); passIframeSrc('CZflgE1iINs')">
           <!-- icon -->
           <i class="bi bi-play-circle viewVideoIcon"></i>
           <h4 class="viewVideoHeading originalHeadingBhagat">Little Bhagat</h4>
@@ -773,7 +832,8 @@
   <!-- who we are -->
 
   <section class="whoWeAreSection">
-    <img loading="lazy" class="scribble scribble10 visible-md" src="./images/Scribbles/scribble10.png" alt="scribbles for fun" />
+    <img loading="lazy" class="scribble scribble10 visible-md" src="./images/Scribbles/scribble10.png"
+      alt="scribbles for fun" />
     <div class="aboutUsDiv whoWeAreDiv">
       <div class="textAndArrow">
         <h3 class="whoWeAreHeading">Who we are</h3>
@@ -840,36 +900,38 @@
             Blog
             <div class="footerUnderline"></div>
           </li>
-          <a data-toggle="modal" data-target="#exampleModalCenter"><li class="footerList2items">
-            Contact
-            <div class="footerUnderline"></div>
-          </li></a>
-          <!-- <li class="footerList2items">
-            Lorem
-            <div class="footerUnderline"></div>
-          </li>
-          <li class="footerList2items">
-            Lorem
-            <div class="footerUnderline"></div>
-          </li> -->
+          <a data-toggle="modal" data-target="#exampleModalCenter">
+            <li class="footerList2items" onclick="window.location.href = 'about.html#careerSection';">
+              Careers
+              <div class="footerUnderline"></div>
+            </li>
+          </a>
         </ul>
       </div>
       <div class="footerButtonsDiv">
         <ul class="footerButtons">
           <div class="footerCircles footerListButtons">
-            <i class="fab fa-facebook-f"></i>
+            <a href="https://www.facebook.com/thehappyslate"><i class="fab fa-facebook-f"></i></a>
           </div>
           <div class="footerCircles footerListButtons">
-            <i class="fa-brands fa-instagram"></i>
+            <a
+              href="https://www.google.com/url?q=https://www.instagram.com/thehappyslate/&sa=D&source=docs&ust=1660378318171895&usg=AOvVaw1XWmDDrn4UJUt_DKM0vZli"><i
+                class="fa-brands fa-instagram"></i></a>
           </div>
           <div class="footerCircles footerListButtons">
-            <i class="fa-brands fa-youtube"></i>
+            <a
+              href="https://www.google.com/url?q=https://www.youtube.com/channel/UCgG0gMEBXulmHaqp8JjuDLg&sa=D&source=docs&ust=1660378318171933&usg=AOvVaw2whJgujldYB0Avl8jv_dA7"><i
+                class="fa-brands fa-youtube"></i></a>
           </div>
           <div class="footerCircles footerListButtons">
-            <i class="fa-brands fa-twitter"></i>
+            <a
+              href="https://www.google.com/url?q=https://twitter.com/TheHappySlate&sa=D&source=docs&ust=1660378318171804&usg=AOvVaw3Z05dIhB3caAqEkMr_Yk8Z"><i
+                class="fa-brands fa-twitter"></i></a>
           </div>
           <div class="footerCircles footerListButtons">
-            <i class="fa-brands fa-linkedin-in"></i>
+            <a
+              href="https://www.google.com/url?q=https://www.linkedin.com/company/thehappyslate/&sa=D&source=docs&ust=1660378318172001&usg=AOvVaw0r8_XdBnRwbXCiWFVxMEyQ"><i
+                class="fa-brands fa-linkedin-in"></i></a>
           </div>
         </ul>
       </div>

@@ -9,6 +9,8 @@
     <!--CSS -->
     <link rel="stylesheet" href="./css/blog.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/contact.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,7 +24,7 @@
         <div class="brandNameContainter serviceBrandNameContainer">
             <img loading="lazy"  onclick="window.location.href = 'index.html';" class="servicesLogo " src="./images/THS-Logos/LogoRGB Landscape.png" alt="" />
 
-            <ul class="snip1226">
+            <ul class="navbarList">
                 <li class="navbarItem">
                     <a href="./index.html" data-hover="Home">Home</a>
                 </li>
@@ -32,7 +34,7 @@
                 <li class="navbarItem">
                     <a href="./services.html" data-hover="Services">Services</a>
                 </li>
-                <li class="navbarItem">
+                <li class="navbarItem text-white">
                     <a id="gallery-dropdown-button" data-hover="Gallery" role="button" aria-expanded="false">Gallery</a>
                     <!-- From This  -->
                     <ul class="dropdown-menu dropdown-menu-lg-end" id="gallery-dropdown" style="display: none;">
@@ -44,7 +46,7 @@
                     </ul>
                     <!-- To This  -->
                 </li>
-                <li class="navbarItem">
+                <li class="navbarItem text-white">
                     <a data-toggle="modal" data-target="#exampleModalCenter" data-hover="Contact">
                         Contact
                     </a>
@@ -77,7 +79,7 @@
                         Takahata and American masters like Disney and Lasseter. Their films are a testimony to the power
                         of animation that speaks to our core, irrespective of who we are and where we are from.
                     </p>
-                    <a href="./blogpost.html" class="blogPostLink">
+                    <a href="./blogTitle.html" class="blogPostLink">
                         Read More</a>
                 </div>
             </div>
@@ -87,7 +89,117 @@
 
     </section>
 
-
+    <!-- contact container -->
+    <!-- floating button contact US -->
+    <div class="contactContainer">
+        <div
+          class="contactUsFloatingDiv"
+          type="button"
+          data-toggle="modal"
+          data-target="#exampleModalCenter"
+        >
+          <i class="fa-solid fa-envelope floatingContactEmailIcon"></i>
+          <h6>Contact Us</h6>
+        </div>
+        <img loading="lazy" src="images/footer/owl.png" alt="owl-image" />
+      </div>
+  
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModalCenter"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="d-flex justify-content-end">
+                <button
+                  type="button"
+                  class="close float-right"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="container-contact100">
+                <form
+                  class="contact100-form"
+                  action="https://formsubmit.co/0e363346e77e05124d3873dcab0f2c3c"
+                  method="POST"
+                >
+                  <span class="contact100-form-title">
+                    We'd love to hear from you!
+                  </span>
+                  <div
+                    class="wrap-input100 rs1-wrap-input100"
+                    data-validate="Name is required"
+                  >
+                    <input
+                      class="input100"
+                      type="text"
+                      name="name"
+                      placeholder="Enter your name"
+                      required
+                    />
+                    <span class="focus-input100"></span>
+                  </div>
+                  <div
+                    class="wrap-input100 rs1-wrap-input100"
+                    data-validate=" Valid email is required: ex@abc.xyz"
+                  >
+                    <input
+                      class="input100"
+                      type="text"
+                      name="email"
+                      placeholder="Enter your email address"
+                      required
+                    />
+                    <span class="focus-input100"></span>
+                  </div>
+                  <div class="wrap-input100" data-validate="Message is required">
+                    <textarea
+                      class="input100"
+                      name="message"
+                      placeholder="Your message here..."
+                      required
+                    ></textarea>
+                    <span class="focus-input100"></span>
+                  </div>
+                  <input type="hidden" name="_captcha" value="false" />
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value="https://www.google.com"
+                  />
+                  <div class="container-contact100-form-btn">
+                    <button type="submit" class="contact100-form-btn">
+                      <span>
+                        Submit
+                        <!-- <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i> -->
+                      </span>
+                    </button>
+                  </div>
+                  <div class="d-flex justify-content-end w-100">
+                    <span class="text-muted">partnerships@thehappyslate.com</span>
+                  </div>
+                </form>
+                <span class="contact100-more">
+                  <!-- For any question contact: <span class="contact100-more-highlight">+001 345 6889</span> -->
+                </span>
+              </div>
+            </div>
+            <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+          </div>
+        </div>
+      </div>
     <!-- footer section -->
     <footer class="footerSection">
         <img loading="lazy" class="footerImg" src="./images/THS-Logos/LogoRGB Landscape_2.png" alt="" />
@@ -112,55 +224,51 @@
             <hr style="color: black; height: 2px" />
             <div class="footerList2Div">
                 <ul class="footerList2">
-                    <li class="footerList2items">
-                        About Us
-                        <div class="footerUnderline"></div>
-                    </li>
-                    <li class="footerList2items">
-                        Services
-                        <div class="footerUnderline"></div>
-                    </li>
-                    <li class="footerList2items">
-                        Portfolio
-                        <div class="footerUnderline"></div>
-                    </li>
-                    <li class="footerList2items">
+                  <li class="footerList2items" onclick="window.location.href = 'about.html';">
+                    About Us
+                    <div class="footerUnderline"></div>
+                  </li>
+                  <li class="footerList2items" onclick="window.location.href = 'services.html';">
+                    Services
+                    <div class="footerUnderline"></div>
+                  </li>
+                  <li class="footerList2items" onclick="window.location.href = 'brandWork.html';">
+                    Portfolio
+                    <div class="footerUnderline"></div>
+                  </li>
+                  <li class="footerList2items" onclick="window.location.href = 'blog.html';">
+                    Blog
+                    <div class="footerUnderline"></div>
+                  </li>
+                  <a data-toggle="modal" data-target="#exampleModalCenter">
+                    <li class="footerList2items" onclick="window.location.href = 'about.html#careerSection';">
                         Careers
-                        <div class="footerUnderline"></div>
+                      <div class="footerUnderline"></div>
                     </li>
-                    <li class="footerList2items">
-                        Social
-                        <div class="footerUnderline"></div>
-                    </li>
-                    <!-- <li class="footerList2items">
-                Lorem
-                <div class="footerUnderline"></div>
-              </li>
-              <li class="footerList2items">
-                Lorem
-                <div class="footerUnderline"></div>
-              </li> -->
+                  </a>
                 </ul>
-            </div>
-            <div class="footerButtonsDiv">
+              </div>
+              <div class="footerButtonsDiv">
                 <ul class="footerButtons">
-                    <div class="footerCircles footerListButtons">
-                        <i class="fab fa-facebook-f"></i>
-                    </div>
-                    <div class="footerCircles footerListButtons">
-                        <i class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i>
-                    </div>
-                    <div class="footerCircles footerListButtons">
-                        <i class="fa-brands circleHiddenSocialHandleIcon fa-youtube"></i>
-                    </div>
-                    <div class="footerCircles footerListButtons">
-                        <i class="fa-brands circleHiddenSocialHandleIcon fa-twitter"></i>
-                    </div>
-                    <div class="footerCircles footerListButtons">
-                        <i class="fa-brands circleHiddenSocialHandleIcon fa-linkedin-in"></i>
-                    </div>
+                  <div class="footerCircles footerListButtons">
+                    <a href="https://www.facebook.com/thehappyslate"><i class="fab fa-facebook-f"></i></a>
+                  </div>
+                  <div class="footerCircles footerListButtons">
+                    <a
+                      href="https://www.google.com/url?q=https://www.instagram.com/thehappyslate/&sa=D&source=docs&ust=1660378318171895&usg=AOvVaw1XWmDDrn4UJUt_DKM0vZli"><i
+                        class="fa-brands fa-instagram"></i></a>
+                  </div>
+                  <div class="footerCircles footerListButtons">
+                    <a href="https://www.google.com/url?q=https://www.youtube.com/channel/UCgG0gMEBXulmHaqp8JjuDLg&sa=D&source=docs&ust=1660378318171933&usg=AOvVaw2whJgujldYB0Avl8jv_dA7"><i class="fa-brands fa-youtube"></i></a>
+                  </div>
+                  <div class="footerCircles footerListButtons">
+                    <a href="https://www.google.com/url?q=https://twitter.com/TheHappySlate&sa=D&source=docs&ust=1660378318171804&usg=AOvVaw3Z05dIhB3caAqEkMr_Yk8Z"><i class="fa-brands fa-twitter"></i></a>
+                  </div>
+                  <div class="footerCircles footerListButtons">
+                    <a href="https://www.google.com/url?q=https://www.linkedin.com/company/thehappyslate/&sa=D&source=docs&ust=1660378318172001&usg=AOvVaw0r8_XdBnRwbXCiWFVxMEyQ"><i class="fa-brands fa-linkedin-in"></i></a>
+                  </div>
                 </ul>
-            </div>
+              </div>
             <div class="footerText">
                 <div class="footerText1 text-muted">
                     <p class="footerText1paragraphs">Terms&conditions</p>
@@ -175,6 +283,9 @@
     </footer>
 <!-- jquery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
 
 </body>
 

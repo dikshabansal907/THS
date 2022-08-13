@@ -26,9 +26,9 @@
 <body>
   <nav class="servicesNavbar">
     <div class="brandNameContainter serviceBrandNameContainer">
-      <img loading="lazy" class="servicesLogo "  onclick="window.location.href = 'index.html';" src="./images/THS-Logos/LogoRGB Landscape.png" alt="" />
+      <img loading="lazy" class="servicesLogo"  onclick="window.location.href = 'index.html';" src="./images/THS-Logos/LogoRGB Landscape.png" alt="" />
 
-      <ul class="snip1226">
+      <ul class="navbarList">
         <li class="navbarItem">
           <a href="./index.html" data-hover="Home">Home</a>
         </li>
@@ -38,7 +38,7 @@
         <li class="navbarItem current">
           <a href="./services.html" data-hover="Services">Services</a>
         </li>
-        <li class="navbarItem">
+        <li class="navbarItem  text-white">
           <a id="gallery-dropdown-button" data-hover="Gallery" role="button" aria-expanded="false">Gallery</a>
           <!-- From This  -->
           <ul class="dropdown-menu " id="gallery-dropdown" style="display: none;">
@@ -48,7 +48,7 @@
           </ul>
           <!-- To This  -->
         </li>
-        <li class="navbarItem">
+        <li class="navbarItem text-white">
           <a data-toggle="modal" data-target="#exampleModalCenter" data-hover="Contact">
             Contact
           </a>
@@ -410,7 +410,7 @@
 
               </div>
               <div class="d-flex justify-content-end w-100">
-                <span class="text-muted">The Happy Slate</span>
+                <span class="text-muted">partnerships@thehappyslate.com</span>
               </div>
             </form>
             <span class="contact100-more">
@@ -452,52 +452,48 @@
       <hr style="color: black; height: 2px" />
       <div class="footerList2Div">
         <ul class="footerList2">
-          <li class="footerList2items">
+          <li class="footerList2items" onclick="window.location.href = 'about.html';">
             About Us
             <div class="footerUnderline"></div>
           </li>
-          <li class="footerList2items">
+          <li class="footerList2items" onclick="window.location.href = 'services.html';">
             Services
             <div class="footerUnderline"></div>
           </li>
-          <li class="footerList2items">
+          <li class="footerList2items" onclick="window.location.href = 'brandWork.html';">
             Portfolio
             <div class="footerUnderline"></div>
           </li>
-          <li class="footerList2items">
+          <li class="footerList2items" onclick="window.location.href = 'blog.html';">
             Blog
             <div class="footerUnderline"></div>
           </li>
-          <li class="footerList2items">
-            Contact
-            <div class="footerUnderline"></div>
-          </li>
-          <!-- <li class="footerList2items">
-            Lorem
-            <div class="footerUnderline"></div>
-          </li>
-          <li class="footerList2items">
-            Lorem
-            <div class="footerUnderline"></div>
-          </li> -->
+          <a data-toggle="modal" data-target="#exampleModalCenter">
+            <li class="footerList2items" onclick="window.location.href = 'about.html#careerSection';">
+              Careers
+              <div class="footerUnderline"></div>
+            </li>
+          </a>
         </ul>
       </div>
       <div class="footerButtonsDiv">
         <ul class="footerButtons">
           <div class="footerCircles footerListButtons">
-            <i class="fab fa-facebook-f"></i>
+            <a href="https://www.facebook.com/thehappyslate"><i class="fab fa-facebook-f"></i></a>
           </div>
           <div class="footerCircles footerListButtons">
-            <i class="fa-brands fa-instagram"></i>
+            <a
+              href="https://www.google.com/url?q=https://www.instagram.com/thehappyslate/&sa=D&source=docs&ust=1660378318171895&usg=AOvVaw1XWmDDrn4UJUt_DKM0vZli"><i
+                class="fa-brands fa-instagram"></i></a>
           </div>
           <div class="footerCircles footerListButtons">
-            <i class="fa-brands fa-youtube"></i>
+            <a href="https://www.google.com/url?q=https://www.youtube.com/channel/UCgG0gMEBXulmHaqp8JjuDLg&sa=D&source=docs&ust=1660378318171933&usg=AOvVaw2whJgujldYB0Avl8jv_dA7"><i class="fa-brands fa-youtube"></i></a>
           </div>
           <div class="footerCircles footerListButtons">
-            <i class="fa-brands fa-twitter"></i>
+            <a href="https://www.google.com/url?q=https://twitter.com/TheHappySlate&sa=D&source=docs&ust=1660378318171804&usg=AOvVaw3Z05dIhB3caAqEkMr_Yk8Z"><i class="fa-brands fa-twitter"></i></a>
           </div>
           <div class="footerCircles footerListButtons">
-            <i class="fa-brands fa-linkedin-in"></i>
+            <a href="https://www.google.com/url?q=https://www.linkedin.com/company/thehappyslate/&sa=D&source=docs&ust=1660378318172001&usg=AOvVaw0r8_XdBnRwbXCiWFVxMEyQ"><i class="fa-brands fa-linkedin-in"></i></a>
           </div>
         </ul>
       </div>
@@ -562,7 +558,6 @@
         });
       }
     };
-
     $(window).resize(function () {
       // onresize
       checkWidth();
@@ -581,5 +576,4 @@
   <!-- <script src="./vendor/php-email-form/validate.js"></script> -->
   <script src="./js/services.js"></script>
 </body>
-
 </html>
