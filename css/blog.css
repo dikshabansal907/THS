@@ -27,11 +27,11 @@ p {
   display: flex;
   justify-content: space-between;
 }
-.snip1226 {
+.navbarList {
   overflow: hidden;
   /* margin-top: 1.3rem; */
 }
-.snip1226 a {
+.navbarList a {
   padding: 0.3em 0;
   color: rgba(255, 255, 255, 0.5) !important;
   position: relative;
@@ -41,29 +41,29 @@ p {
   text-decoration: none;
   cursor: pointer;
 }
-.snip1226 ol,
+.navbarList ol,
 ul {
   padding-left: 0rem !important;
   margin-bottom: 0rem !important ;
 }
-.snip1226 {
+.navbarList {
   font-family: "Yeseva One", sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-weight: 500;
 }
-.snip1226 * {
+.navbarList * {
   box-sizing: border-box;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
-.snip1226 li {
+.navbarList li {
   display: inline-block;
   list-style: outside none none;
   margin: 0 1em;
   overflow: hidden;
 }
-.snip1226 a {
+.navbarList a {
   padding: 0.3em 0;
   color: rgba(255, 255, 255, 0.5);
   position: relative;
@@ -73,13 +73,13 @@ ul {
   margin: 0;
   text-decoration: none;
 }
-.snip1226 a:before,
-.snip1226 a:after {
+.navbarList a:before,
+.navbarList a:after {
   position: absolute;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
-.snip1226 a:before {
+.navbarList a:before {
   bottom: 100%;
   display: block;
   height: 3px;
@@ -87,7 +87,7 @@ ul {
   content: "";
   background-color: #e67e22;
 }
-.snip1226 a:after {
+.navbarList a:after {
   padding: 0.3em 0;
   position: absolute;
   bottom: 100%;
@@ -96,9 +96,32 @@ ul {
   color: white;
   white-space: nowrap;
 }
-.snip1226 li:hover a,
-.snip1226 .current a {
+.navbarList li:hover a,
+.navbarList .current a {
   transform: translateY(100%);
+}
+/* dropdown */
+.dropdown-item {
+  /* font-weight: 900; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: transparent !important;
+  color: #dd4d4b;
+}
+
+.dropdown-item:hover {
+  background-color: #dd4d4b !important;
+  color: white;
+}
+
+.dropdown-menu {
+  background-color: white !important;
+  border: 1px #dd4d4b solid;
+  padding: 0;
+}
+
+.dropdown-item-brand {
+  border-bottom: 1px #dd4d4b solid;
 }
 /* heading */
 .servicesPageHeading {
@@ -346,18 +369,15 @@ ul {
     padding: 2rem 4rem 3rem 4rem;
   }
 }
-@media screen and (max-width:300px) {
-  .navbarList li{
-    font-size: 0.4rem;
-  }
-}
+
 @media screen and (max-width: 480px) {
+
   .servicesLogo {
     text-align: center;
     width: 40%;
     margin-bottom: 10px;
   }
-  .snip1226 li {
+  .navbarList li {
     font-size: 0.6rem;
     margin: 0 0.7em;
   }
@@ -414,5 +434,20 @@ ul {
   .postSection {
     padding: 1rem;
     margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width:360px) {
+  .navbarList li{
+    font-size: 0.3rem;
+  }
+}
+@media screen and (max-width:320px) {
+  .navbarList li{
+    font-size: 0.45rem;
+  }
+}
+@media screen and (max-width:300px) {
+  .navbarList li{
+    font-size: 0.4rem;
   }
 }

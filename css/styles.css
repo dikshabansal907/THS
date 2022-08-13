@@ -1184,6 +1184,9 @@ ul {
 .modal-header {
   justify-content: flex-end !important;
 }
+.modal{
+  z-index: 2002 !important;
+}
 /* 
 ########################################## about us Page Starts ################################
 */
@@ -1417,6 +1420,18 @@ about us Page ends
   .customerCircles {
     display: none;
   }
+}
+@media screen and (max-width:1150px) {
+  .originalGridHeading{
+    bottom:25%;
+  }
+  .originalParahScooter,
+  .originalParahTeachers,
+  .originalParahMummy,
+  .originalParahBhagat{
+    bottom: 5%;
+  }
+
 }
 /* doing it 850 from 768 */
 @media screen and (max-width: 850px) {
@@ -1899,22 +1914,14 @@ about us Page ends
     padding: 2rem;
   }
 }
-
+/* @media screen and (max-width:320px) {
+  .navbarList li{
+    font-size: 0.3rem;
+  }
+}
 @media screen and (max-width:300px) {
   .navbarList li{
     font-size: 0.45rem;
   }
-}
-@media screen and (max-width:1150px) {
-  .originalGridHeading{
-    bottom:25%;
-  }
-  .originalParahScooter,
-  .originalParahTeachers,
-  .originalParahMummy,
-  .originalParahBhagat{
-    bottom: 5%;
-  }
+} */
 
-}
-  
