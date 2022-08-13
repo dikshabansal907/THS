@@ -191,7 +191,7 @@ Services Page Ends
 
 
 /* services ends */
-@media screen and (max-width:300px) {
+@media screen and (max-width:360px) {
   .navbarList li{
     font-size: 0.4rem;
   }
