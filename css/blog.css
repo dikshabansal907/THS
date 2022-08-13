@@ -346,6 +346,11 @@ ul {
     padding: 2rem 4rem 3rem 4rem;
   }
 }
+@media screen and (max-width:300px) {
+  .navbarList li{
+    font-size: 0.4rem;
+  }
+}
 @media screen and (max-width: 480px) {
   .servicesLogo {
     text-align: center;

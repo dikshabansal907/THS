@@ -188,6 +188,7 @@ ul {
   font-size: 2em;
   letter-spacing: 3px;
   margin-top: 2px;
+  text-align: center;
   text-shadow: 0px 0px 5px #fff;
 }
 /* navigation bar ends */
@@ -1574,8 +1575,8 @@ about us Page ends
     font-size: 17px;
   }
   .servicesContactContainerDiv {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   .contactUsMapIframe {
     height: 203%;
@@ -1615,6 +1616,9 @@ about us Page ends
   video {
     /* width: 147vw; */
     /* transform: translateX(-32%); */
+  }
+  .navbarOverlay {
+    height: 97%;
   }
   .navbar {
     padding: 0rem;
@@ -1900,5 +1904,17 @@ about us Page ends
   .navbarList li{
     font-size: 0.45rem;
   }
-  
 }
+@media screen and (max-width:1150px) {
+  .originalGridHeading{
+    bottom:25%;
+  }
+  .originalParahScooter,
+  .originalParahTeachers,
+  .originalParahMummy,
+  .originalParahBhagat{
+    bottom: 5%;
+  }
+
+}
+  
