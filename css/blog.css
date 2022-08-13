@@ -27,6 +27,7 @@ p {
   display: flex;
   justify-content: space-between;
 }
+
 .navbarList {
   overflow: hidden;
   /* margin-top: 1.3rem; */
@@ -100,29 +101,7 @@ ul {
 .navbarList .current a {
   transform: translateY(100%);
 }
-/* dropdown */
-.dropdown-item {
-  /* font-weight: 900; */
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: transparent !important;
-  color: #dd4d4b;
-}
 
-.dropdown-item:hover {
-  background-color: #dd4d4b !important;
-  color: white;
-}
-
-.dropdown-menu {
-  background-color: white !important;
-  border: 1px #dd4d4b solid;
-  padding: 0;
-}
-
-.dropdown-item-brand {
-  border-bottom: 1px #dd4d4b solid;
-}
 /* heading */
 .servicesPageHeading {
   letter-spacing: 5px;

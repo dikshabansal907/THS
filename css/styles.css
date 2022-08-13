@@ -1628,10 +1628,6 @@ about us Page ends
 @media screen and (max-width: 480px) {
   /* navigation bar */
 
-  video {
-    /* width: 147vw; */
-    /* transform: translateX(-32%); */
-  }
   .navbarOverlay {
     height: 97%;
   }
@@ -1731,6 +1727,9 @@ about us Page ends
   }
   .owlPrevButton:hover i {
     transform: translateX(0px);
+  }
+  .item-container{
+    height: 50vh;
   }
   /* footer */
   .footerDiv {
