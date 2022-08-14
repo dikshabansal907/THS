@@ -326,4 +326,12 @@ textarea.input100 {
   .wrap-contact100 {
     padding: 82px 15px 33px 15px;
   }
+  .contact100-form-title{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+
+  }
+  .contact100-form-btn {
+    margin-bottom: 1rem;
+  }
 }

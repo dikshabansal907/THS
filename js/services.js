@@ -192,3 +192,6 @@ const passIframeSrc = (src) => {
 const stopVideo = () => {
   $(".iframeSectionVideo").attr("src", "");
 };
+// footerCopyrightYear copyright year
+const year = new Date().getFullYear();
+document.querySelector(".footerCopyrightYear").innerText = year;

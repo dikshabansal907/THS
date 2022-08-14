@@ -20,3 +20,7 @@ dropdownForGalleryOptions.addEventListener("mouseout", () => {
 setInterval(() => {
     $(".floatingContactEmailIcon").toggleClass("animation-paused");
   }, 2000);
+
+  // footerCopyrightYear copyright year
+const year = new Date().getFullYear();
+document.querySelector(".footerCopyrightYear").innerText = year;

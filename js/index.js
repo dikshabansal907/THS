@@ -190,7 +190,7 @@ $(window).scroll(function () {
 $(".owl-carousel").owlCarousel({
   loop: true,
   margin: 30,
-  autoplay: false,
+  autoplay: true,
   autoplayTimeout: 7000,
   dots: false,
   center: true,
@@ -232,3 +232,6 @@ setInterval(() => {
   $(".floatingContactEmailIcon").toggleClass("animation-paused");
 }, 2000);
 
+// footerCopyrightYear copyright year
+const year = new Date().getFullYear();
+document.querySelector(".footerCopyrightYear").innerText = year;

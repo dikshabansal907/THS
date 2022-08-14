@@ -47,7 +47,6 @@ h3 {
   /* margin-top: 1.3rem; */
 }
 
-
 .navbarList ol,
 ul {
   padding-left: 0rem !important;
@@ -130,7 +129,6 @@ ul {
   transform: translateY(100%);
   color: white;
 }
-
 
 /* gallery dropdown */
 .dropdown-menu {
@@ -626,7 +624,7 @@ ul {
 
 .customerSliderImage {
   position: absolute;
-  top:50%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100px;
@@ -1096,14 +1094,12 @@ ul {
   list-style-type: none;
   justify-content: center;
   gap: 20px;
-  
 }
 .footerListButtons {
   margin-top: 1rem;
 }
-.footerButtons a{
+.footerButtons a {
   color: white;
-
 }
 .footerCircles {
   border-radius: 50%;
@@ -1184,7 +1180,7 @@ ul {
 .modal-header {
   justify-content: flex-end !important;
 }
-.modal{
+.modal {
   z-index: 2002 !important;
 }
 /* 
@@ -1421,17 +1417,16 @@ about us Page ends
     display: none;
   }
 }
-@media screen and (max-width:1150px) {
-  .originalGridHeading{
-    bottom:25%;
+@media screen and (max-width: 1150px) {
+  .originalGridHeading {
+    bottom: 25%;
   }
   .originalParahScooter,
   .originalParahTeachers,
   .originalParahMummy,
-  .originalParahBhagat{
+  .originalParahBhagat {
     bottom: 5%;
   }
-
 }
 /* doing it 850 from 768 */
 @media screen and (max-width: 850px) {
@@ -1619,7 +1614,7 @@ about us Page ends
   position: absolute;
   height: 99%;
   width: 100%;
-  background-color: rgba(0, 0, 0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
   top: 0;
   left: 0;
@@ -1728,9 +1723,17 @@ about us Page ends
   .owlPrevButton:hover i {
     transform: translateX(0px);
   }
-  .item-container{
+  .item-container {
     height: 50vh;
+    border-radius: 0;
   }
+  .item-container img,
+  .item-container::before,
+  .item-container .info {
+    border-radius: 0;
+  }
+
+
   /* footer */
   .footerDiv {
     width: 90%;
@@ -1923,4 +1926,3 @@ about us Page ends
     font-size: 0.45rem;
   }
 } */
-

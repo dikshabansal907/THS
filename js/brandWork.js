@@ -31,4 +31,7 @@ dropdownForGalleryOptions.addEventListener("mouseout", () => {
 
 $('#gallery-dropdown-button').click(function(){return false;});
 
+// footerCopyrightYear copyright year
+const year = new Date().getFullYear();
+document.querySelector(".footerCopyrightYear").innerText = year;
   

@@ -88,6 +88,9 @@
     .brandHeadingDiv h1 {
       font-size: 2rem;
     }
+    .navbarList li {
+      font-size: 0.7rem;
+    }
 }
 @media screen and (max-width:400px) {
   .navbarList li{

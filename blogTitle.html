@@ -6,21 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Happy Slate | Blog</title>
-    <!--CSS -->
-    <link rel="stylesheet" href="./css/blog.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <!--CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/blog.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
 </head>
 
 <body>
     <!-- navbar section -->
     <nav class="servicesNavbar">
         <div class="brandNameContainter serviceBrandNameContainer">
-            <img  class="servicesLogo" onclick="window.location.href = 'index.html';"
+            <img class="servicesLogo" onclick="window.location.href = 'index.html';"
                 src="./images/THS-Logos/LogoRGB Landscape.png" alt="" />
 
             <ul class="navbarList">
@@ -59,14 +61,14 @@
         <div class="postContainer">
             <div class="post">
                 <div class="blogPostTitleDiv">
-                    <h1 class="postTitle">Title</h1>
+                    <h1 class="postTitle mb-0">Title</h1>
                     <p class="blogPostByLine">
                         <i>written by
                             <span class="blogPostAuthorName"><strong>Author Name</strong></span></i>
                         | <i>9th July 2022</i>
                     </p>
                 </div>
-                <img  src="./images/brandWorkThumbnails/unacademy.jpeg" class="postImage" alt="blog 1" />
+                <img src="./images/brandWorkThumbnails/unacademy.jpeg" class="postImage" alt="blog 1" />
                 <div class="postContent">
                     <p class="postText">
                         Visual storytelling, especially the medium of art and animation,
@@ -128,9 +130,73 @@
         </div>
     </section>
 
+      <!-- contact container -->
+  <!-- floating button contact US -->
+  <div class="contactContainer">
+    <div class="contactUsFloatingDiv" type="button" data-toggle="modal" data-target="#exampleModalCenter">
+      <i class="fa-solid fa-envelope floatingContactEmailIcon"></i>
+      <h6>Contact Us</h6>
+    </div>
+    <img src="images/footer/owl.png" alt="owl-image" />
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="d-flex justify-content-end">
+            <button type="button" class="close float-right" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="container-contact100">
+            <form class="contact100-form" action="https://formsubmit.co/0e363346e77e05124d3873dcab0f2c3c" method="POST">
+              <span class="contact100-form-title">
+                We'd love to hear from you!
+              </span>
+              <div class="wrap-input100 rs1-wrap-input100" data-validate="Name is required">
+                <input class="input100" type="text" name="name" placeholder="Enter your name" required />
+                <span class="focus-input100"></span>
+              </div>
+              <div class="wrap-input100 rs1-wrap-input100" data-validate=" Valid email is required: ex@abc.xyz">
+                <input class="input100" type="text" name="email" placeholder="Enter your email address" required />
+                <span class="focus-input100"></span>
+              </div>
+              <div class="wrap-input100" data-validate="Message is required">
+                <textarea class="input100" name="message" placeholder="Your message here..." required></textarea>
+                <span class="focus-input100"></span>
+              </div>
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value="https://www.google.com" />
+              <div class="container-contact100-form-btn">
+                <button type="submit" class="contact100-form-btn">
+                  <span>
+                    Submit
+                    <!-- <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i> -->
+                  </span>
+                </button>
+              </div>
+              <div class="d-flex justify-content-end w-100">
+                <span class="text-muted">partnerships@thehappyslate.com</span>
+              </div>
+            </form>
+            <span class="contact100-more">
+              <!-- For any question contact: <span class="contact100-more-highlight">+001 345 6889</span> -->
+            </span>
+          </div>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
     <!-- footer section -->
     <footer class="footerSection">
-        <img  class="footerImg" src="./images/THS-Logos/LogoRGB Landscape_2.png" alt="" />
+        <img class="footerImg" src="./images/THS-Logos/LogoRGB Landscape_2.png" alt="" />
         <div class="footerDiv">
             <!-- <h5 class="footerBrandName">THE HAPPY SLATE</h5> -->
             <div class="footerList1Div">
@@ -209,7 +275,7 @@
                     <p class="footerText1paragraphs">Privacy Policy</p>
                 </div>
                 <div class="footerText2 mt-2 text-muted">
-                    <p>Copyright © 2022 The Happy Slate.</p>
+                    <p>Copyright © <span class="footerCopyrightYear"></span> The Happy Slate.</p>
                     <p>All rights reserved.</p>
                 </div>
             </div>
@@ -217,10 +283,11 @@
     </footer>
 
     <!-- jquery -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/about.js"></script>
 </body>
 

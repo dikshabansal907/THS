@@ -34,7 +34,7 @@ p {
 }
 .navbarList a {
   padding: 0.3em 0;
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: rgba(255, 255, 255) !important;
   position: relative;
   display: inline-block;
   letter-spacing: 1px;
@@ -64,16 +64,7 @@ ul {
   margin: 0 1em;
   overflow: hidden;
 }
-.navbarList a {
-  padding: 0.3em 0;
-  color: rgba(255, 255, 255, 0.5);
-  position: relative;
-  display: inline-block;
-  letter-spacing: 1px;
-  font-weight: 100;
-  margin: 0;
-  text-decoration: none;
-}
+
 .navbarList a:before,
 .navbarList a:after {
   position: absolute;
@@ -330,6 +321,29 @@ ul {
   margin-bottom: 0.1rem;
 }
 
+.dropdown-item {
+  /* font-weight: 900; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: transparent !important;
+  color: #dd4d4b;
+}
+
+.dropdown-item:hover {
+  background-color: #dd4d4b !important;
+  color: white;
+}
+
+.dropdown-menu {
+  background-color: white !important;
+  border: 1px #dd4d4b solid;
+  padding: 0;
+}
+
+.dropdown-item-brand {
+  border-bottom: 1px #dd4d4b solid;
+}
+
 @media screen and (max-width: 850px) {
   /* blog section */
   .blogSection,
@@ -350,6 +364,9 @@ ul {
 }
 
 @media screen and (max-width: 480px) {
+  .dropdown-menu{
+    right: 1rem;
+  }
 
   .servicesLogo {
     text-align: center;
@@ -357,7 +374,7 @@ ul {
     margin-bottom: 10px;
   }
   .navbarList li {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     margin: 0 0.7em;
   }
   .serviceBrandNameContainer {
@@ -413,6 +430,11 @@ ul {
   .postSection {
     padding: 1rem;
     margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width:400px) {
+  .navbarList li{
+    font-size: 0.5rem;
   }
 }
 @media screen and (max-width:360px) {
