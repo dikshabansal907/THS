@@ -1496,7 +1496,7 @@ about us Page ends
     font-size: initial;
   }
   .item-container .info {
-    padding: 2rem 3rem;
+    /* padding: 2rem 3rem; */
   }
   .originals {
     padding-left: 4rem;
@@ -1758,7 +1758,7 @@ about us Page ends
 
   }
 .owlButton{
-  padding: 0.8rem;
+  padding: 1rem;
   font-size:x-large;
 }
 
