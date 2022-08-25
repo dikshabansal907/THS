@@ -60,10 +60,10 @@ ul {
   top:0;
   left: 0;
   width: 100%;
-  height: 9%;
+  height: 10%;
   z-index: 2;
   /* done on 24aug */
-  background-color: #26323854;
+  background-color: #263238cc;
 }
 .navBarItem {
   display: inline-block;
@@ -137,7 +137,7 @@ ul {
   background-color: transparent !important;
   border: 1px white solid;
   padding: 0;
-  right:0.3rem;
+  /* right:0.3rem; */
 }
 .dropdown-item {
   padding-top: 10px;
@@ -168,7 +168,8 @@ ul {
   left: 1vh;
 }
 .homePageLogo{
-  width: 15%;
+  width: 18%;
+  margin-left:2%;
 }
 .headerSectionText {
   text-align: center;
@@ -1635,10 +1636,11 @@ about us Page ends
   .navbar {
     padding: 0rem;
     flex-direction: column;
-    height: 21%;
+    height: 23%;
   }
   .homePageLogo{
-    width: 18%;
+    width: 21%;
+    margin-top: 0.3%;
   }
   .logo {
     position: static;
@@ -1657,6 +1659,9 @@ about us Page ends
   .navbarList li {
     font-size: 0.6rem;
     margin: 0 0.7em;
+  }
+  .dropdown-menu{
+    right:0.3rem;
   }
   /* paddings of sections */
   .whoWeAreSection,
@@ -1734,16 +1739,26 @@ about us Page ends
     transform: translateX(0px);
   }
   .item-container {
-    height: 43vh;
+    height: 53vh;
     border-radius: 0;
+    
   }
-  .item-container img,
+  .item-container img{
+    border-radius: 0;
+    transform: scale(0.9);
+    object-fit: contain;
+  }
+
   .item-container::before,
   .item-container .info {
-    border-radius: 0;
+  border-radius: 0;
+  transform: scale(0.9);
+  object-fit: contain;
+
   }
 .owlButton{
   padding: 0.8rem;
+  font-size:large;
 }
 
   /* footer */
