@@ -99,12 +99,12 @@
 }
 @media screen and (max-width:360px) {
   .navbarList li{
-    font-size: 0.4rem;
+    font-size: 0.5rem;
   }
 }
 @media screen and (max-width:320px) {
   .navbarList li{
-    font-size: 0.45rem;
+    font-size: 0.4rem;
   }
 }
 @media screen and (max-width:300px) {

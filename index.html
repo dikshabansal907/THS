@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="The Happy Slate is a 2D animation & motion graphics production studio in India. We create tailor-made story-driven engaging content with original characters" />
   <title>The Happy Slate | Home</title>
   <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 
@@ -29,16 +31,24 @@
   <link rel="stylesheet" href="./css/styles.css" />
   <link rel="stylesheet" href="./css/contact.css" />
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-938XPJ5V0Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
-  <!-- <script src="./js/skroll.min.js"></script> -->
+    gtag('config', 'G-938XPJ5V0Z');
+  </script>
 </head>
 
 <body>
   <!-- Navigation Bar Starts -->
 
   <section class="navbarSection">
-    <nav class="navbar">
+
+    <!-- <nav class="navbar">
+
       <div class="logoContainter">
         <a href="./index.html"><img  class="logo"
             src="https://static.wixstatic.com/media/c7b6c9_a8c30ef23499423abf083e7d57863dfe~mv2.png/v1/fill/w_132,h_136,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/THS%20LOGO_%20WhiteBG.png"
@@ -57,26 +67,60 @@
         <li class="navbarItem">
           <a href="" id="gallery-dropdown-button" data-hover="Gallery" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">Gallery</a>
-          <!-- From This  -->
           <ul class="dropdown-menu" id="gallery-dropdown" style="display: none">
             <button onclick="window.location.href = 'brandWork.html';" class="dropdown-item dropdown-item-brand"> Brand
               Films</button>
             <button onclick="window.location.href = 'originalWork.html';" class="dropdown-item">Original Films</button>
           </ul>
-          <!-- To This  -->
+
         </li>
-        </div>
+
         <li class="navbarItem">
           <a class="text-white" data-toggle="modal" data-target="#exampleModalCenter" data-hover="Contact Us">
             Contact
           </a>
         </li>
       </ul>
+    
+    </nav> -->
+    <nav class="navbar">
+      <div class="brandNameContainter serviceBrandNameContainer">
+        <img class="homePageLogo" onclick="window.location.href = 'index.html';"
+          src="./images/THS-Logos/LogoRGB Landscape.png" alt="" />
+
+        <ul class="navbarList">
+          <li class="navbarItem current">
+            <a href="./index.html" data-hover="Home">Home</a>
+          </li>
+          <li class="navbarItem ">
+            <a href="./about.html" data-hover="About Us">About Us</a>
+          </li>
+          <li class="navbarItem ">
+            <a href="./services.html" data-hover="Services">Services</a>
+          </li>
+          <li class="navbarItem  text-white">
+            <a id="gallery-dropdown-button" data-hover="Gallery" role="button" aria-expanded="false">Gallery</a>
+            <!-- From This  -->
+            <ul class="dropdown-menu " id="gallery-dropdown" style="display: none;">
+              <button onclick="window.location.href = 'brandWork.html';" class="dropdown-item dropdown-item-brand">Brand
+                Films</button>
+              <button onclick="window.location.href = 'originalWork.html';" class="dropdown-item">Original
+                Films</button>
+            </ul>
+            <!-- To This  -->
+          </li>
+          <li class="navbarItem text-white">
+            <a data-toggle="modal" data-target="#exampleModalCenter" data-hover="Contact">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <video class="navbarVideo" loop autoplay="true" muted playsinline>
       <source src="./images/demo.mp4" type="video/mp4" />
     </video>
-    <div class="navbarOverlay"></div>
+    <!-- <div class="navbarOverlay"></div> -->
 
   </section>
 
@@ -84,14 +128,14 @@
 
   <!-- portfolio section starts ----------------------------------------------->
   <section id="portfolio" class="portfolio">
-    <img  class="scribble scribble4" src="./images/Scribbles/scribble4.png" alt="scribbles for fun" />
+    <img class="scribble scribble4" src="./images/Scribbles/scribble4.png" alt="scribbles for fun" />
     <div class="portfolioDiv">
       <!-- <div class="textAndArrow">
         <h3>Portfolio</h3>
         <img  class="plane"src="./images/plane.gif" alt="">
         <img  class="downArrowPortfolio downArrow" src="./images/downArrow.png" alt="" />
       </div> -->
-      <img  class="scribble scribble13" src="./images/Scribbles/scribble13.png" alt="scribbles for fun" />
+      <img class="scribble scribble13" src="./images/Scribbles/scribble13.png" alt="scribbles for fun" />
       <h1 class="typing-demo2 text-break">
         Our <span class="home">Brand </span>Films
       </h1>
@@ -127,7 +171,7 @@
     <div class="owl-carousel owl-theme">
       <div class="item">
         <div class="item-container">
-          <img  src="./images/BrandImages/brandfilmsthumbs_0004_Unacademy.jpg"
+          <img src="./images/BrandImages/brandfilmsthumbs_0004_Unacademy.jpg"
             alt="brand unacademy-An animated collab for India’s biggest scholarship test by Unacademy" />
           <div class="infoBackground"></div>
           <div class="info" onclick="showThis('.iframeSection'); passIframeSrc('A5pMyztSRq8')">
@@ -146,7 +190,7 @@
       </div>
       <div class="item">
         <div class="item-container">
-          <img  src="./images/BrandImages/brandfilmsthumbs_0005_Cudents.jpg"
+          <img src="./images/BrandImages/brandfilmsthumbs.jpg"
             alt="brand-a one of a kind collab for a one of a kind app for revision before exams" />
           <div class="infoBackground"></div>
           <div class="info" onclick="showThis('.iframeSection'); passIframeSrc('ycUq6CTx-Zw')">
@@ -165,7 +209,7 @@
 
       <div class="item">
         <div class="item-container">
-          <img  src="./images/BrandImages/brandfilmsthumbs_0002_Kotak.jpg"
+          <img src="./images/BrandImages/brandfilmsthumbs_0002_Kotak.jpg"
             alt="brand-a beloved character created exclusively for Kotak Bank that simplifies savings for little kids." />
           <div class="info" onclick="showThis('.iframeSection'); passIframeSrc('AA2m9ZGCgLc')">
             <h2 class="brandName">Kotak</h2>
@@ -182,7 +226,7 @@
       </div>
       <div class="item">
         <div class="item-container">
-          <img  src="./images/BrandImages/brandfilmsthumbs_0007_Bloomvalue.jpg"
+          <img src="./images/BrandImages/brandfilmsthumbs_0007_Bloomvalue.jpg"
             alt="brand-an interesting product motion graphics video that garnered immense love" />
           <div class="info" onclick="showThis('.iframeSection'); passIframeSrc('Zfj24ypr4zU')">
             <h2 class="brandName">Bloomvalue</h2>
@@ -199,7 +243,7 @@
       </div>
       <div class="item">
         <div class="item-container">
-          <img  src="./images/BrandImages/brandfilmsthumbs_0001_Anviti.jpg"
+          <img src="./images/BrandImages/brandfilmsthumbs_0001_Anviti.jpg"
             alt="brand-anviti decided to rebrand their company and we came up with this" />
           <div class="info" onclick="showThis('.iframeSection'); passIframeSrc('-0jMfPhg-DA')">
             <h2 class="brandName">Anviti</h2>
@@ -216,7 +260,7 @@
       </div>
       <div class="item">
         <div class="item-container">
-          <img  src="./images/BrandImages/brandfilmsthumbs_0003_Squirro.jpg"
+          <img src="./images/BrandImages/brandfilmsthumbs_0003_Squirro.jpg"
             alt="brand-A day in Eric’s life and how Squirro Cognitive Search was key for him" />
           <div class="info" onclick="showThis('.iframeSection'); passIframeSrc('nK1z7JqjxPE')">
             <h2 class="brandName">Squirro</h2>
@@ -298,49 +342,49 @@
     <!-- <img  class="scribble scribble5" src="./images/scibble5.png" alt=""> -->
     <div class="slide-track">
       <div class="logoSlide">
-        <img  src="./images/BrandLogos/Logos_0000_Layer-16.png" alt="logo" />
+        <img src="./images/BrandLogos/Logos_0000_Layer-16.png" alt="logo" />
       </div>
       <div class="logoSlide">
-        <img  src="./images/BrandLogos/Logos_0001_Layer-15.png" alt="logo" />
+        <img src="./images/BrandLogos/Logos_0001_Layer-15.png" alt="logo" />
       </div>
       <div class="logoSlide">
-        <img  src="./images/BrandLogos/Logos_0002_Layer-14.png" alt="logo" />
+        <img src="./images/BrandLogos/Logos_0002_Layer-14.png" alt="logo" />
       </div>
       <div class="logoSlide">
-        <img  src="./images/BrandLogos/Logos_0003_Layer-13.png" />
+        <img src="./images/BrandLogos/Logos_0003_Layer-13.png" />
       </div>
       <div class="logoSlide">
-        <img  src="./images/BrandLogos/Logos_0004_Layer-12.png" alt="logo" />
+        <img src="./images/BrandLogos/Logos_0004_Layer-12.png" alt="logo" />
       </div>
       <div class="logoSlide">
-        <img  src="./images/BrandLogos/Logos_0005_Layer-11.png" alt="logo" />
+        <img src="./images/BrandLogos/Logos_0005_Layer-11.png" alt="logo" />
       </div>
       <div class="logoSlide">
-        <img  src="./images/BrandLogos/Logos_0006_Layer-10.png" alt="logo" />
+        <img src="./images/BrandLogos/Logos_0006_Layer-10.png" alt="logo" />
       </div>
       <div class="logoSlide">
-        <img  src="./images/BrandLogos/Logos_0007_Layer-9.png" alt="logo" />
+        <img src="./images/BrandLogos/Logos_0007_Layer-9.png" alt="logo" />
       </div>
       <div class="logoSlide">
-        <img  src="./images/BrandLogos/Logos_0008_Layer-8.png" alt="logo" />
+        <img src="./images/BrandLogos/Logos_0008_Layer-8.png" alt="logo" />
       </div>
       <div class="logoSlide">
-        <img  src="./images/BrandLogos/Logos_0009_Layer-7.png" alt="logo" />
+        <img src="./images/BrandLogos/Logos_0009_Layer-7.png" alt="logo" />
       </div>
       <div class="logoSlide">
-        <img  src="./images/BrandLogos/Logos_0010_Layer-6.png" alt="logo" />
+        <img src="./images/BrandLogos/Logos_0010_Layer-6.png" alt="logo" />
       </div>
       <div class="logoSlide">
-        <img  src="./images/BrandLogos/Logos_0011_Layer-5.png" alt="logo" />
+        <img src="./images/BrandLogos/Logos_0011_Layer-5.png" alt="logo" />
       </div>
       <div class="logoSlide">
-        <img  src="./images/BrandLogos/Logos_0012_Layer-4.png" alt="logo" />
+        <img src="./images/BrandLogos/Logos_0012_Layer-4.png" alt="logo" />
       </div>
       <div class="logoSlide">
-        <img  src="./images/BrandLogos/Logos_0013_Layer-3.png" alt="logo" />
+        <img src="./images/BrandLogos/Logos_0013_Layer-3.png" alt="logo" />
       </div>
       <div class="logoSlide">
-        <img  src="./images/BrandLogos/Logos_0014_Layer-1.png" alt="logo" />
+        <img src="./images/BrandLogos/Logos_0014_Layer-1.png" alt="logo" />
       </div>
       <!-- <div class="logoSlide">
                 <img  src="./images/BrandLogos/1.png" alt="">
@@ -354,43 +398,41 @@
   <section class="customerReviews">
     <div class="textAndArrow customerTextAndArrow">
       <h3>Customer Reviews</h3>
-      <img  class="downArrowSocial downArrow" src="./images/downArrow.png" alt="testimoinial" />
+      <img class="downArrowSocial downArrow" src="./images/downArrow.png" alt="testimoinial" />
     </div>
 
     <h1 class="typing-demo4 text-break">
       What Our <span class="home">Clients</span><br> & fans have to say
     </h1>
-    <img  class="scribble scribble14" src="./images/Scribbles/scribble14.png" alt="testimoinial" />
+    <img class="scribble scribble14" src="./images/Scribbles/scribble14.png" alt="testimoinial" />
     <!-- <div class="customerCircle bg-danger">gggggg</div> -->
 
     <div class="customerReviewContainer">
       <div class="customerReviewHeading">
-        <h3 class="text-center ">Our clients send us bunch of smiles and we love them</h3>
+        <h3 class="text-center ">Words of love and encouragement from our clients and fans</h3>
       </div>
-      <img  class="customerCircles customerYellowCircleLeft"
-        src="./images/CustomerReviews/lightYellowCircle.png" alt="testimoinial">
-      <img  class="customerCircles customerYellowCircleRight"
-        src="./images/CustomerReviews/lightYellowCircle.png" alt="testimoinial">
-      <img  class=" customerCircles customerBlueCircle" src="./images/CustomerReviews/lightBlueCircle.png"
+      <img class="customerCircles customerYellowCircleLeft" src="./images/CustomerReviews/lightYellowCircle.png"
         alt="testimoinial">
-      <img  class=" customerCircles customerPinkCircle" src="./images/CustomerReviews/pinkCircle.png"
+      <img class="customerCircles customerYellowCircleRight" src="./images/CustomerReviews/lightYellowCircle.png"
         alt="testimoinial">
-      <img  class=" customerCircles customerPinkCircleBottom"
-        src="./images/CustomerReviews/pinkCircle.png" alt="testimoinial">
-      <img  class=" customerCircles customerPurpleCircle" src="./images/CustomerReviews/purpleCircle.png"
+      <img class=" customerCircles customerBlueCircle" src="./images/CustomerReviews/lightBlueCircle.png"
         alt="testimoinial">
-      <img  class=" customerCircles customerRedCircle" src="./images/CustomerReviews/redCircle.png"
+      <img class=" customerCircles customerPinkCircle" src="./images/CustomerReviews/pinkCircle.png" alt="testimoinial">
+      <img class=" customerCircles customerPinkCircleBottom" src="./images/CustomerReviews/pinkCircle.png"
         alt="testimoinial">
-      <img  class=" customerCircles customerYellowCircle"
-        src="./images/CustomerReviews/lightYellowCircle.png" alt="testimoinial">
+      <img class=" customerCircles customerPurpleCircle" src="./images/CustomerReviews/purpleCircle.png"
+        alt="testimoinial">
+      <img class=" customerCircles customerRedCircle" src="./images/CustomerReviews/redCircle.png" alt="testimoinial">
+      <img class=" customerCircles customerYellowCircle" src="./images/CustomerReviews/lightYellowCircle.png"
+        alt="testimoinial">
 
       <div id="customerSliderCarousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="customerSliderContent">
               <div class="customerSliderImageDiv">
-                <img  class="customerSliderImage"
-                  src="./images/CustomerReviews/logo testimonials_Squirro.png" alt="testimoinial">
+                <img class="customerSliderImage" src="./images/CustomerReviews/logo testimonials_Squirro.png"
+                  alt="testimoinial">
               </div>
               <div class="customerSliderInfo">
                 <h4 class="customerName">Gloria Fernandez</h4>
@@ -412,8 +454,8 @@
           <div class="carousel-item">
             <div class="customerSliderContent">
               <div class="customerSliderImageDiv">
-                <img  class="customerSliderImage"
-                  src="./images/CustomerReviews/logo testimonials_Logicroots.png" alt="testimoinial">
+                <img class="customerSliderImage" src="./images/CustomerReviews/logo testimonials_Logicroots.png"
+                  alt="testimoinial">
               </div>
               <div class="customerSliderInfo">
                 <h4 class="customerName">Kunal Gandhi </h4>
@@ -425,21 +467,13 @@
                 <i class="bi bi-quote customerSliderQuoteIcon customerSliderQuoteIconEnd"></i>
                 <p class="customerSliderReview text-center">I have had a chance of working with The Happy Slate when we
                   were making an animation video about my company. It was to be a concept video explaining the fear of
-                  math in kids in a fun way and connecting with our product.
+                  math in kids in a fun way and connecting with our product.<br>
                   Working with them has been an absolute joy. I always felt we got much much more than our money's worth
-                  with them . Here is why ...<br>
-                  1. They are very process oriented. They will start with extensive secondary research to find the best
-                  ideas and executions currently done. He will also define a work plan with dates and elements. This is
-                  amazing. It is one thing that I always lacked in creative people and what Happy Slate brings<br>
+                  with them. They are very process oriented. They will start with extensive secondary research to find
+                  the best ideas and executions currently done. They will also define a work plan with dates and
+                  elements. This is amazing. It is one thing that I always lacked in creative people and what Happy
+                  Slate brings. Brilliant work and great work ethics. Best wishes.
 
-                  2. They have their own style. They brings innovative and earthy flavor to your vodeo. Just look at the
-                  animation for Logic Roots to understand<br>
-
-                  3. They owns the work. Once you give them a work, its their work. I realized its not my problem any
-                  more. They will even fight with you for his belief and make sure that the best gets delivered<br>
-
-                  Output is a testimony to the input. I am very happy about the video that we got and has been viewed
-                  and shared over a hundred thousand times now. Brilliant work and great work ethics. Best wishes.
                 </p>
               </div>
             </div>
@@ -447,8 +481,8 @@
           <div class="carousel-item">
             <div class="customerSliderContent">
               <div class="customerSliderImageDiv">
-                <img  class="customerSliderImage"
-                  src="./images/CustomerReviews/logo testimonials_Potlibaba.png" alt="testimoinial">
+                <img class="customerSliderImage" src="./images/CustomerReviews/logo testimonials_Potlibaba.png"
+                  alt="testimoinial">
               </div>
               <div class="customerSliderInfo">
                 <h4 class="customerName text-break">Arjun Chauhan and M.S.Belliappa</h4>
@@ -468,7 +502,7 @@
           <div class="carousel-item">
             <div class="customerSliderContent">
               <div class="customerSliderImageDiv">
-                <img  class="customerSliderImage" src="./images/CustomerReviews/logo testimonials_YT.png"
+                <img class="customerSliderImage" src="./images/CustomerReviews/logo testimonials_YT.png"
                   alt="testimoinial">
               </div>
               <div class="customerSliderInfo">
@@ -487,7 +521,7 @@
           <div class="carousel-item">
             <div class="customerSliderContent">
               <div class="customerSliderImageDiv">
-                <img  class="customerSliderImage" src="./images/CustomerReviews/logo testimonials_YT.png"
+                <img class="customerSliderImage" src="./images/CustomerReviews/logo testimonials_YT.png"
                   alt="testimoinial">
               </div>
               <div class="customerSliderInfo">
@@ -508,7 +542,7 @@
           <div class="carousel-item">
             <div class="customerSliderContent">
               <div class="customerSliderImageDiv">
-                <img  class="customerSliderImage" src="./images//CustomerReviews/logo testimonials_YT.png"
+                <img class="customerSliderImage" src="./images//CustomerReviews/logo testimonials_YT.png"
                   alt="testimoinial">
               </div>
               <div class="customerSliderInfo">
@@ -529,7 +563,7 @@
           <div class="carousel-item">
             <div class="customerSliderContent">
               <div class="customerSliderImageDiv">
-                <img  class="customerSliderImage" src="./images//CustomerReviews/logo testimonials_YT.png"
+                <img class="customerSliderImage" src="./images//CustomerReviews/logo testimonials_YT.png"
                   alt="testimoinial">
               </div>
               <div class="customerSliderInfo">
@@ -585,7 +619,7 @@
     <!-- <img  class="scribble scribble9" src="./images/scribble9.png" alt="" /> -->
     <div class="textAndArrow">
       <h3>Originals</h3>
-      <img  class="downArrow" src="./images/downArrow.png" alt="headings" />
+      <img class="downArrow" src="./images/downArrow.png" alt="headings" />
     </div>
   </section>
   <!-- originals section ends ----------------------->
@@ -596,11 +630,10 @@
     <h1 class="typing-demo3 text-break">
       Our <span class="home">Original </span>Films
     </h1>
-    <img  class="scribble scribble8" src="./images/Scribbles/scribble8.png" alt="scribbles for fun" />
+    <img class="scribble scribble8" src="./images/Scribbles/scribble8.png" alt="scribbles for fun" />
     <div class="originalGridContainer">
       <div class="originalGridItem originalGridItem1">
-        <img  class="originalGridItemImg" src="./images/originals/garmiKiChuttiyan.png"
-          alt="Original IMG 1" />
+        <img class="originalGridItemImg" src="./images/originals/garmiKiChuttiyan.png" alt="Original IMG 1" />
         <div class="originalTransparentDiv" onclick="showThis('.iframeSection'); passIframeSrc('aZ4-Vlse91U')">
 
           <!-- icon -->
@@ -611,8 +644,7 @@
       </div>
 
       <div class="originalGridItem originalGridItem2">
-        <img  class="originalGridItemImg" src="./images/originals/HomePage_Thumbs_2.png"
-          alt="Original IMG 2" />
+        <img class="originalGridItemImg" src="./images/originals/HomePage_Thumbs_2.png" alt="Original IMG 2" />
         <div class="originalTransparentDiv" onclick="showThis('.iframeSection'); passIframeSrc('YaqpyaTZXZQ')">
           <!-- icon -->
           <i class="bi bi-play-circle viewVideoIcon"></i>
@@ -623,8 +655,7 @@
         </div>
       </div>
       <div class="originalGridItem originalGridItem3">
-        <img  class="originalGridItemImg" src="./images/originals/Homepage_Thumbs_3.png"
-          alt="Original IMG 3" />
+        <img class="originalGridItemImg" src="./images/originals/Homepage_Thumbs_3.png" alt="Original IMG 3" />
         <div class="originalTransparentDiv" onclick="showThis('.iframeSection'); passIframeSrc('Spz6xweCMnU')">
           <!-- icon -->
           <i class="bi bi-play-circle viewVideoIcon"></i>
@@ -635,8 +666,7 @@
         </div>
       </div>
       <div class="originalGridItem originalGridItem4">
-        <img  class="originalGridItemImg" src="./images/originals/Homepage_Thumbs_3_2.png"
-          alt="Original IMG 3" />
+        <img class="originalGridItemImg" src="./images/originals/Homepage_Thumbs_3_2.png" alt="Original IMG 3" />
         <div class="originalTransparentDiv" onclick="showThis('.iframeSection'); passIframeSrc('R9OeUYUOsAE')">
           <!-- icon -->
           <i class="bi bi-play-circle viewVideoIcon"></i>
@@ -647,8 +677,7 @@
         </div>
       </div>
       <div class="originalGridItem originalGridItem5">
-        <img  class="originalGridItemImg" src="./images/originals/HomepageThumbs_1_2.png"
-          alt="Original IMG 3" />
+        <img class="originalGridItemImg" src="./images/originals/HomepageThumbs_1_2.png" alt="Original IMG 3" />
         <div class="originalTransparentDiv" onclick="showThis('.iframeSection'); passIframeSrc('ruZn2hyP4-o')">
           <!-- icon -->
           <i class="bi bi-play-circle viewVideoIcon"></i>
@@ -659,8 +688,7 @@
         </div>
       </div>
       <div class="originalGridItem originalGridItem6">
-        <img  class="originalGridItemImg" src="./images/originals/Homepage_Thumbs_4.png"
-          alt="Original IMG 1" />
+        <img class="originalGridItemImg" src="./images/originals/Homepage_Thumbs_4.png" alt="Original IMG 1" />
         <div class="originalTransparentDiv" onclick="showThis('.iframeSection'); passIframeSrc('fqF5evUS1dg')">
           <!-- icon -->
           <i class="bi bi-play-circle viewVideoIcon"></i>
@@ -671,8 +699,7 @@
         </div>
       </div>
       <div class="originalGridItem originalGridItem7">
-        <img  class="originalGridItemImg" src="./images/originals/Homepage_thumbs_5.png"
-          alt="Original IMG 1" />
+        <img class="originalGridItemImg" src="./images/originals/Homepage_thumbs_5.png" alt="Original IMG 1" />
         <div class="originalTransparentDiv" onclick="showThis('.iframeSection'); passIframeSrc('CZflgE1iINs')">
           <!-- icon -->
           <i class="bi bi-play-circle viewVideoIcon"></i>
@@ -810,7 +837,7 @@
                 </button>
 
               </div>
-              <div class="d-flex justify-content-end w-100">
+              <div class="d-flex justify-content-end w-100 contactModalEmail">
                 <span class="text-muted">partnerships@thehappyslate.com</span>
               </div>
             </form>
@@ -832,16 +859,15 @@
   <!-- who we are -->
 
   <section class="whoWeAreSection">
-    <img  class="scribble scribble10 visible-md" src="./images/Scribbles/scribble10.png"
-      alt="scribbles for fun" />
+    <img class="scribble scribble10 visible-md" src="./images/Scribbles/scribble10.png" alt="scribbles for fun" />
     <div class="aboutUsDiv whoWeAreDiv">
       <div class="textAndArrow">
         <h3 class="whoWeAreHeading">Who we are</h3>
-        <img  class="downArrow" src="./images/downArrow.png" alt="scribbles for fun" />
+        <img class="downArrow" src="./images/downArrow.png" alt="scribbles for fun" />
       </div>
       <h1 class="typing-demo5 text-break">
         We pour our
-        <span class="heartSpan"><img  class="heart" src="./images/hearticon1.gif" alt="heart" /></span>
+        <span class="heartSpan"><img class="heart" src="./images/hearticon1.gif" alt="heart" /></span>
         in<br class="visible-xs d-lg-none">
         every <span class="home">film.</span>
       </h1>
@@ -862,7 +888,7 @@
 
   <footer class="footerSection">
     <!-- <img  class="footerImg" src="./images/footer/owl.png" alt="" /> -->
-    <img  class="footerImg" src="./images/THS-Logos/LogoRGB Landscape_2.png" alt="the happy slate logo" />
+    <img class="footerImg" src="./images/THS-Logos/LogoRGB Landscape_2.png" alt="the happy slate logo" />
     <div class="footerDiv">
       <!-- <h5 class="footerBrandName">THE HAPPY SLATE</h5> -->
       <div class="footerList1Div">
@@ -937,7 +963,7 @@
       </div>
       <div class="footerText">
         <div class="footerText1 text-muted">
-          <p class="footerText1paragraphs">Terms&conditions</p>
+          <p class="footerText1paragraphs">Terms & conditions</p>
           <p class="footerText1paragraphs">Privacy Policy</p>
         </div>
         <div class="footerText2 mt-2 text-muted">
@@ -966,7 +992,7 @@
       <i class="fa-solid fa-envelope floatingContactEmailIcon"></i>
       <h6>Contact Us</h6>
     </div>
-    <img  src="images/footer/owl.png" alt="owl-image">
+    <img src="images/footer/owl.png" alt="owl-image">
   </div>
 
   <!-- <script>

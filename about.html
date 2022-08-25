@@ -1,1239 +1,799 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Happy Slate | About Us</title>
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
 
-    <!-- CSS only -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Happy Slate | About Us</title>
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/contact.css" />
-    <link rel="stylesheet" href="./css/services.css" />
-  </head>
+  <!-- CSS only -->
 
-  <body>
-    <nav class="servicesNavbar">
-      <div class="brandNameContainter serviceBrandNameContainer">
-        <img
-          
-          class="servicesLogo"
-          onclick="window.location.href = 'index.html';"
-          src="./images/THS-Logos/LogoRGB Landscape.png"
-          alt="the happy slate logo"
-        />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/contact.css" />
+  <link rel="stylesheet" href="./css/services.css" />
+</head>
 
-        <ul class="navbarList">
-          <li class="navbarItem">
-            <a href="./index.html" data-hover="Home">Home</a>
-          </li>
-          <li class="navbarItem current">
-            <a href="./about.html" data-hover="About Us">About Us</a>
-          </li>
-          <li class="navbarItem">
-            <a href="./services.html" data-hover="Services">Services</a>
-          </li>
-          <li class="navbarItem text-white">
-            <a
-              id="gallery-dropdown-button"
-              data-hover="Gallery"
-              role="button"
-              aria-expanded="false"
-              >Gallery</a
-            >
-            <!-- From This  -->
-            <ul
-              class="dropdown-menu dropdown-menu-lg-end"
-              id="gallery-dropdown"
-              style="display: none"
-            >
-              <button
-                onclick="window.location.href = 'brandWork.html';"
-                class="dropdown-item dropdown-item-brand"
-              >
-                Brand Films
-              </button>
-              <button
-                onclick="window.location.href = 'originalWork.html';"
-                class="dropdown-item"
-              >
-                Original Films
-              </button>
-            </ul>
-            <!-- To This  -->
-          </li>
-          <li class="navbarItem text-white">
-            <a
-              data-toggle="modal"
-              data-target="#exampleModalCenter"
-              data-hover="Contact"
-            >
-              Contact
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+<body>
+  <nav class="servicesNavbar">
+    <div class="brandNameContainter serviceBrandNameContainer">
+      <img class="servicesLogo" onclick="window.location.href = 'index.html';"
+        src="./images/THS-Logos/LogoRGB Landscape.png" alt="the happy slate logo" />
 
-    <main class="py-4">
-      <div class="container-fluid h-100 d-none d-md-block">
-        <div class="row h-100 mt-2">
-          <div class="col-lg-6 d-flex justify-content-center lottieAnimation">
-            <lottie-player
-              src="https://assets6.lottiefiles.com/packages/lf20_0bzu9jvt.json"
-              background="transparent"
-              speed="1"
-              style="width: 600px; height: 600px"
-              loop
-              autoplay
-            ></lottie-player>
-          </div>
+      <ul class="navbarList">
+        <li class="navbarItem">
+          <a href="./index.html" data-hover="Home">Home</a>
+        </li>
+        <li class="navbarItem current">
+          <a href="./about.html" data-hover="About Us">About Us</a>
+        </li>
+        <li class="navbarItem">
+          <a href="./services.html" data-hover="Services">Services</a>
+        </li>
+        <li class="navbarItem text-white">
+          <a id="gallery-dropdown-button" data-hover="Gallery" role="button" aria-expanded="false">Gallery</a>
+          <!-- From This  -->
+          <ul class="dropdown-menu dropdown-menu-lg-end" id="gallery-dropdown" style="display: none">
+            <button onclick="window.location.href = 'brandWork.html';" class="dropdown-item dropdown-item-brand">
+              Brand Films
+            </button>
+            <button onclick="window.location.href = 'originalWork.html';" class="dropdown-item">
+              Original Films
+            </button>
+          </ul>
+          <!-- To This  -->
+        </li>
+        <li class="navbarItem text-white">
+          <a data-toggle="modal" data-target="#exampleModalCenter" data-hover="Contact">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-          <div
-            class="col-lg-6 d-flex justify-content-center flex-column aboutUsContent"
-          >
-            <h1 class="">About <span class="home">Us</span></h1>
-
-            <p class="about-us-content">
-              We’re a <span><b class="bold">young, </b></span>homegrown
-              animation studio driven by an experienced team of artists and
-              creators, bringing
-              <span><b class="bold">authentic Indian stories</b></span> to
-              people, one film at a time. That said, we’re not just an animation
-              studio, we’re much more. We think, we create, we execute. Not only
-              for our audience, but for our clients too. We help bring your
-              stories to life! So if you’re a business owner, team leader or
-              influencer in your company and looking to land your
-              messages/engage with your customers and employees better, we can
-              help you. <br /><span
-                ><b class="bold">Get in touch with us !</b></span
-              >
-            </p>
-
-            <div class="d-flex justify-content-around pr-5 mb-3">
-              <span class="email"
-                ><i class="fa-solid fa-envelope"></i>
-                partnerships@thehappyslate.com</span
-              >
-              <span class="email"
-                ><i class="fa-solid fa-envelope"></i>
-                careers@thehappyslate.com</span
-              >
-            </div>
-          </div>
+  <main class="py-4">
+    <div class="container-fluid h-100 d-none d-md-block">
+      <div class="row h-100 mt-2">
+        <div class="col-lg-6 d-flex justify-content-center lottieAnimation">
+          <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_0bzu9jvt.json" background="transparent"
+            speed="1" style="width: 600px; height: 600px" loop autoplay></lottie-player>
         </div>
-      </div>
 
-      <div class="container-fluid h-100 d-md-none">
-        <div class="row h-100 mt-2">
-          <div class="col-lg-6 d-flex justify-content-center lottieAnimation">
-            <lottie-player
-              src="https://assets6.lottiefiles.com/packages/lf20_0bzu9jvt.json"
-              background="transparent"
-              speed="1"
-              style="width: 600px; height: 300px"
-              loop
-              autoplay
-            ></lottie-player>
-          </div>
+        <div class="col-lg-6 d-flex justify-content-center flex-column aboutUsContent">
+          <h1 class="">About <span class="home">Us</span></h1>
 
-          <div class="col-lg-6 d-flex justify-content-center flex-column px-5">
-            <h1 class="about-us-heading">About <span class="home">Us</span></h1>
-
-            <p class="about-us-content">
-              We’re a <span><b class="bold">young, </b></span>homegrown
-              animation studio driven by an experienced team of artists and
-              creators, bringing
-              <span><b class="bold">authentic Indian stories</b></span> to
-              people, one film at a time. That said, we’re not just an animation
-              studio, we’re much more. We think, we create, we execute. Not only
-              for our audience, but for our clients too. We help bring your
-              stories to life! So if you’re a business owner, team leader or
-              influencer in your company and looking to land your
-              messages/engage with your customers and employees better, we can
-              help you. <br /><span
-                ><b class="bold">Get in touch with us !</b></span
-              >
-            </p>
-
-            <div class="d-flex pr-5 mb-3">
-              <span class="email"
-                ><i class="fa-solid fa-at"></i>partnerships@thehappyslate.com
-                <br /><i class="fa-solid fa-envelope"></i>
-                careers@thehappyslate.com</span
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <!-- team section -->
-    <section class="teamSection container">
-      <h1 class="">Our <span class="home">Team</span></h1>
-      <div class="teamContainerDiv">
-        <!-- <h2 class="teamContainerHeading teamFoundersHeading text-center">Founders</h2> -->
-
-        <div class="circleContainer mt-4">
-          <div class="teamMemberDiv">
-            <div class="circleImageDiv p-0">
-              <div class="circleHiddenDiv">
-                <h5 class="designation text-center">Founder & CEO</h5>
-                <div class="circleHiddenSocialHandlesDiv mt-1">
-                  <a href="https://www.instagram.com/lipuster/"
-                    ><i
-                      class="fa-brands circleHiddenSocialHandleIcon fa-instagram"
-                    ></i
-                  ></a>
-                  <a href="https://www.linkedin.com/in/rakesh-nanda-60157256/"
-                    ><i
-                      href=""
-                      class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"
-                    ></i
-                  ></a>
-                </div>
-              </div>
-              <img
-                
-                class="avatar"
-                src="./images/Team/Rakesh.jpg"
-                alt="team member 1"
-              />
-            </div>
-            <h3 class="teamMemberName">Rakesh Nanda</h3>
-          </div>
-
-          <div class="teamMemberDiv">
-            <div class="circleImageDiv p-0">
-              <div class="circleHiddenDiv">
-                <h5 class="designation text-center">Co-founder & COO</h5>
-                <div class="circleHiddenSocialHandlesDiv mt-1">
-                  <a href="https://www.instagram.com/dipsster/"
-                    ><i
-                      class="fa-brands circleHiddenSocialHandleIcon fa-instagram"
-                    ></i
-                  ></a>
-                  <a href="https://www.linkedin.com/in/debasishsarangi/"
-                    ><i
-                      href=""
-                      class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"
-                    ></i
-                  ></a>
-                </div>
-              </div>
-              <img
-                
-                class="avatar"
-                src="./images/Team/Debasish.jpg"
-                alt="team member "
-              />
-            </div>
-            <h3 class="teamMemberName">Debasish Sarangi</h3>
-          </div>
-
-          <div class="teamMemberDiv">
-            <div class="circleImageDiv p-0">
-              <div class="circleHiddenDiv">
-                <h5 class="designation text-center">
-                  Co-founder &<br />Creative Director
-                </h5>
-                <div class="circleHiddenSocialHandlesDiv">
-                  <a href="https://www.instagram.com/fotuwali/"
-                    ><i
-                      class="fa-brands circleHiddenSocialHandleIcon fa-instagram"
-                    ></i
-                  ></a>
-                  <a href="https://www.linkedin.com/in/agarwalshilpa03/"
-                    ><i
-                      href=""
-                      class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"
-                    ></i
-                  ></a>
-                </div>
-              </div>
-              <img
-                
-                class="avatar"
-                src="./images/Team/Shilpa.jpg"
-                alt="team member "
-              />
-            </div>
-            <h3 class="teamMemberName">Shilpa Agarwal</h3>
-          </div>
-
-          <div class="teamMemberDiv">
-            <div class="circleImageDiv p-0">
-              <div class="circleHiddenDiv">
-                <h5 class="designation text-center">
-                  Co-founder & <br />Advisor
-                </h5>
-                <div class="circleHiddenSocialHandlesDiv">
-                  <a href="https://www.instagram.com/lotsanoise/"
-                    ><i
-                      class="fa-brands circleHiddenSocialHandleIcon fa-instagram"
-                    ></i
-                  ></a>
-                  <a href="https://www.linkedin.com/in/nandarajesh/"
-                    ><i
-                      href=""
-                      class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"
-                    ></i
-                  ></a>
-                </div>
-              </div>
-              <img
-                
-                class="avatar"
-                src="./images/Team/rajesh.png"
-                alt="team member "
-              />
-            </div>
-            <h3 class="teamMemberName">Rajesh Nanda</h3>
-          </div>
-        </div>
-      </div>
-      <div class="teamContainerDiv">
-        <!-- <h2 class="teamContainerHeading teamFoundersHeading text-center ">Designation 2</h2> -->
-
-        <div class="circleContainer mt-4">
-          <div class="teamMemberDiv">
-            <div class="circleImageDiv p-0">
-              <div class="circleHiddenDiv">
-                <h5 class="designation text-center">
-                  Production Lead<br />Motion Design
-                </h5>
-                <div class="circleHiddenSocialHandlesDiv">
-                  <a href="https://www.behance.net/adityasiva1397"
-                    ><i
-                      class="fa-brands circleHiddenSocialHandleIcon fa-instagram"
-                    ></i
-                  ></a>
-                  <a href="https://www.linkedin.com/in/adityasivanandan03/"
-                    ><i
-                      href=""
-                      class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"
-                    ></i
-                  ></a>
-                </div>
-              </div>
-              <img
-                
-                class="avatar"
-                src="./images/Team/Aditya.jpg"
-                alt="team member "
-              />
-            </div>
-            <h3 class="teamMemberName">Aditya Sivanadan</h3>
-          </div>
-
-          <div class="teamMemberDiv">
-            <div class="circleImageDiv p-0">
-              <div class="circleHiddenDiv">
-                <h5 class="designation text-center">
-                  Production Lead<br />Originals
-                </h5>
-                <div class="circleHiddenSocialHandlesDiv">
-                  <a href="https://www.instagram.com/cakemanartist/"
-                    ><i
-                      class="fa-brands circleHiddenSocialHandleIcon fa-instagram"
-                    ></i
-                  ></a>
-                  <a href="https://www.linkedin.com/in/soham-dutta-5889b6185/"
-                    ><i
-                      href=""
-                      class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"
-                    ></i
-                  ></a>
-                </div>
-              </div>
-              <img
-                
-                class="avatar"
-                src="./images/Team/Soham.jpg"
-                alt="team member "
-              />
-            </div>
-            <h3 class="teamMemberName">Soham Dutta</h3>
-          </div>
-
-          <div class="teamMemberDiv">
-            <div class="circleImageDiv p-0">
-              <div class="circleHiddenDiv">
-                <h5 class="designation text-center">Sr. Illustrator</h5>
-                <div class="circleHiddenSocialHandlesDiv mt-1">
-                  <a
-                    href="https://instagram.com/house_of_chandra?igshid=YmMyMTA2M2Y="
-                    ><i
-                      class="fa-brands circleHiddenSocialHandleIcon fa-instagram"
-                    ></i
-                  ></a>
-                  <a href="https://www.linkedin.com/in/tushar-chandra-10b1781b2"
-                    ><i
-                      href=""
-                      class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"
-                    ></i
-                  ></a>
-                </div>
-              </div>
-              <img
-                
-                class="avatar"
-                src="./images/Team/Tushar.jpg"
-                alt="team member "
-              />
-            </div>
-            <h3 class="teamMemberName">Tushar Chandra</h3>
-          </div>
-
-          <div class="teamMemberDiv">
-            <div class="circleImageDiv p-0">
-              <div class="circleHiddenDiv">
-                <h5 class="designation text-center">Illustrator</h5>
-                <div class="circleHiddenSocialHandlesDiv mt-1">
-                  <a href="https://www.instagram.com/akshattteeee/"
-                    ><i
-                      class="fa-brands circleHiddenSocialHandleIcon fa-instagram"
-                    ></i
-                  ></a>
-                  <a href="https://www.linkedin.com/in/akshat-vaidyaaaa/"
-                    ><i
-                      href=""
-                      class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"
-                    ></i
-                  ></a>
-                </div>
-              </div>
-              <img
-                
-                class="avatar"
-                src="./images/Team/Akshat.jpg"
-                alt="team member "
-              />
-            </div>
-            <h3 class="teamMemberName">Akshat Vaidya</h3>
-          </div>
-
-          <div class="teamMemberDiv">
-            <div class="circleImageDiv p-0">
-              <div class="circleHiddenDiv">
-                <h5 class="designation text-center">Sr. Animator</h5>
-                <div class="circleHiddenSocialHandlesDiv mt-1">
-                  <a href="https://www.instagram.com/kru.art_/"
-                    ><i
-                      class="fa-brands circleHiddenSocialHandleIcon fa-instagram"
-                    ></i
-                  ></a>
-                  <a href="https://www.linkedin.com/in/krutuja-mane-89b99a160"
-                    ><i
-                      href=""
-                      class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"
-                    ></i
-                  ></a>
-                </div>
-              </div>
-              <img
-                
-                class="avatar"
-                src="./images/Team/Krutuja.jpg"
-                alt="team member "
-              />
-            </div>
-            <h3 class="teamMemberName">Krutuja Mane</h3>
-          </div>
-
-          <div class="teamMemberDiv">
-            <div class="circleImageDiv p-0">
-              <div class="circleHiddenDiv">
-                <h5 class="designation text-center">Animator</h5>
-                <div class="circleHiddenSocialHandlesDiv mt-1">
-                  <a href="https://www.instagram.com/hunnychhillar/"
-                    ><i
-                      class="fa-brands circleHiddenSocialHandleIcon fa-instagram"
-                    ></i
-                  ></a>
-                  <a
-                    href="https://www.linkedin.com/in/bijender-chhillar-349986228/"
-                    ><i
-                      href=""
-                      class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"
-                    ></i
-                  ></a>
-                </div>
-              </div>
-              <img
-                
-                class="avatar"
-                src="./images/Team/Bijendar.jpg"
-                alt="team member "
-              />
-            </div>
-            <h3 class="teamMemberName">Bijender Chhillar</h3>
-          </div>
-        </div>
-      </div>
-      <div class="teamContainerDiv">
-        <!-- <h2 class="teamContainerHeading teamFoundersHeading text-center">Designation 3</h2> -->
-
-        <div class="circleContainer mt-4">
-          <div class="teamMemberDiv">
-            <div class="circleImageDiv p-0">
-              <div class="circleHiddenDiv">
-                <h5 class="designation text-center">Sr. Motion Designer</h5>
-                <div class="circleHiddenSocialHandlesDiv mt-1">
-                  <i
-                    class="fa-brands circleHiddenSocialHandleIcon fa-instagram"
-                  ></i>
-                  <i
-                    href=""
-                    class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"
-                  ></i>
-                </div>
-              </div>
-              <img
-                
-                class="avatar"
-                src="./images/Team/boyAvatar.png"
-                alt="team member "
-              />
-            </div>
-            <h3 class="teamMemberName">Haider Khan</h3>
-          </div>
-
-          <div class="teamMemberDiv">
-            <div class="circleImageDiv p-0">
-              <div class="circleHiddenDiv">
-                <h5 class="designation text-center">Sr. Motion Designer</h5>
-                <div class="circleHiddenSocialHandlesDiv mt-1">
-                  <a href="#"
-                    ><i
-                      class="fa-brands circleHiddenSocialHandleIcon fa-instagram"
-                    ></i
-                  ></a>
-                  <a href="http://www.linkedin.com/in/sudhanshu-gupta-2021"
-                    ><i
-                      class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"
-                    ></i
-                  ></a>
-                </div>
-              </div>
-              <img
-                
-                class="avatar"
-                src="./images/Team/Sudhanshu.jpg"
-                alt="team member "
-              />
-            </div>
-            <h3 class="teamMemberName">Sudhanshu Gupta</h3>
-          </div>
-
-          <div class="teamMemberDiv">
-            <div class="circleImageDiv p-0">
-              <div class="circleHiddenDiv">
-                <h5 class="designation text-center">Motion Designer</h5>
-                <div class="circleHiddenSocialHandlesDiv mt-1">
-                  <a href=""
-                    ><i
-                      class="fa-brands circleHiddenSocialHandleIcon fa-instagram"
-                    ></i
-                  ></a>
-                  <a href="https://www.linkedin.com/in/rishab-bansal-b5464b17a"
-                    ><i
-                      class="fa-brands fa-linkedin circleHiddenSocialHandleIcon"
-                    ></i
-                  ></a>
-                </div>
-              </div>
-              <img
-                
-                class="avatar"
-                src="./images/Team/Adarsh.jpg"
-                alt="team member "
-              />
-            </div>
-            <h3 class="teamMemberName">Rishab Bansal</h3>
-          </div>
-
-          <div class="teamMemberDiv">
-            <div class="circleImageDiv p-0">
-              <div class="circleHiddenDiv">
-                <h5 class="designation text-center">Motion Designer</h5>
-                <div class="circleHiddenSocialHandlesDiv mt-1">
-                  <a href=" https://www.youtube.com/watch?v=rK9_28SLGqQ"
-                    ><i
-                      class="fa-brands circleHiddenSocialHandleIcon fa-instagram"
-                    ></i
-                  ></a>
-                  <a href="https://www.linkedin.com/in/debanjan-saha-7b50a7214/"
-                    ><i
-                      href=""
-                      class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"
-                    ></i
-                  ></a>
-                </div>
-              </div>
-              <img
-                
-                class="avatar"
-                src="./images/Team/Debanjan.jpg"
-                alt="team member "
-              />
-            </div>
-            <h3 class="teamMemberName">Debanjan Saha</h3>
-          </div>
-
-          <div class="teamMemberDiv">
-            <div class="circleImageDiv p-0">
-              <div class="circleHiddenDiv">
-                <h5 class="designation text-center">Intern(Illustration)</h5>
-                <div class="circleHiddenSocialHandlesDiv mt-1">
-                  <a href="https://www.instagram.com/naptimeboidraws/"
-                    ><i
-                      class="fa-brands circleHiddenSocialHandleIcon fa-instagram"
-                    ></i
-                  ></a>
-                  <a href="https://www.linkedin.com/in/fallon-galway-728a8a238/"
-                    ><i
-                      href=""
-                      class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"
-                    ></i
-                  ></a>
-                </div>
-              </div>
-              <img
-                
-                class="avatar"
-                src="./images/Team/Fallon.jpg"
-                alt="team member "
-              />
-            </div>
-            <h3 class="teamMemberName">Fallon Galway</h3>
-          </div>
-          <div class="teamMemberDiv">
-            <div class="circleImageDiv p-0">
-              <div class="circleHiddenDiv">
-                <h5 class="designation text-center">Intern (Animation)</h5>
-                <div class="circleHiddenSocialHandlesDiv mt-1">
-                  <a href="https://www.instagram.com/_khrusha/?hl=en"
-                    ><i
-                      class="fa-brands circleHiddenSocialHandleIcon fa-instagram"
-                    ></i
-                  ></a>
-                  <a href="https://www.linkedin.com/in/khrusha-parekh-494251208"
-                    ><i
-                      href=""
-                      class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"
-                    ></i
-                  ></a>
-                </div>
-              </div>
-              <img
-                
-                class="avatar"
-                src="./images/Team/Khrusha.jpg"
-                alt="team member "
-              />
-            </div>
-            <h3 class="teamMemberName">Khrusha Parekh</h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="teamContainerDiv">
-        <!-- <h2 class="teamContainerHeading teamFoundersHeading text-center ">Designation 4</h2> -->
-
-        <div class="circleContainer mt-4">
-          <div class="teamMemberDiv">
-            <div class="circleImageDiv p-0">
-              <div class="circleHiddenDiv">
-                <h5 class="designation text-center">Intern (MoDes)</h5>
-                <div class="circleHiddenSocialHandlesDiv mt-1">
-                  <a href=""
-                    ><i
-                      class="fa-brands circleHiddenSocialHandleIcon fa-instagram"
-                    ></i
-                  ></a>
-                  <a href=""
-                    ><i
-                      href=""
-                      class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"
-                    ></i
-                  ></a>
-                </div>
-              </div>
-              <img
-                
-                class="avatar"
-                src="./images/Team/boyAvatar.png"
-                alt="team member "
-              />
-            </div>
-            <h3 class="teamMemberName">Kartavya Panchal</h3>
-          </div>
-
-          <div class="teamMemberDiv">
-            <div class="circleImageDiv p-0">
-              <div class="circleHiddenDiv">
-                <h5 class="designation text-center">Intern (MoDes)</h5>
-                <div class="circleHiddenSocialHandlesDiv mt-1">
-                  <i
-                    class="fa-brands circleHiddenSocialHandleIcon fa-instagram"
-                  ></i>
-                  <i
-                    href=""
-                    class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"
-                  ></i>
-                </div>
-              </div>
-              <img
-                
-                class="avatar"
-                src="./images/Team/boyAvatar.png"
-                alt=""
-              />
-            </div>
-            <h3 class="teamMemberName">Anshul Chandankhede</h3>
-          </div>
-
-          <div class="teamMemberDiv">
-            <div class="circleImageDiv p-0">
-              <div class="circleHiddenDiv">
-                <h5 class="designation text-center">Intern (3D Prod)</h5>
-                <div class="circleHiddenSocialHandlesDiv mt-1">
-                  <a href="https://www.instagram.com/_isha_jaiswal14/"
-                    ><i
-                      class="fa-brands circleHiddenSocialHandleIcon fa-instagram"
-                    ></i
-                  ></a>
-                  <a href=""
-                    ><i
-                      href=""
-                      class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"
-                    ></i
-                  ></a>
-                </div>
-              </div>
-              <img
-                
-                class="avatar"
-                src="./images/Team/Isha.jpg"
-                alt="team member "
-              />
-            </div>
-            <h3 class="teamMemberName">Isha Jaiswal</h3>
-          </div>
-
-          <div class="teamMemberDiv">
-            <div class="circleImageDiv p-0">
-              <div class="circleHiddenDiv">
-                <h5 class="designation text-center">Intern (3D Prod)</h5>
-                <div class="circleHiddenSocialHandlesDiv mt-1">
-                  <a
-                    href="https://instagram.com/himanshu_._tiwari_?igshid=YmMyMTA2M2Y="
-                    ><i
-                      class="fa-brands circleHiddenSocialHandleIcon fa-instagram"
-                    ></i
-                  ></a>
-                  <a href=""
-                    ><i
-                      href=""
-                      class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"
-                    ></i
-                  ></a>
-                </div>
-              </div>
-              <img
-                
-                class="avatar"
-                src="./images/Team/boyAvatar.png"
-                alt="team member "
-              />
-            </div>
-            <h3 class="teamMemberName">Himanshu Tiwari</h3>
-          </div>
-
-          <div class="teamMemberDiv">
-            <div class="circleImageDiv p-0">
-              <div class="circleHiddenDiv">
-                <h5 class="designation text-center">
-                  Consultant<br />(Animation)
-                </h5>
-                <div class="circleHiddenSocialHandlesDiv">
-                  <a href="https://www.instagram.com/chamandeep.khokher/"
-                    ><i
-                      class="fa-brands circleHiddenSocialHandleIcon fa-instagram"
-                    ></i
-                  ></a>
-                  <a href=""
-                    ><i
-                      class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"
-                    ></i
-                  ></a>
-                </div>
-              </div>
-              <img
-                
-                class="avatar"
-                src="./images/Team/Deep.jpg"
-                alt="team member "
-              />
-            </div>
-            <h3 class="teamMemberName">Chamandeep Singh</h3>
-          </div>
-
-          <div class="teamMemberDiv">
-            <div class="circleImageDiv p-0">
-              <div class="circleHiddenDiv">
-                <h5 class="designation text-center">Consultant (Art)</h5>
-                <div class="circleHiddenSocialHandlesDiv mt-1">
-                  <a href="https://www.instagram.com/lipuster/"
-                    ><i
-                      class="fa-brands circleHiddenSocialHandleIcon fa-instagram"
-                    ></i
-                  ></a>
-                  <a href=""
-                    ><i
-                      class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"
-                    ></i
-                  ></a>
-                </div>
-              </div>
-              <img
-                
-                class="avatar"
-                src="./images/Team/Shaina.jpg"
-                alt="team member "
-              />
-            </div>
-            <h3 class="teamMemberName">Shaina Mishra</h3>
-          </div>
-        </div>
-      </div>
-      <div class="teamContainerDiv">
-        <!-- <h2 class="teamContainerHeading teamFoundersHeading text-center">Consultant</h2> -->
-
-        <div class="circleContainer mt-4">
-          <div class="teamMemberDiv">
-            <div class="circleImageDiv p-0">
-              <div class="circleHiddenDiv">
-                <h5 class="designation text-center">
-                  Consultant<br />(Marketing)
-                </h5>
-                <div class="circleHiddenSocialHandlesDiv">
-                  <a href="https://www.instagram.com/darshika.r/"
-                    ><i
-                      class="fa-brands circleHiddenSocialHandleIcon fa-instagram"
-                    ></i
-                  ></a>
-                  <a href="https://www.linkedin.com/in/darshika-bhagat/"
-                    ><i
-                      href=""
-                      class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"
-                    ></i
-                  ></a>
-                </div>
-              </div>
-              <img
-                
-                class="avatar"
-                src="./images/Team/Darshika.jpg"
-                alt="team member "
-              />
-            </div>
-            <h3 class="teamMemberName">Darshika Bhagat</h3>
-          </div>
-
-          <div class="teamMemberDiv">
-            <div class="circleImageDiv p-0">
-              <div class="circleHiddenDiv">
-                <h5 class="designation text-center">Consultant (Art)</h5>
-                <div class="circleHiddenSocialHandlesDiv mt-1">
-                  <a href="https://www.instagram.com/jigggyyyyyyy/"
-                    ><i
-                      class="fa-brands circleHiddenSocialHandleIcon fa-instagram"
-                    ></i
-                  ></a>
-                  <a href=""
-                    ><i
-                      class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"
-                    ></i
-                  ></a>
-                </div>
-              </div>
-              <img
-                
-                class="avatar"
-                src="./images/Team/JIGNESH CHAVDA.jpg"
-                alt="team member "
-              />
-            </div>
-            <h3 class="teamMemberName">Jignesh Chavda</h3>
-          </div>
-
-          <div class="teamMemberDiv">
-            <div class="circleImageDiv p-0">
-              <div class="circleHiddenDiv">
-                <h5 class="designation text-center">Consultant(Website)</h5>
-                <div class="circleHiddenSocialHandlesDiv mt-1">
-                  <a href="https://www.instagram.com/dikshabansal09/"
-                    ><i
-                      class="fa-brands circleHiddenSocialHandleIcon fa-instagram"
-                    ></i
-                  ></a>
-                  <a href="#"
-                    ><i
-                      href=""
-                      class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"
-                    ></i
-                  ></a>
-                </div>
-              </div>
-              <img
-                
-                class="avatar"
-                src="./images/Team/Diksha.png"
-                alt="team member "
-              />
-            </div>
-            <h3 class="teamMemberName">Diksha Bansal</h3>
-          </div>
-
-          <div class="teamMemberDiv">
-            <div class="circleImageDiv p-0">
-              <div class="circleHiddenDiv">
-                <h5 class="designation text-center">
-                  Consultant<br />(Voice Acting)
-                </h5>
-                <div class="circleHiddenSocialHandlesDiv">
-                  <i
-                    class="fa-brands circleHiddenSocialHandleIcon fa-instagram"
-                  ></i>
-                  <i
-                    href=""
-                    class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"
-                  ></i>
-                </div>
-              </div>
-              <img
-                
-                class="avatar"
-                src="./images/Team/girlAvatar.png"
-                alt="team member "
-              />
-            </div>
-            <h3 class="teamMemberName">Akanksha Mishra</h3>
-          </div>
-
-          <div class="teamMemberDiv">
-            <div class="circleImageDiv p-0">
-              <div class="circleHiddenDiv">
-                <h5 class="designation text-center">
-                  Consultant<br />(Voice Acting)
-                </h5>
-                <div class="circleHiddenSocialHandlesDiv">
-                  <a href="https://www.instagram.com/ohkshitij/"
-                    ><i
-                      class="fa-brands circleHiddenSocialHandleIcon fa-instagram"
-                    ></i
-                  ></a>
-                  <a href="https://www.linkedin.com/in/oh-kshitij-12a971158/"
-                    ><i
-                      href=""
-                      class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"
-                    ></i
-                  ></a>
-                </div>
-              </div>
-              <img
-                
-                class="avatar"
-                src="./images/Team/boyAvatar.png"
-                alt="team member "
-              />
-            </div>
-            <h3 class="teamMemberName">Kshitij</h3>
-          </div>
-
-          <div class="teamMemberDiv">
-            <div class="circleImageDiv p-0">
-              <div class="circleHiddenDiv">
-                <h5 class="designation text-center">
-                  Consultant <br />(Story Boards)
-                </h5>
-                <div class="circleHiddenSocialHandlesDiv">
-                  <i
-                    class="fa-brands circleHiddenSocialHandleIcon fa-instagram"
-                  ></i>
-                  <i
-                    href=""
-                    class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"
-                  ></i>
-                </div>
-              </div>
-              <img
-                
-                class="avatar"
-                src="./images/Team/boyAvatar.png"
-                alt="team member "
-              />
-            </div>
-            <h3 class="teamMemberName">Addayta Biswas</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- careers section -->
-    <section class="careerSection" id="careerSection">
-      <div class="careerDiv">
-        <div class="careerTitleDiv">
-          <h1 class="careerTitle">Careers</h1>
-        </div>
-        <div class="careerContentDiv">
-          <p class="careerContent">
-            <strong>Want to work with us? Here is what you should know!</strong
-            ><br />
-
-            We are a bunch of young and oldsters, who believe in making fun and
-            relatable stories via animation with an occasional PSA. We believe
-            in supporting each other and doing whatever it takes to get the ball
-            rolling. While you’d have your own roles to fill if you work with
-            us, you’d be free to take interest/participate in all the animation
-            projects that we have. Give ideas, doodle, give voice over, go
-            crazy, no one would stop you. Just be on top of your game and we’ll
-            take it from there.
+          <p class="about-us-content">
+            We’re a <span><b class="bold">young, </b></span>homegrown
+            animation studio driven by an experienced team of artists and
+            creators, bringing
+            <span><b class="bold">authentic Indian stories</b></span> to
+            people, one film at a time. That said, we’re not just an animation
+            studio, we’re much more. We think, we create, we execute. Not only
+            for our audience, but for our clients too. We help bring your
+            stories to life! So if you’re a business owner, team leader or
+            influencer in your company and looking to land your
+            messages/engage with your customers and employees better, we can
+            help you. <br /><span><b class="bold">Get in touch with us !</b></span>
           </p>
+
+          <div class="d-flex justify-content-around pr-5 mb-3">
+            <span class="email"><i class="fa-solid fa-envelope"></i>
+              partnerships@thehappyslate.com</span>
+            <span class="email"><i class="fa-solid fa-envelope"></i>
+              careers@thehappyslate.com</span>
+          </div>
         </div>
       </div>
-    </section>
-
-    <!-- contact container -->
-    <!-- floating button contact US -->
-    <div class="contactContainer">
-      <div
-        class="contactUsFloatingDiv"
-        type="button"
-        data-toggle="modal"
-        data-target="#exampleModalCenter"
-      >
-        <i class="fa-solid fa-envelope floatingContactEmailIcon"></i>
-        <h6>Contact Us</h6>
-      </div>
-      <img  src="images/footer/owl.png" alt="owl-image" />
     </div>
 
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="exampleModalCenter"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="d-flex justify-content-end">
-              <button
-                type="button"
-                class="close float-right"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="container-contact100">
-              <form
-                class="contact100-form"
-                action="https://formsubmit.co/0e363346e77e05124d3873dcab0f2c3c"
-                method="POST"
-              >
-                <span class="contact100-form-title">
-                  We'd love to hear from you!
-                </span>
-                <div
-                  class="wrap-input100 rs1-wrap-input100"
-                  data-validate="Name is required"
-                >
-                  <input
-                    class="input100"
-                    type="text"
-                    name="name"
-                    placeholder="Enter your name"
-                    required
-                  />
-                  <span class="focus-input100"></span>
-                </div>
-                <div
-                  class="wrap-input100 rs1-wrap-input100"
-                  data-validate=" Valid email is required: ex@abc.xyz"
-                >
-                  <input
-                    class="input100"
-                    type="text"
-                    name="email"
-                    placeholder="Enter your email address"
-                    required
-                  />
-                  <span class="focus-input100"></span>
-                </div>
-                <div class="wrap-input100" data-validate="Message is required">
-                  <textarea
-                    class="input100"
-                    name="message"
-                    placeholder="Your message here..."
-                    required
-                  ></textarea>
-                  <span class="focus-input100"></span>
-                </div>
-                <input type="hidden" name="_captcha" value="false" />
-                <input
-                  type="hidden"
-                  name="_next"
-                  value="https://www.google.com"
-                />
-                <div class="container-contact100-form-btn">
-                  <button type="submit" class="contact100-form-btn">
-                    <span>
-                      Submit
-                      <!-- <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i> -->
-                    </span>
-                  </button>
-                </div>
-                <div class="d-flex justify-content-end w-100">
-                  <span class="text-muted">partnerships@thehappyslate.com</span>
-                </div>
-              </form>
-              <span class="contact100-more">
-                <!-- For any question contact: <span class="contact100-more-highlight">+001 345 6889</span> -->
-              </span>
-            </div>
+    <div class="container-fluid h-100 d-md-none">
+      <div class="row h-100 mt-2">
+        <div class="col-lg-6 d-flex justify-content-center lottieAnimation">
+          <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_0bzu9jvt.json" background="transparent"
+            speed="1" style="width: 600px; height: 300px" loop autoplay></lottie-player>
+        </div>
+
+        <div class="col-lg-6 d-flex justify-content-center flex-column px-5">
+          <h1 class="about-us-heading">About <span class="home">Us</span></h1>
+
+          <p class="about-us-content">
+            We’re a <span><b class="bold">young, </b></span>homegrown
+            animation studio driven by an experienced team of artists and
+            creators, bringing
+            <span><b class="bold">authentic Indian stories</b></span> to
+            people, one film at a time. That said, we’re not just an animation
+            studio, we’re much more. We think, we create, we execute. Not only
+            for our audience, but for our clients too. We help bring your
+            stories to life! So if you’re a business owner, team leader or
+            influencer in your company and looking to land your
+            messages/engage with your customers and employees better, we can
+            help you. <br /><span><b class="bold">Get in touch with us !</b></span>
+          </p>
+
+          <div class="d-flex pr-5 mb-3">
+            <span class="email"><i class="fa-solid fa-at"></i>partnerships@thehappyslate.com
+              <br /><i class="fa-solid fa-envelope"></i>
+              careers@thehappyslate.com</span>
           </div>
-          <!-- <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- team section -->
+  <section class="teamSection container">
+    <h1 class="">Our <span class="home">Team</span></h1>
+    <div class="teamContainerDiv">
+      <!-- <h2 class="teamContainerHeading teamFoundersHeading text-center">Founders</h2> -->
+
+      <div class="circleContainer mt-4">
+        <div class="teamMemberDiv">
+          <div class="circleImageDiv p-0">
+            <div class="circleHiddenDiv">
+              <h5 class="designation text-center">Founder & CEO</h5>
+              <div class="circleHiddenSocialHandlesDiv mt-1">
+                <a href="https://www.instagram.com/lipuster/"><i
+                    class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/rakesh-nanda-60157256/"><i href=""
+                    class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"></i></a>
+              </div>
+            </div>
+            <img class="avatar" src="./images/Team/Rakesh.jpg" alt="team member 1" />
+          </div>
+          <h3 class="teamMemberName">Rakesh Nanda</h3>
+        </div>
+
+        <div class="teamMemberDiv">
+          <div class="circleImageDiv p-0">
+            <div class="circleHiddenDiv">
+              <h5 class="designation text-center">Co-founder & COO</h5>
+              <div class="circleHiddenSocialHandlesDiv mt-1">
+                <a href="https://www.instagram.com/dipsster/"><i
+                    class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/debasishsarangi/"><i href=""
+                    class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"></i></a>
+              </div>
+            </div>
+            <img class="avatar" src="./images/Team/Debasish.jpg" alt="team member " />
+          </div>
+          <h3 class="teamMemberName">Debasish Sarangi</h3>
+        </div>
+
+        <div class="teamMemberDiv">
+          <div class="circleImageDiv p-0">
+            <div class="circleHiddenDiv">
+              <h5 class="designation text-center">
+                Co-founder &<br />Creative Director
+              </h5>
+              <div class="circleHiddenSocialHandlesDiv">
+                <a href="https://www.instagram.com/fotuwali/"><i
+                    class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/agarwalshilpa03/"><i href=""
+                    class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"></i></a>
+              </div>
+            </div>
+            <img class="avatar" src="./images/Team/Shilpa.jpg" alt="team member " />
+          </div>
+          <h3 class="teamMemberName">Shilpa Agarwal</h3>
+        </div>
+
+        <div class="teamMemberDiv">
+          <div class="circleImageDiv p-0">
+            <div class="circleHiddenDiv">
+              <h5 class="designation text-center">
+                Co-founder & <br />Advisor
+              </h5>
+              <div class="circleHiddenSocialHandlesDiv">
+                <a href="https://www.instagram.com/lotsanoise/"><i
+                    class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/nandarajesh/"><i href=""
+                    class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"></i></a>
+              </div>
+            </div>
+            <img class="avatar" src="./images/Team/rajesh.png" alt="team member " />
+          </div>
+          <h3 class="teamMemberName">Rajesh Nanda</h3>
+        </div>
+      </div>
+    </div>
+    <div class="teamContainerDiv">
+      <!-- <h2 class="teamContainerHeading teamFoundersHeading text-center ">Designation 2</h2> -->
+
+      <div class="circleContainer mt-4">
+        <div class="teamMemberDiv">
+          <div class="circleImageDiv p-0">
+            <div class="circleHiddenDiv">
+              <h5 class="designation text-center">
+                Production Lead<br />Motion Design
+              </h5>
+              <div class="circleHiddenSocialHandlesDiv">
+                <a href="https://www.behance.net/adityasiva1397"><i
+                    class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/adityasivanandan03/"><i href=""
+                    class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"></i></a>
+              </div>
+            </div>
+            <img class="avatar" src="./images/Team/Aditya.jpg" alt="team member " />
+          </div>
+          <h3 class="teamMemberName">Aditya Sivanadan</h3>
+        </div>
+
+        <div class="teamMemberDiv">
+          <div class="circleImageDiv p-0">
+            <div class="circleHiddenDiv">
+              <h5 class="designation text-center">
+                Production Lead<br />Originals
+              </h5>
+              <div class="circleHiddenSocialHandlesDiv">
+                <a href="https://www.instagram.com/cakemanartist/"><i
+                    class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/soham-dutta-5889b6185/"><i href=""
+                    class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"></i></a>
+              </div>
+            </div>
+            <img class="avatar" src="./images/Team/Soham.jpg" alt="team member " />
+          </div>
+          <h3 class="teamMemberName">Soham Dutta</h3>
+        </div>
+
+        <div class="teamMemberDiv">
+          <div class="circleImageDiv p-0">
+            <div class="circleHiddenDiv">
+              <h5 class="designation text-center">Sr. Illustrator</h5>
+              <div class="circleHiddenSocialHandlesDiv mt-1">
+                <a href="https://instagram.com/house_of_chandra?igshid=YmMyMTA2M2Y="><i
+                    class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/tushar-chandra-10b1781b2"><i href=""
+                    class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"></i></a>
+              </div>
+            </div>
+            <img class="avatar" src="./images/Team/Tushar.jpg" alt="team member " />
+          </div>
+          <h3 class="teamMemberName">Tushar Chandra</h3>
+        </div>
+
+        <div class="teamMemberDiv">
+          <div class="circleImageDiv p-0">
+            <div class="circleHiddenDiv">
+              <h5 class="designation text-center">Illustrator</h5>
+              <div class="circleHiddenSocialHandlesDiv mt-1">
+                <a href="https://www.instagram.com/akshattteeee/"><i
+                    class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/akshat-vaidyaaaa/"><i href=""
+                    class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"></i></a>
+              </div>
+            </div>
+            <img class="avatar" src="./images/Team/Akshat.jpg" alt="team member " />
+          </div>
+          <h3 class="teamMemberName">Akshat Vaidya</h3>
+        </div>
+
+        <div class="teamMemberDiv">
+          <div class="circleImageDiv p-0">
+            <div class="circleHiddenDiv">
+              <h5 class="designation text-center">Sr. Animator</h5>
+              <div class="circleHiddenSocialHandlesDiv mt-1">
+                <a href="https://www.instagram.com/kru.art_/"><i
+                    class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/krutuja-mane-89b99a160"><i href=""
+                    class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"></i></a>
+              </div>
+            </div>
+            <img class="avatar" src="./images/Team/Krutuja.jpg" alt="team member " />
+          </div>
+          <h3 class="teamMemberName">Krutuja Mane</h3>
+        </div>
+
+        <div class="teamMemberDiv">
+          <div class="circleImageDiv p-0">
+            <div class="circleHiddenDiv">
+              <h5 class="designation text-center">Animator</h5>
+              <div class="circleHiddenSocialHandlesDiv mt-1">
+                <a href="https://www.instagram.com/hunnychhillar/"><i
+                    class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/bijender-chhillar-349986228/"><i href=""
+                    class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"></i></a>
+              </div>
+            </div>
+            <img class="avatar" src="./images/Team/Bijendar.jpg" alt="team member " />
+          </div>
+          <h3 class="teamMemberName">Bijender Chhillar</h3>
+        </div>
+      </div>
+    </div>
+    <div class="teamContainerDiv">
+      <!-- <h2 class="teamContainerHeading teamFoundersHeading text-center">Designation 3</h2> -->
+
+      <div class="circleContainer mt-4">
+        <div class="teamMemberDiv">
+          <div class="circleImageDiv p-0">
+            <div class="circleHiddenDiv">
+              <h5 class="designation text-center">Sr. Motion Designer</h5>
+              <div class="circleHiddenSocialHandlesDiv mt-1">
+                <i class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i>
+                <i href="" class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"></i>
+              </div>
+            </div>
+            <img class="avatar" src="./images/Team/haider.png" alt="team member " />
+          </div>
+          <h3 class="teamMemberName">Haider Khan</h3>
+        </div>
+
+        <div class="teamMemberDiv">
+          <div class="circleImageDiv p-0">
+            <div class="circleHiddenDiv">
+              <h5 class="designation text-center">Sr. Motion Designer</h5>
+              <div class="circleHiddenSocialHandlesDiv mt-1">
+                <a href="#"><i class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i></a>
+                <a href="http://www.linkedin.com/in/sudhanshu-gupta-2021"><i
+                    class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"></i></a>
+              </div>
+            </div>
+            <img class="avatar" src="./images/Team/Sudhanshu.jpg" alt="team member " />
+          </div>
+          <h3 class="teamMemberName">Sudhanshu Gupta</h3>
+        </div>
+
+        <div class="teamMemberDiv">
+          <div class="circleImageDiv p-0">
+            <div class="circleHiddenDiv">
+              <h5 class="designation text-center">Motion Designer</h5>
+              <div class="circleHiddenSocialHandlesDiv mt-1">
+                <a href=""><i class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/rishab-bansal-b5464b17a"><i
+                    class="fa-brands fa-linkedin circleHiddenSocialHandleIcon"></i></a>
+              </div>
+            </div>
+            <img class="avatar" src="./images/Team/Adarsh.jpg" alt="team member " />
+          </div>
+          <h3 class="teamMemberName">Rishab Bansal</h3>
+        </div>
+
+        <div class="teamMemberDiv">
+          <div class="circleImageDiv p-0">
+            <div class="circleHiddenDiv">
+              <h5 class="designation text-center">Motion Designer</h5>
+              <div class="circleHiddenSocialHandlesDiv mt-1">
+                <a href=" https://www.youtube.com/watch?v=rK9_28SLGqQ"><i
+                    class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/debanjan-saha-7b50a7214/"><i href=""
+                    class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"></i></a>
+              </div>
+            </div>
+            <img class="avatar" src="./images/Team/Debanjan.jpg" alt="team member " />
+          </div>
+          <h3 class="teamMemberName">Debanjan Saha</h3>
+        </div>
+
+        <div class="teamMemberDiv">
+          <div class="circleImageDiv p-0">
+            <div class="circleHiddenDiv">
+              <h5 class="designation text-center">Intern(Illustration)</h5>
+              <div class="circleHiddenSocialHandlesDiv mt-1">
+                <a href="https://www.instagram.com/naptimeboidraws/"><i
+                    class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/fallon-galway-728a8a238/"><i href=""
+                    class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"></i></a>
+              </div>
+            </div>
+            <img class="avatar" src="./images/Team/Fallon.jpg" alt="team member " />
+          </div>
+          <h3 class="teamMemberName">Fallon Galway</h3>
+        </div>
+        <div class="teamMemberDiv">
+          <div class="circleImageDiv p-0">
+            <div class="circleHiddenDiv">
+              <h5 class="designation text-center">Intern (Animation)</h5>
+              <div class="circleHiddenSocialHandlesDiv mt-1">
+                <a href="https://www.instagram.com/_khrusha/?hl=en"><i
+                    class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/khrusha-parekh-494251208"><i href=""
+                    class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"></i></a>
+              </div>
+            </div>
+            <img class="avatar" src="./images/Team/Khrusha.jpg" alt="team member " />
+          </div>
+          <h3 class="teamMemberName">Khrusha Parekh</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="teamContainerDiv">
+      <!-- <h2 class="teamContainerHeading teamFoundersHeading text-center ">Designation 4</h2> -->
+
+      <div class="circleContainer mt-4">
+        <div class="teamMemberDiv">
+          <div class="circleImageDiv p-0">
+            <div class="circleHiddenDiv">
+              <h5 class="designation text-center">Intern (MoDes)</h5>
+              <div class="circleHiddenSocialHandlesDiv mt-1">
+                <a href=""><i class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i></a>
+                <a href=""><i href="" class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"></i></a>
+              </div>
+            </div>
+            <img class="avatar" src="./images/Team/boyAvatar.png" alt="team member " />
+          </div>
+          <h3 class="teamMemberName">Kartavya Panchal</h3>
+        </div>
+
+        <div class="teamMemberDiv">
+          <div class="circleImageDiv p-0">
+            <div class="circleHiddenDiv">
+              <h5 class="designation text-center">Intern (MoDes)</h5>
+              <div class="circleHiddenSocialHandlesDiv mt-1">
+                <i class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i>
+                <i href="" class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"></i>
+              </div>
+            </div>
+            <img class="avatar" src="./images/Team/boyAvatar.png" alt="" />
+          </div>
+          <h3 class="teamMemberName">Anshul Chandankhede</h3>
+        </div>
+
+        <div class="teamMemberDiv">
+          <div class="circleImageDiv p-0">
+            <div class="circleHiddenDiv">
+              <h5 class="designation text-center">Intern (3D Prod)</h5>
+              <div class="circleHiddenSocialHandlesDiv mt-1">
+                <a href="https://www.instagram.com/_isha_jaiswal14/"><i
+                    class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i></a>
+                <a href=""><i href="" class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"></i></a>
+              </div>
+            </div>
+            <img class="avatar" src="./images/Team/Isha.jpg" alt="team member " />
+          </div>
+          <h3 class="teamMemberName">Isha Jaiswal</h3>
+        </div>
+
+        <div class="teamMemberDiv">
+          <div class="circleImageDiv p-0">
+            <div class="circleHiddenDiv">
+              <h5 class="designation text-center">Intern (3D Prod)</h5>
+              <div class="circleHiddenSocialHandlesDiv mt-1">
+                <a href="https://instagram.com/himanshu_._tiwari_?igshid=YmMyMTA2M2Y="><i
+                    class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i></a>
+                <a href=""><i href="" class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"></i></a>
+              </div>
+            </div>
+            <img class="avatar" src="./images/Team/boyAvatar.png" alt="team member " />
+          </div>
+          <h3 class="teamMemberName">Himanshu Tiwari</h3>
+        </div>
+
+        <div class="teamMemberDiv">
+          <div class="circleImageDiv p-0">
+            <div class="circleHiddenDiv">
+              <h5 class="designation text-center">
+                Consultant<br />(Animation)
+              </h5>
+              <div class="circleHiddenSocialHandlesDiv">
+                <a href="https://www.instagram.com/chamandeep.khokher/"><i
+                    class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i></a>
+                <a href=""><i class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"></i></a>
+              </div>
+            </div>
+            <img class="avatar" src="./images/Team/Deep.jpg" alt="team member " />
+          </div>
+          <h3 class="teamMemberName">Chamandeep Singh</h3>
+        </div>
+
+        <div class="teamMemberDiv">
+          <div class="circleImageDiv p-0">
+            <div class="circleHiddenDiv">
+              <h5 class="designation text-center">Consultant (Art)</h5>
+              <div class="circleHiddenSocialHandlesDiv mt-1">
+                <a href="https://www.instagram.com/lipuster/"><i
+                    class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i></a>
+                <a href=""><i class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"></i></a>
+              </div>
+            </div>
+            <img class="avatar" src="./images/Team/Shaina.jpg" alt="team member " />
+          </div>
+          <h3 class="teamMemberName">Shaina Mishra</h3>
+        </div>
+      </div>
+    </div>
+    <div class="teamContainerDiv">
+      <!-- <h2 class="teamContainerHeading teamFoundersHeading text-center">Consultant</h2> -->
+
+      <div class="circleContainer mt-4">
+        <div class="teamMemberDiv">
+          <div class="circleImageDiv p-0">
+            <div class="circleHiddenDiv">
+              <h5 class="designation text-center">
+                Consultant<br />(Marketing)
+              </h5>
+              <div class="circleHiddenSocialHandlesDiv">
+                <a href="https://www.instagram.com/darshika.r/"><i
+                    class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/darshika-bhagat/"><i href=""
+                    class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"></i></a>
+              </div>
+            </div>
+            <img class="avatar" src="./images/Team/Darshika.jpg" alt="team member " />
+          </div>
+          <h3 class="teamMemberName">Darshika Bhagat</h3>
+        </div>
+
+        <div class="teamMemberDiv">
+          <div class="circleImageDiv p-0">
+            <div class="circleHiddenDiv">
+              <h5 class="designation text-center">Consultant (Art)</h5>
+              <div class="circleHiddenSocialHandlesDiv mt-1">
+                <a href="https://www.instagram.com/jigggyyyyyyy/"><i
+                    class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i></a>
+                <a href=""><i class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"></i></a>
+              </div>
+            </div>
+            <img class="avatar" src="./images/Team/JIGNESH CHAVDA.jpg" alt="team member " />
+          </div>
+          <h3 class="teamMemberName">Jignesh Chavda</h3>
+        </div>
+
+        <div class="teamMemberDiv">
+          <div class="circleImageDiv p-0">
+            <div class="circleHiddenDiv">
+              <h5 class="designation text-center">Consultant(Website)</h5>
+              <div class="circleHiddenSocialHandlesDiv mt-1">
+                <a href="https://www.instagram.com/dikshabansal09/"><i
+                    class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i></a>
+                <a href="#"><i href="" class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"></i></a>
+              </div>
+            </div>
+            <img class="avatar" src="./images/Team/Diksha.png" alt="team member " />
+          </div>
+          <h3 class="teamMemberName">Diksha Bansal</h3>
+        </div>
+
+        <div class="teamMemberDiv">
+          <div class="circleImageDiv p-0">
+            <div class="circleHiddenDiv">
+              <h5 class="designation text-center">
+                Consultant<br />(Voice Acting)
+              </h5>
+              <div class="circleHiddenSocialHandlesDiv">
+                <i class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i>
+                <i href="" class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"></i>
+              </div>
+            </div>
+            <img class="avatar" src="./images/Team/akanksha.png" alt="team member " />
+          </div>
+          <h3 class="teamMemberName">Akanksha Mishra</h3>
+        </div>
+
+        <div class="teamMemberDiv">
+          <div class="circleImageDiv p-0">
+            <div class="circleHiddenDiv">
+              <h5 class="designation text-center">
+                Consultant<br />(Voice Acting)
+              </h5>
+              <div class="circleHiddenSocialHandlesDiv">
+                <a href="https://www.instagram.com/ohkshitij/"><i
+                    class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/oh-kshitij-12a971158/"><i href=""
+                    class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"></i></a>
+              </div>
+            </div>
+            <img class="avatar" src="./images/Team/kshitij.png" alt="team member " />
+          </div>
+          <h3 class="teamMemberName">Kshitij</h3>
+        </div>
+
+        <div class="teamMemberDiv">
+          <div class="circleImageDiv p-0">
+            <div class="circleHiddenDiv">
+              <h5 class="designation text-center">
+                Consultant <br />(Story Boards)
+              </h5>
+              <div class="circleHiddenSocialHandlesDiv">
+                <i class="fa-brands circleHiddenSocialHandleIcon fa-instagram"></i>
+                <i href="" class="fa-brands circleHiddenSocialHandleIcon fa-linkedin"></i>
+              </div>
+            </div>
+            <img class="avatar" src="./images/Team/boyAvatar.png" alt="team member " />
+          </div>
+          <h3 class="teamMemberName">Addayta Biswas</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- careers section -->
+  <section class="careerSection" id="careerSection">
+    <div class="careerDiv">
+      <div class="careerTitleDiv">
+        <h1 class="careerTitle">Careers</h1>
+      </div>
+      <div class="careerContentDiv">
+        <p class="careerContent">
+          <strong>Want to work with us? Here is what you should know!</strong><br />
+
+          We are a bunch of young and oldsters, who believe in making fun and
+          relatable stories via animation with an occasional PSA. We believe
+          in supporting each other and doing whatever it takes to get the ball
+          rolling. While you’d have your own roles to fill if you work with
+          us, you’d be free to take interest/participate in all the animation
+          projects that we have. Give ideas, doodle, give voice over, go
+          crazy, no one would stop you. Just be on top of your game and we’ll
+          take it from there.
+        </p>
+      </div>
+      <div class="email"><i class="fa-solid fa-envelope"></i>
+        careers@thehappyslate.com</div>
+      </div>
+  </section>
+
+  <!-- contact container -->
+  <!-- floating button contact US -->
+  <div class="contactContainer">
+    <div class="contactUsFloatingDiv" type="button" data-toggle="modal" data-target="#exampleModalCenter">
+      <i class="fa-solid fa-envelope floatingContactEmailIcon"></i>
+      <h6>Contact Us</h6>
+    </div>
+    <img src="images/footer/owl.png" alt="owl-image" />
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="d-flex justify-content-end">
+            <button type="button" class="close float-right" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="container-contact100">
+            <form class="contact100-form" action="https://formsubmit.co/0e363346e77e05124d3873dcab0f2c3c" method="POST">
+              <span class="contact100-form-title">
+                We'd love to hear from you!
+              </span>
+              <div class="wrap-input100 rs1-wrap-input100" data-validate="Name is required">
+                <input class="input100" type="text" name="name" placeholder="Enter your name" required />
+                <span class="focus-input100"></span>
+              </div>
+              <div class="wrap-input100 rs1-wrap-input100" data-validate=" Valid email is required: ex@abc.xyz">
+                <input class="input100" type="text" name="email" placeholder="Enter your email address" required />
+                <span class="focus-input100"></span>
+              </div>
+              <div class="wrap-input100" data-validate="Message is required">
+                <textarea class="input100" name="message" placeholder="Your message here..." required></textarea>
+                <span class="focus-input100"></span>
+              </div>
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value="https://www.google.com" />
+              <div class="container-contact100-form-btn">
+                <button type="submit" class="contact100-form-btn">
+                  <span>
+                    Submit
+                    <!-- <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i> -->
+                  </span>
+                </button>
+              </div>
+               <div class="d-flex justify-content-end w-100 contactModalEmail">
+                <span class="text-muted">partnerships@thehappyslate.com</span>
+              </div>
+            </form>
+            <span class="contact100-more">
+              <!-- For any question contact: <span class="contact100-more-highlight">+001 345 6889</span> -->
+            </span>
+          </div>
+        </div>
+        <!-- <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class="footerSection">
+    <img class="footerImg" src="./images/THS-Logos/LogoRGB Landscape_2.png" alt="" />
+    <div class="footerDiv">
+      <!-- <h5 class="footerBrandName">THE HAPPY SLATE</h5> -->
+      <div class="footerList1Div">
+        <ul class="footerList1">
+          <li class="footerList1items">
+            Parampara
+            <!-- <div class="footerUnderline"></div> -->
+          </li>
+          <li class="footerList1items">
+            Pratishtha
+            <!-- <div class="footerUnderline"></div> -->
+          </li>
+          <li class="footerList1items">
+            Anushasan
+            <!-- <div class="footerUnderline"></div> -->
+          </li>
+        </ul>
+      </div>
+      <hr style="color: black; height: 2px" />
+      <div class="footerList2Div">
+        <ul class="footerList2">
+          <li class="footerList2items" onclick="window.location.href = 'about.html';">
+            About Us
+            <div class="footerUnderline"></div>
+          </li>
+          <li class="footerList2items" onclick="window.location.href = 'services.html';">
+            Services
+            <div class="footerUnderline"></div>
+          </li>
+          <li class="footerList2items" onclick="window.location.href = 'brandWork.html';">
+            Portfolio
+            <div class="footerUnderline"></div>
+          </li>
+          <li class="footerList2items" onclick="window.location.href = 'blog.html';">
+            Blog
+            <div class="footerUnderline"></div>
+          </li>
+          <a data-toggle="modal" data-target="#exampleModalCenter">
+            <li class="footerList2items" onclick="window.location.href = 'about.html#careerSection';">
+              Careers
+              <div class="footerUnderline"></div>
+            </li>
+          </a>
+        </ul>
+      </div>
+      <div class="footerButtonsDiv">
+        <ul class="footerButtons">
+          <div class="footerCircles footerListButtons">
+            <a href="https://www.facebook.com/thehappyslate"><i class="fab fa-facebook-f"></i></a>
+          </div>
+          <div class="footerCircles footerListButtons">
+            <a
+              href="https://www.google.com/url?q=https://www.instagram.com/thehappyslate/&sa=D&source=docs&ust=1660378318171895&usg=AOvVaw1XWmDDrn4UJUt_DKM0vZli"><i
+                class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div class="footerCircles footerListButtons">
+            <a
+              href="https://www.google.com/url?q=https://www.youtube.com/channel/UCgG0gMEBXulmHaqp8JjuDLg&sa=D&source=docs&ust=1660378318171933&usg=AOvVaw2whJgujldYB0Avl8jv_dA7"><i
+                class="fa-brands fa-youtube"></i></a>
+          </div>
+          <div class="footerCircles footerListButtons">
+            <a
+              href="https://www.google.com/url?q=https://twitter.com/TheHappySlate&sa=D&source=docs&ust=1660378318171804&usg=AOvVaw3Z05dIhB3caAqEkMr_Yk8Z"><i
+                class="fa-brands fa-twitter"></i></a>
+          </div>
+          <div class="footerCircles footerListButtons">
+            <a
+              href="https://www.google.com/url?q=https://www.linkedin.com/company/thehappyslate/&sa=D&source=docs&ust=1660378318172001&usg=AOvVaw0r8_XdBnRwbXCiWFVxMEyQ"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </ul>
+      </div>
+      <div class="footerText">
+        <div class="footerText1 text-muted">
+          <p class="footerText1paragraphs">Terms & conditions</p>
+          <p class="footerText1paragraphs">Privacy Policy</p>
+        </div>
+        <div class="footerText2 mt-2 text-muted">
+          <p>Copyright © <span class="footerCopyrightYear"></span> The Happy Slate.</p>
+          <p>All rights reserved.</p>
         </div>
       </div>
     </div>
-    <!-- footer -->
-    <footer class="footerSection">
-      <img
-        
-        class="footerImg"
-        src="./images/THS-Logos/LogoRGB Landscape_2.png"
-        alt=""
-      />
-      <div class="footerDiv">
-        <!-- <h5 class="footerBrandName">THE HAPPY SLATE</h5> -->
-        <div class="footerList1Div">
-          <ul class="footerList1">
-            <li class="footerList1items">
-              Parampara
-              <!-- <div class="footerUnderline"></div> -->
-            </li>
-            <li class="footerList1items">
-              Pratishtha
-              <!-- <div class="footerUnderline"></div> -->
-            </li>
-            <li class="footerList1items">
-              Anushasan
-              <!-- <div class="footerUnderline"></div> -->
-            </li>
-          </ul>
-        </div>
-        <hr style="color: black; height: 2px" />
-        <div class="footerList2Div">
-          <ul class="footerList2">
-            <li class="footerList2items" onclick="window.location.href = 'about.html';">
-              About Us
-              <div class="footerUnderline"></div>
-            </li>
-            <li class="footerList2items" onclick="window.location.href = 'services.html';">
-              Services
-              <div class="footerUnderline"></div>
-            </li>
-            <li class="footerList2items" onclick="window.location.href = 'brandWork.html';">
-              Portfolio
-              <div class="footerUnderline"></div>
-            </li>
-            <li class="footerList2items" onclick="window.location.href = 'blog.html';">
-              Blog
-              <div class="footerUnderline"></div>
-            </li>
-            <a data-toggle="modal" data-target="#exampleModalCenter">
-              <li class="footerList2items" onclick="window.location.href = 'about.html#careerSection';">
-                Careers
-                <div class="footerUnderline"></div>
-              </li>
-            </a>
-          </ul>
-        </div>
-        <div class="footerButtonsDiv">
-          <ul class="footerButtons">
-            <div class="footerCircles footerListButtons">
-              <a href="https://www.facebook.com/thehappyslate"><i class="fab fa-facebook-f"></i></a>
-            </div>
-            <div class="footerCircles footerListButtons">
-              <a
-                href="https://www.google.com/url?q=https://www.instagram.com/thehappyslate/&sa=D&source=docs&ust=1660378318171895&usg=AOvVaw1XWmDDrn4UJUt_DKM0vZli"><i
-                  class="fa-brands fa-instagram"></i></a>
-            </div>
-            <div class="footerCircles footerListButtons">
-              <a href="https://www.google.com/url?q=https://www.youtube.com/channel/UCgG0gMEBXulmHaqp8JjuDLg&sa=D&source=docs&ust=1660378318171933&usg=AOvVaw2whJgujldYB0Avl8jv_dA7"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-            <div class="footerCircles footerListButtons">
-              <a href="https://www.google.com/url?q=https://twitter.com/TheHappySlate&sa=D&source=docs&ust=1660378318171804&usg=AOvVaw3Z05dIhB3caAqEkMr_Yk8Z"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-            <div class="footerCircles footerListButtons">
-              <a href="https://www.google.com/url?q=https://www.linkedin.com/company/thehappyslate/&sa=D&source=docs&ust=1660378318172001&usg=AOvVaw0r8_XdBnRwbXCiWFVxMEyQ"><i class="fa-brands fa-linkedin-in"></i></a>
-            </div>
-          </ul>
-        </div>
-        <div class="footerText">
-          <div class="footerText1 text-muted">
-            <p class="footerText1paragraphs">Terms&conditions</p>
-            <p class="footerText1paragraphs">Privacy Policy</p>
-          </div>
-          <div class="footerText2 mt-2 text-muted">
-            <p>Copyright © <span class="footerCopyrightYear"></span> The Happy Slate.</p>
-            <p>All rights reserved.</p>
-          </div>
-        </div>
-      </div>
-    </footer>
+  </footer>
 
-    <!-- jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/about.js"></script>
-  </body>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script src="./js/about.js"></script>
+</body>
+
 </html>

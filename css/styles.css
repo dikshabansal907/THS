@@ -46,7 +46,6 @@ h3 {
   overflow: hidden;
   /* margin-top: 1.3rem; */
 }
-
 .navbarList ol,
 ul {
   padding-left: 0rem !important;
@@ -56,12 +55,15 @@ ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 3.5rem 3rem;
+  /* padding: 3.5rem 3rem; //24aug */ 
   position: absolute;
-  top: 0;
+  top:0;
   left: 0;
   width: 100%;
+  height: 9%;
   z-index: 2;
+  /* done on 24aug */
+  background-color: #26323854;
 }
 .navBarItem {
   display: inline-block;
@@ -135,6 +137,7 @@ ul {
   background-color: transparent !important;
   border: 1px white solid;
   padding: 0;
+  min-width: 9rem;
 }
 .dropdown-item {
   padding-top: 10px;
@@ -163,6 +166,9 @@ ul {
   position: absolute;
   top: 4%;
   left: 1vh;
+}
+.homePageLogo{
+  width: 15%;
 }
 .headerSectionText {
   text-align: center;
@@ -361,7 +367,7 @@ ul {
   overflow: hidden;
   align-items: flex-end;
   border-radius: 25px;
-  height: 60vh;
+  height: 63vh;
   border-radius: 20px;
 }
 .item-container:hover {
@@ -1530,7 +1536,7 @@ about us Page ends
     padding: 0 15px;
   }
   .iframeCrossDiv {
-    left: 50%;
+    /* left: 50%; */
     top: 25%;
     right: inherit;
   }
@@ -1629,6 +1635,10 @@ about us Page ends
   .navbar {
     padding: 0rem;
     flex-direction: column;
+    height: 21%;
+  }
+  .homePageLogo{
+    width: 18%;
   }
   .logo {
     position: static;
@@ -1724,7 +1734,7 @@ about us Page ends
     transform: translateX(0px);
   }
   .item-container {
-    height: 50vh;
+    height: 43vh;
     border-radius: 0;
   }
   .item-container img,
@@ -1732,7 +1742,9 @@ about us Page ends
   .item-container .info {
     border-radius: 0;
   }
-
+.owlButton{
+  padding: 0.8rem;
+}
 
   /* footer */
   .footerDiv {
@@ -1896,6 +1908,10 @@ about us Page ends
   }
   .contactContainer img {
     left: 1.4rem;
+  }
+  .contactModalEmail{
+    display: block !important;
+    margin-top: 1%;
   }
   /* contact us banner */
   .contactUsBanner {

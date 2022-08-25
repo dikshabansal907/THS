@@ -13,8 +13,9 @@ dropdownForGalleryOptions.addEventListener("mouseout", () => {
   document.getElementById("gallery-dropdown").style.display = "none";
 });
 
-$('#gallery-dropdown-button').click(function(){return false;});
-
+$("#gallery-dropdown-button").click(function () {
+  return false;
+});
 
 const showThis = (selector) => {
   $(selector).removeClass("display-none");
@@ -31,8 +32,6 @@ const passIframeSrc = (src) => {
 const stopVideo = () => {
   $(".iframeSectionVideo").attr("src", "");
 };
-
-
 
 let brandTimerRan = false;
 let originalTimerRan = false;
@@ -55,7 +54,7 @@ const runTimer = () => {
   let countAwards = document.querySelector(".brandCountAwards");
   let customerUpto = 20;
   let projectUpto = 100;
-  let awardsUpto = 115;
+  let awardsUpto = 250;
   let i = 0;
   let j = 0;
   let k = 0;
@@ -72,7 +71,7 @@ const runTimer = () => {
     if (j == projectUpto) {
       clearInterval(counterP);
     }
-    countProjects.innerText = `${j}M+`;
+    countProjects.innerText = `${j}+`;
     j = j + 1;
   }, 50);
   document.querySelector(".brandCountProjects").style.color =
@@ -104,7 +103,7 @@ const runOriginalTimer = () => {
   let countCustomers = document.querySelector(".originalCountCustomers");
   let countProjects = document.querySelector(".originalCountProjects");
   let countAwards = document.querySelector(".originalCountAwards");
-  let customerUpto = 150;
+  let customerUpto = 159;
   let projectUpto = 20;
   let awardsUpto = 115;
   let i = 0;
