@@ -368,7 +368,7 @@ ul {
   overflow: hidden;
   align-items: flex-end;
   border-radius: 25px;
-  height: 63vh;
+  height: 60vh;
   border-radius: 20px;
 }
 .item-container:hover {
@@ -429,6 +429,7 @@ ul {
   justify-content: flex-end;
   border-radius: 25px;
   opacity: 0;
+  width: 100%;
   transition: 0.5s all;
   padding: 1rem 1.5rem;
   transform: translateY(-30px);
@@ -1739,8 +1740,8 @@ about us Page ends
     transform: translateX(0px);
   }
   .item-container {
-    height: 53vh;
-    border-radius: 0;
+    /* height: 53vh;
+    border-radius: 0; */
     
   }
   .item-container img{
@@ -1752,13 +1753,13 @@ about us Page ends
   .item-container::before,
   .item-container .info {
   border-radius: 0;
-  transform: scale(0.9);
+  /* transform: scale(0.9); */
   object-fit: contain;
 
   }
 .owlButton{
   padding: 0.8rem;
-  font-size:large;
+  font-size:x-large;
 }
 
   /* footer */

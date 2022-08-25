@@ -187,7 +187,7 @@ $(window).scroll(function () {
 // Go to the next item
 
 $(".owl-carousel").owlCarousel({
-  loop: true,
+  loop: false,
   margin: 30,
   autoplay: true,
   autoplayTimeout: 7000,
