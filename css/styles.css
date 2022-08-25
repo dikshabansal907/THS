@@ -427,7 +427,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  border-radius: 25px;
+  border-radius:0px;
   opacity: 0;
   width: 100%;
   transition: 0.5s all;
@@ -1740,8 +1740,8 @@ about us Page ends
     transform: translateX(0px);
   }
   .item-container {
-    /* height: 53vh;
-    border-radius: 0; */
+    height: 50vh;
+    border-radius: 0;
     
   }
   .item-container img{
