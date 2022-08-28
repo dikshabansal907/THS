@@ -1624,7 +1624,7 @@ about us Page ends
   position: absolute;
   height: 99%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
   top: 0;
   left: 0;
@@ -1643,7 +1643,7 @@ about us Page ends
   }
   .homePageLogo{
     width: 40%;
-    margin-top: 0.3%;
+    margin-top: 0.3rem;
   }
   .logo {
     position: static;
@@ -1664,7 +1664,7 @@ about us Page ends
     margin: 0 0.7em;
   }
   .navbarVideo{
-    margin-top: 4.3rem;
+    margin-top: 4.2rem;
   }
   .dropdown-menu{
     right:0.3rem;
