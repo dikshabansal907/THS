@@ -99,15 +99,13 @@
             <a href="./services.html" data-hover="Services">Services</a>
           </li>
           <li class="navbarItem  text-white">
-            <a id="gallery-dropdown-button" data-hover="Gallery" role="button" aria-expanded="false">Gallery</a>
-            <!-- From This  -->
+            <a onclick="window.location.href = 'brandWork.html';"  id="gallery-dropdown-button" data-hover="Gallery" role="button" aria-expanded="false">Gallery</a>
             <ul class="dropdown-menu " id="gallery-dropdown" style="display: none;">
               <button onclick="window.location.href = 'brandWork.html';" class="dropdown-item dropdown-item-brand">Brand
                 Films</button>
               <button onclick="window.location.href = 'originalWork.html';" class="dropdown-item">Original
                 Films</button>
             </ul>
-            <!-- To This  -->
           </li>
           <li class="navbarItem text-white">
             <a data-toggle="modal" data-target="#exampleModalCenter" data-hover="Contact">
@@ -120,8 +118,7 @@
     <video class="navbarVideo" loop autoplay="true" muted playsinline>
       <source src="./images/demo.mp4" type="video/mp4" />
     </video>
-    <!-- <div class="navbarOverlay"></div> -->
-
+    <div class="navbarOverlay"></div>
   </section>
 
   <!-- Navigation Bar ends---------------------------- -->
@@ -502,6 +499,45 @@
           <div class="carousel-item">
             <div class="customerSliderContent">
               <div class="customerSliderImageDiv">
+                <img class="customerSliderImage" src="./images/CustomerReviews/eka.jpg"
+                  alt="testimoinial">
+              </div>
+              <div class="customerSliderInfo">
+                <h4 class="customerName text-break">Revanth Krishnan</h4>
+                <p>Creative Manager - Motion Graphics, Video & Design, Eka Software</p>
+              </div>
+              <!-- <img  class="customerReviewStars" src="" alt=""> -->
+              <div class="customerSliderReviewDiv">
+                <i class="bi bi-quote customerSliderQuoteIcon customerSliderQuoteIconStart"></i>
+                <i class="bi bi-quote customerSliderQuoteIcon customerSliderQuoteIconEnd"></i>
+                <p class="customerSliderReview text-center">Yes it been a great journey for us with Happy slate. I have
+                  found the team there to do things because of their love for design rather just completing a task. I
+                  would highly recommend them for their collaborative culture & Talented designers :)</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="customerSliderContent">
+              <div class="customerSliderImageDiv">
+                <img class="customerSliderImage" src="./images/CustomerReviews/cudents.jpg"
+                  alt="testimoinial">
+              </div>
+              <div class="customerSliderInfo">
+                <h4 class="customerName text-break">Deepak Girdhera</h4>
+                <p>Founder and Director, Cudents</p>
+              </div>
+              <!-- <img  class="customerReviewStars" src="" alt=""> -->
+              <div class="customerSliderReviewDiv">
+                <i class="bi bi-quote customerSliderQuoteIcon customerSliderQuoteIconStart"></i>
+                <i class="bi bi-quote customerSliderQuoteIcon customerSliderQuoteIconEnd"></i>
+                <p class="customerSliderReview text-center">Had a great experience working with The Happy Slate.
+                  Exceeded our expectations. The creativity was awesome with the high-quality output.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="customerSliderContent">
+              <div class="customerSliderImageDiv">
                 <img class="customerSliderImage" src="./images/CustomerReviews/logo testimonials_YT.png"
                   alt="testimoinial">
               </div>
@@ -580,6 +616,7 @@
               </div>
             </div>
           </div>
+
         </div>
         <i class="carousel-control-prev bi bi-arrow-left"></i>
         <i class="carousel-control-next bi bi-arrow-right"></i>

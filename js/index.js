@@ -189,10 +189,10 @@ $(window).scroll(function () {
 $(".owl-carousel").owlCarousel({
   loop: false,
   margin: 30,
-  autoplay: false,
+  autoplay: true,
   autoplayTimeout: 7000,
   dots: false,
-  center: true,
+  center: false,
   nav: true,
   responsive: {
     0: {
